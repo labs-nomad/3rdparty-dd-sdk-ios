@@ -21,6 +21,9 @@ source "${CURRENT_DIR}/submodules/dev-ops/scripts/include/xcode.sh"
 #----------------------------------------------------------------#
 function buildDataDog {
 
+    # check dependencies
+    checkDependencies
+
     # settings
     local publishDir="${CURRENT_DIR}/bin"
     local workingDir="${CURRENT_DIR}/.working"
@@ -36,29 +39,23 @@ function buildDataDog {
     local checkoutDir="${workingDir}/checkout"
     git_fetchSourceBranchOrTag "${GIT_REPO}" "${GIT_TAG}" "${checkoutDir}"
 
-    # build frameworks
-    local apolloRootDir="${checkoutDir}/apollo-ios"
+    # build
+    local dataDogRootDir="${checkoutDir}/dd-sdk-ios"
+    cd ${dataDogRootDir}
 
-    # buildApolloFramework                        \
-    #     "Apollo"                                \
-    #     "Apollo-Target-Framework.xcconfig"      \
-    #     "${apolloRootDir}"                      \
-    #     "${workingDir}"                         \
-    #     "${publishDir}"
-        
-    # buildApolloFramework                        \
-    #     "ApolloAPI"                             \
-    #     "Apollo-Target-ApolloAPI.xcconfig"      \
-    #     "${apolloRootDir}"                      \
-    #     "${workingDir}"                         \
-    #     "${publishDir}"
-        
-    # buildApolloFramework                        \
-    #     "ApolloUtils"                           \
-    #     "Apollo-Target-ApolloUtils.xcconfig"    \
-    #     "${apolloRootDir}"                      \
-    #     "${workingDir}"                         \
-    #     "${publishDir}"
+    # edit the built-in script so it produces static frameworks instead of dynamic
+    printf "%s\n" "54i" "MACH_O_TYPE=staticlib \\" "." "w" "q" | ed -s "./tools/release/build-xcframeworks.sh"
+   
+    # run the built-in script
+    ./tools/release/build-xcframeworks.sh   \
+        --repo-path ${dataDogRootDir}       \
+        --output-path ${publishDir}         \
+        --ios
+}
+
+#----------------------------------------------------------------#
+function checkDependencies {
+    util_commandExists "xcbeautify" || (util_echoError "Please install xcbeautify! (brew install xcbeautify)" && exit 1)
 }
 
 #----------------------------------------------------------------#
