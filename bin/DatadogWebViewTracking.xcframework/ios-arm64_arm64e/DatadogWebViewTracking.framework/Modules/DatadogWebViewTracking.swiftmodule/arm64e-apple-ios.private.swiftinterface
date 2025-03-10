@@ -1,0 +1,30 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64e-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogWebViewTracking
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import DatadogInternal
+import Foundation
+import Swift
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum WebViewTracking {
+  public static func enable(webView: WebKit.WKWebView, hosts: Swift.Set<Swift.String> = [], logsSampleRate: DatadogInternal.SampleRate = .maxSampleRate, in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+  public static func disable(webView: WebKit.WKWebView)
+}
+extension DatadogWebViewTracking.WebViewTracking : DatadogInternal.InternalExtended {
+  public typealias ExtendedType = DatadogWebViewTracking.WebViewTracking
+}
+extension DatadogInternal.InternalExtension where ExtendedType == DatadogWebViewTracking.WebViewTracking {
+  @_hasMissingDesignatedInitializers public class AbstractMessageEmitter {
+    public func send(body: Any, slotId: Swift.String? = nil)
+    @objc deinit
+  }
+  public static func messageEmitter(in core: any DatadogInternal.DatadogCoreProtocol, logsSampleRate: DatadogInternal.SampleRate = .maxSampleRate) -> DatadogInternal.InternalExtension<ExtendedType>.AbstractMessageEmitter
+}
+@_spi(objc) @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DDWebViewTracking) final public class objc_WebViewTracking : ObjectiveC.NSObject {
+  @_spi(objc) @objc public static func enable(webView: WebKit.WKWebView, hosts: Swift.Set<Swift.String> = [], logsSampleRate: DatadogInternal.SampleRate = .maxSampleRate)
+  @_spi(objc) @objc public static func disable(webView: WebKit.WKWebView)
+  @_spi(objc) @objc deinit
+}

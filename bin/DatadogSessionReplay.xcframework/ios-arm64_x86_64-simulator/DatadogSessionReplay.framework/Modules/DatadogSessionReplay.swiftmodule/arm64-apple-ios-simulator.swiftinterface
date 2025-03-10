@@ -1,0 +1,101 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogSessionReplay
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CommonCrypto
+import CoreGraphics
+import DatadogInternal
+@_exported import DatadogInternal/*.ImagePrivacyLevel*/
+@_exported import DatadogInternal/*.SessionReplayPrivacyLevel*/
+@_exported import DatadogInternal/*.TextAndInputPrivacyLevel*/
+@_exported import DatadogInternal/*.TouchPrivacyLevel*/
+import Foundation
+import QuartzCore
+import SafariServices
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import zlib
+extension UIKit.UIImage : DatadogInternal.DatadogExtended {
+  @available(iOS 2.0, *)
+  public typealias ExtendedType = UIKit.UIImage
+}
+extension DatadogSessionReplay.SessionReplay {
+  public struct Configuration {
+    public var replaySampleRate: Swift.Float
+    @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use the new privacy levels instead.")
+    public var defaultPrivacyLevel: DatadogInternal.SessionReplayPrivacyLevel {
+      get
+      set
+    }
+    public var textAndInputPrivacyLevel: DatadogInternal.TextAndInputPrivacyLevel
+    public var imagePrivacyLevel: DatadogInternal.ImagePrivacyLevel
+    public var touchPrivacyLevel: DatadogInternal.TouchPrivacyLevel
+    public var startRecordingImmediately: Swift.Bool
+    public var customEndpoint: Foundation.URL?
+    public var featureFlags: DatadogSessionReplay.SessionReplay.Configuration.FeatureFlags
+    public init(replaySampleRate: DatadogInternal.SampleRate = .maxSampleRate, textAndInputPrivacyLevel: DatadogInternal.TextAndInputPrivacyLevel, imagePrivacyLevel: DatadogInternal.ImagePrivacyLevel, touchPrivacyLevel: DatadogInternal.TouchPrivacyLevel, startRecordingImmediately: Swift.Bool = true, customEndpoint: Foundation.URL? = nil, featureFlags: DatadogSessionReplay.SessionReplay.Configuration.FeatureFlags = .defaults)
+    @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(replaySampleRate:textAndInputPrivacyLevel:imagePrivacyLevel:touchPrivacyLevel:)` instead.")
+    public init(replaySampleRate: DatadogInternal.SampleRate = .maxSampleRate, defaultPrivacyLevel: DatadogInternal.SessionReplayPrivacyLevel = .mask, startRecordingImmediately: Swift.Bool = true, customEndpoint: Foundation.URL? = nil)
+  }
+}
+extension DatadogSessionReplay.SessionReplay.Configuration {
+  public typealias FeatureFlags = [DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag : Swift.Bool]
+  public enum FeatureFlag : Swift.String {
+    case swiftui
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension Swift.Dictionary where Key == DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag, Value == Swift.Bool {
+  public static var defaults: Swift.Dictionary<DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag, Swift.Bool> {
+    get
+  }
+  public subscript(flag: Key) -> Swift.Bool {
+    get
+  }
+}
+extension DatadogInternal.DatadogExtension where ExtendedType : UIKit.UIView {
+  public var sessionReplayPrivacyOverrides: DatadogSessionReplay.SessionReplayPrivacyOverrides {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class SessionReplayPrivacyOverrides {
+  final public var textAndInputPrivacy: DatadogInternal.TextAndInputPrivacyLevel?
+  final public var imagePrivacy: DatadogInternal.ImagePrivacyLevel?
+  final public var touchPrivacy: DatadogInternal.TouchPrivacyLevel?
+  final public var hide: Swift.Bool?
+  @objc deinit
+}
+extension DatadogSessionReplay.SessionReplayPrivacyOverrides : Swift.Equatable {
+  public static func == (lhs: DatadogSessionReplay.SessionReplayPrivacyOverrides, rhs: DatadogSessionReplay.SessionReplayPrivacyOverrides) -> Swift.Bool
+}
+extension UIKit.UIView : DatadogInternal.DatadogExtended {
+  @available(iOS 2.0, *)
+  public typealias ExtendedType = UIKit.UIView
+}
+public enum SessionReplay {
+  public static func enable(with configuration: DatadogSessionReplay.SessionReplay.Configuration, in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+  public static func startRecording(in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+  public static func stopRecording(in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+}
+extension CoreFoundation.CGRect : DatadogInternal.DatadogExtended {
+  public typealias ExtendedType = CoreFoundation.CGRect
+}
+extension CoreFoundation.CGSize : DatadogInternal.DatadogExtended {
+  public typealias ExtendedType = CoreFoundation.CGSize
+}
+extension UIKit.UIColor : DatadogInternal.DatadogExtended {
+  @available(iOS 2.0, *)
+  public typealias ExtendedType = UIKit.UIColor
+}
+extension DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag : Swift.Equatable {}
+extension DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag : Swift.Hashable {}
+extension DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag : Swift.RawRepresentable {}

@@ -1,0 +1,600 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DatadogWebViewTracking",
+    "printedName": "DatadogWebViewTracking",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DatadogInternal",
+        "printedName": "DatadogInternal",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebViewTracking",
+        "printedName": "WebViewTracking",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "enable",
+            "printedName": "enable(webView:hosts:logsSampleRate:in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogCoreProtocol",
+                "printedName": "any DatadogInternal.DatadogCoreProtocol",
+                "hasDefaultArg": true,
+                "usr": "s:15DatadogInternal0A12CoreProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22DatadogWebViewTracking0bcD0O6enable03webC05hosts14logsSampleRate2inySo05WKWebC0C_ShySSGSf0A8Internal0A12CoreProtocol_ptFZ",
+            "mangledName": "$s22DatadogWebViewTracking0bcD0O6enable03webC05hosts14logsSampleRate2inySo05WKWebC0C_ShySSGSf0A8Internal0A12CoreProtocol_ptFZ",
+            "moduleName": "DatadogWebViewTracking",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disable",
+            "printedName": "disable(webView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22DatadogWebViewTracking0bcD0O7disable03webC0ySo05WKWebC0C_tFZ",
+            "mangledName": "$s22DatadogWebViewTracking0bcD0O7disable03webC0ySo05WKWebC0C_tFZ",
+            "moduleName": "DatadogWebViewTracking",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22DatadogWebViewTracking0bcD0O",
+        "mangledName": "$s22DatadogWebViewTracking0bcD0O",
+        "moduleName": "DatadogWebViewTracking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "InternalExtended",
+            "printedName": "InternalExtended",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedType",
+                "printedName": "ExtendedType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebViewTracking",
+                    "printedName": "DatadogWebViewTracking.WebViewTracking",
+                    "usr": "s:22DatadogWebViewTracking0bcD0O"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:15DatadogInternal0B8ExtendedP",
+            "mangledName": "$s15DatadogInternal0B8ExtendedP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DatadogInternal",
+        "printedName": "DatadogInternal",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DatadogInternal",
+        "printedName": "DatadogInternal",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "objc_WebViewTracking",
+        "printedName": "objc_WebViewTracking",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "enable",
+            "printedName": "enable(webView:hosts:logsSampleRate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DatadogWebViewTracking@objc(cs)DDWebViewTracking(cm)enableWithWebView:hosts:logsSampleRate:",
+            "mangledName": "$s22DatadogWebViewTracking05objc_bcD0C6enable03webC05hosts14logsSampleRateySo05WKWebC0C_ShySSGSftFZ",
+            "moduleName": "DatadogWebViewTracking",
+            "static": true,
+            "objc_name": "enableWithWebView:hosts:logsSampleRate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "objc"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disable",
+            "printedName": "disable(webView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DatadogWebViewTracking@objc(cs)DDWebViewTracking(cm)disableWithWebView:",
+            "mangledName": "$s22DatadogWebViewTracking05objc_bcD0C7disable03webC0ySo05WKWebC0C_tFZ",
+            "moduleName": "DatadogWebViewTracking",
+            "static": true,
+            "objc_name": "disableWithWebView:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "objc"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DatadogWebViewTracking@objc(cs)DDWebViewTracking",
+        "mangledName": "$s22DatadogWebViewTracking05objc_bcD0C",
+        "moduleName": "DatadogWebViewTracking",
+        "objc_name": "DDWebViewTracking",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "objc"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking"
+      },
+      {
+        "kind": "Import",
+        "name": "DatadogInternal",
+        "printedName": "DatadogInternal",
+        "declKind": "Import",
+        "moduleName": "DatadogWebViewTracking"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InternalExtension",
+        "printedName": "InternalExtension",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "AbstractMessageEmitter",
+            "printedName": "AbstractMessageEmitter",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "send",
+                "printedName": "send(body:slotId:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:15DatadogInternal0B9ExtensionV0A15WebViewTrackingAD0deF0ORszlE22AbstractMessageEmitterC4send4body6slotIdyyp_SSSgtF",
+                "mangledName": "$s15DatadogInternal0B9ExtensionV0A15WebViewTrackingAD0deF0ORszlE22AbstractMessageEmitterC4send4body6slotIdyyp_SSSgtF",
+                "moduleName": "DatadogWebViewTracking",
+                "genericSig": "<τ_0_0 where τ_0_0 == DatadogWebViewTracking.WebViewTracking>",
+                "sugared_genericSig": "<ExtendedType where ExtendedType == DatadogWebViewTracking.WebViewTracking>",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:15DatadogInternal0B9ExtensionV0A15WebViewTrackingAD0deF0ORszlE22AbstractMessageEmitterC",
+            "mangledName": "$s15DatadogInternal0B9ExtensionV0A15WebViewTrackingAD0deF0ORszlE22AbstractMessageEmitterC",
+            "moduleName": "DatadogWebViewTracking",
+            "genericSig": "<τ_0_0 where τ_0_0 == DatadogWebViewTracking.WebViewTracking>",
+            "sugared_genericSig": "<ExtendedType where ExtendedType == DatadogWebViewTracking.WebViewTracking>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "messageEmitter",
+            "printedName": "messageEmitter(in:logsSampleRate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AbstractMessageEmitter",
+                "printedName": "DatadogInternal.InternalExtension<τ_0_0>.AbstractMessageEmitter",
+                "usr": "s:15DatadogInternal0B9ExtensionV0A15WebViewTrackingAD0deF0ORszlE22AbstractMessageEmitterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogCoreProtocol",
+                "printedName": "any DatadogInternal.DatadogCoreProtocol",
+                "usr": "s:15DatadogInternal0A12CoreProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15DatadogInternal0B9ExtensionV0A15WebViewTrackingAD0deF0ORszlE14messageEmitter2in14logsSampleRateAcdFRszlE015AbstractMessageH0CyAF_GAA0A12CoreProtocol_p_SftFZ",
+            "mangledName": "$s15DatadogInternal0B9ExtensionV0A15WebViewTrackingAD0deF0ORszlE14messageEmitter2in14logsSampleRateAcdFRszlE015AbstractMessageH0CyAF_GAA0A12CoreProtocol_p_SftFZ",
+            "moduleName": "DatadogWebViewTracking",
+            "genericSig": "<τ_0_0 where τ_0_0 == DatadogWebViewTracking.WebViewTracking>",
+            "sugared_genericSig": "<ExtendedType where ExtendedType == DatadogWebViewTracking.WebViewTracking>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15DatadogInternal0B9ExtensionV",
+        "mangledName": "$s15DatadogInternal0B9ExtensionV",
+        "moduleName": "DatadogInternal",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<ExtendedType>",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/WebViewTracking.swift",
+      "kind": "Array",
+      "offset": 1930,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/WebViewTracking.swift",
+      "kind": "StringLiteral",
+      "offset": 3059,
+      "length": 26,
+      "value": "\"\/* DatadogEventBridge *\/\""
+    },
+    {
+      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/ObjC\/WebViewTracking+objc.swift",
+      "kind": "Array",
+      "offset": 1344,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/DDScriptMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 418,
+      "length": 20,
+      "value": "\"DatadogEventBridge\""
+    },
+    {
+      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/DDScriptMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 29,
+      "value": "\"com.datadoghq.JSEventBridge\""
+    }
+  ]
+}

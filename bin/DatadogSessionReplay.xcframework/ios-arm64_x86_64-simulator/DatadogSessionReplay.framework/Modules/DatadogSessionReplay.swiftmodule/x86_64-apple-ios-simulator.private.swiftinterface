@@ -1,0 +1,905 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogSessionReplay
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CommonCrypto
+import CoreGraphics
+import DatadogInternal
+@_exported import DatadogInternal/*.ImagePrivacyLevel*/
+@_exported import DatadogInternal/*.SessionReplayPrivacyLevel*/
+@_exported import DatadogInternal/*.TextAndInputPrivacyLevel*/
+@_exported import DatadogInternal/*.TouchPrivacyLevel*/
+import Foundation
+import QuartzCore
+import SafariServices
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import zlib
+extension UIKit.UIImage : DatadogInternal.DatadogExtended {
+  @available(iOS 2.0, *)
+  public typealias ExtendedType = UIKit.UIImage
+}
+extension DatadogSessionReplay.SessionReplay {
+  public struct Configuration {
+    public var replaySampleRate: Swift.Float
+    @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use the new privacy levels instead.")
+    public var defaultPrivacyLevel: DatadogInternal.SessionReplayPrivacyLevel {
+      get
+      set
+    }
+    public var textAndInputPrivacyLevel: DatadogInternal.TextAndInputPrivacyLevel
+    public var imagePrivacyLevel: DatadogInternal.ImagePrivacyLevel
+    public var touchPrivacyLevel: DatadogInternal.TouchPrivacyLevel
+    public var startRecordingImmediately: Swift.Bool
+    public var customEndpoint: Foundation.URL?
+    public var featureFlags: DatadogSessionReplay.SessionReplay.Configuration.FeatureFlags
+    public init(replaySampleRate: DatadogInternal.SampleRate = .maxSampleRate, textAndInputPrivacyLevel: DatadogInternal.TextAndInputPrivacyLevel, imagePrivacyLevel: DatadogInternal.ImagePrivacyLevel, touchPrivacyLevel: DatadogInternal.TouchPrivacyLevel, startRecordingImmediately: Swift.Bool = true, customEndpoint: Foundation.URL? = nil, featureFlags: DatadogSessionReplay.SessionReplay.Configuration.FeatureFlags = .defaults)
+    @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(replaySampleRate:textAndInputPrivacyLevel:imagePrivacyLevel:touchPrivacyLevel:)` instead.")
+    public init(replaySampleRate: DatadogInternal.SampleRate = .maxSampleRate, defaultPrivacyLevel: DatadogInternal.SessionReplayPrivacyLevel = .mask, startRecordingImmediately: Swift.Bool = true, customEndpoint: Foundation.URL? = nil)
+    @_spi(Internal) public mutating func setAdditionalNodeRecorders(_ additionalNodeRecorders: [any DatadogSessionReplay.SessionReplayNodeRecorder])
+  }
+}
+extension DatadogSessionReplay.SessionReplay.Configuration {
+  public typealias FeatureFlags = [DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag : Swift.Bool]
+  public enum FeatureFlag : Swift.String {
+    case swiftui
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension Swift.Dictionary where Key == DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag, Value == Swift.Bool {
+  public static var defaults: Swift.Dictionary<DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag, Swift.Bool> {
+    get
+  }
+  public subscript(flag: Key) -> Swift.Bool {
+    get
+  }
+}
+@_spi(Internal) public typealias WireframeID = DatadogSessionReplay.NodeID
+@_spi(Internal) @_hasMissingDesignatedInitializers public class SessionReplayWireframesBuilder {
+  @_spi(Internal) @objc deinit
+}
+@_spi(Internal) extension DatadogSessionReplay.SessionReplayWireframesBuilder {
+  @_spi(Internal) public struct FontOverride {
+    @_spi(Internal) public init(size: CoreFoundation.CGFloat?)
+  }
+  @_spi(Internal) public func createShapeWireframe(id: DatadogSessionReplay.WireframeID, frame: CoreFoundation.CGRect, clip: CoreFoundation.CGRect, borderColor: CoreGraphics.CGColor? = nil, borderWidth: CoreFoundation.CGFloat? = nil, backgroundColor: CoreGraphics.CGColor? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, opacity: CoreFoundation.CGFloat? = nil) -> DatadogSessionReplay.SRWireframe
+  @_spi(Internal) public func createImageWireframe(id: DatadogSessionReplay.WireframeID, resource: any DatadogSessionReplay.SessionReplayResource, frame: CoreFoundation.CGRect, clip: CoreFoundation.CGRect, mimeType: Swift.String = "png", borderColor: CoreGraphics.CGColor? = nil, borderWidth: CoreFoundation.CGFloat? = nil, backgroundColor: CoreGraphics.CGColor? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, opacity: CoreFoundation.CGFloat? = nil) -> DatadogSessionReplay.SRWireframe
+  @_spi(Internal) public func createTextWireframe(id: DatadogSessionReplay.WireframeID, frame: CoreFoundation.CGRect, clip: CoreFoundation.CGRect, text: Swift.String, textFrame: CoreFoundation.CGRect? = nil, textAlignment: DatadogSessionReplay.SRTextPosition.Alignment? = nil, textColor: CoreGraphics.CGColor? = nil, font: UIKit.UIFont? = nil, fontOverride: DatadogSessionReplay.SessionReplayWireframesBuilder.FontOverride? = nil, fontScalingEnabled: Swift.Bool = false, borderColor: CoreGraphics.CGColor? = nil, borderWidth: CoreFoundation.CGFloat? = nil, backgroundColor: CoreGraphics.CGColor? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, opacity: CoreFoundation.CGFloat? = nil) -> DatadogSessionReplay.SRWireframe
+  @_spi(Internal) public func createPlaceholderWireframe(id: Swift.Int64, frame: CoreFoundation.CGRect, clip: CoreFoundation.CGRect, label: Swift.String) -> DatadogSessionReplay.SRWireframe
+  @_spi(Internal) public func visibleWebViewWireframe(id: Swift.Int, frame: CoreFoundation.CGRect, clip: CoreFoundation.CGRect, borderColor: CoreGraphics.CGColor? = nil, borderWidth: CoreFoundation.CGFloat? = nil, backgroundColor: CoreGraphics.CGColor? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, opacity: CoreFoundation.CGFloat? = nil) -> DatadogSessionReplay.SRWireframe
+  @_spi(Internal) public func hiddenWebViewWireframes() -> [DatadogSessionReplay.SRWireframe]
+}
+@_spi(Internal) extension DatadogSessionReplay.SRContentClip {
+  @_spi(Internal) public static func create(bottom: Swift.Int64?, left: Swift.Int64?, right: Swift.Int64?, top: Swift.Int64?) -> DatadogSessionReplay.SRContentClip
+}
+@_spi(Internal) public typealias NodeID = Swift.Int64
+@_spi(Internal) @_hasMissingDesignatedInitializers final public class NodeIDGenerator {
+  @_spi(Internal) final public func nodeID(view: UIKit.UIView, nodeRecorder: any DatadogSessionReplay.SessionReplayNodeRecorder) -> DatadogSessionReplay.NodeID
+  @_spi(Internal) @objc deinit
+}
+@_spi(Internal) extension DatadogSessionReplay.SRImageWireframe {
+  @_spi(Internal) public static func == (lhs: DatadogSessionReplay.SRImageWireframe, rhs: DatadogSessionReplay.SRImageWireframe) -> Swift.Bool
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+}
+@_spi(Internal) @_hasMissingDesignatedInitializers public class Recorder {
+  @_spi(Internal) public struct Context {
+    @_spi(Internal) public let textAndInputPrivacy: DatadogInternal.TextAndInputPrivacyLevel
+    @_spi(Internal) public let imagePrivacy: DatadogInternal.ImagePrivacyLevel
+    @_spi(Internal) public let touchPrivacy: DatadogInternal.TouchPrivacyLevel
+  }
+  @_spi(Internal) @objc deinit
+}
+extension DatadogInternal.DatadogExtension where ExtendedType : UIKit.UIView {
+  public var sessionReplayPrivacyOverrides: DatadogSessionReplay.SessionReplayPrivacyOverrides {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class SessionReplayPrivacyOverrides {
+  final public var textAndInputPrivacy: DatadogInternal.TextAndInputPrivacyLevel?
+  final public var imagePrivacy: DatadogInternal.ImagePrivacyLevel?
+  final public var touchPrivacy: DatadogInternal.TouchPrivacyLevel?
+  final public var hide: Swift.Bool?
+  @objc deinit
+}
+extension DatadogSessionReplay.SessionReplayPrivacyOverrides : Swift.Equatable {
+  public static func == (lhs: DatadogSessionReplay.SessionReplayPrivacyOverrides, rhs: DatadogSessionReplay.SessionReplayPrivacyOverrides) -> Swift.Bool
+}
+extension UIKit.UIView : DatadogInternal.DatadogExtended {
+  @available(iOS 2.0, *)
+  public typealias ExtendedType = UIKit.UIView
+}
+@_spi(objc) @objc extension UIKit.UIView {
+  @_spi(objc) @objc @_Concurrency.MainActor @preconcurrency dynamic public var ddSessionReplayPrivacyOverrides: DatadogSessionReplay.objc_SessionReplayPrivacyOverrides {
+    @_spi(objc) @objc get
+  }
+}
+@_spi(objc) @objc(DDSessionReplayPrivacyOverrides) @objcMembers final public class objc_SessionReplayPrivacyOverrides : ObjectiveC.NSObject {
+  @_spi(objc) @objc public init(view: UIKit.UIView)
+  @_spi(objc) @objc final public var textAndInputPrivacy: DatadogSessionReplay.objc_TextAndInputPrivacyLevelOverride {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc final public var imagePrivacy: DatadogSessionReplay.objc_ImagePrivacyLevelOverride {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc final public var touchPrivacy: DatadogSessionReplay.objc_TouchPrivacyLevelOverride {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc final public var hide: Foundation.NSNumber? {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc deinit
+}
+public enum SessionReplay {
+  public static func enable(with configuration: DatadogSessionReplay.SessionReplay.Configuration, in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+  public static func startRecording(in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+  public static func stopRecording(in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+}
+@_spi(Internal) public protocol SessionReplayNodeRecorder {
+  @_spi(Internal) func semantics(of view: UIKit.UIView, with attributes: DatadogSessionReplay.SessionReplayViewAttributes, in context: DatadogSessionReplay.SessionReplayViewTreeRecordingContext) -> (any DatadogSessionReplay.SessionReplayNodeSemantics)?
+  @_spi(Internal) var identifier: Foundation.UUID { get }
+}
+@_spi(Internal) public protocol SessionReplayNodeWireframesBuilder {
+  @_spi(Internal) var wireframeRect: CoreFoundation.CGRect { get }
+  @_spi(Internal) func buildWireframes(with builder: DatadogSessionReplay.SessionReplayWireframesBuilder) -> [DatadogSessionReplay.SRWireframe]
+}
+extension CoreFoundation.CGRect : DatadogInternal.DatadogExtended {
+  public typealias ExtendedType = CoreFoundation.CGRect
+}
+extension CoreFoundation.CGSize : DatadogInternal.DatadogExtended {
+  public typealias ExtendedType = CoreFoundation.CGSize
+}
+@_spi(Internal) public protocol SessionReplayTextObfuscating {
+  @_spi(Internal) func mask(text: Swift.String) -> Swift.String
+}
+@_spi(Internal) extension DatadogSessionReplay.SRTextPosition.Alignment {
+  @_spi(Internal) public init(systemTextAlignment: UIKit.NSTextAlignment, vertical: DatadogSessionReplay.SRTextPosition.Alignment.Vertical = .center)
+}
+@_spi(Internal) public struct SessionReplayViewTreeRecordingContext {
+  @_spi(Internal) public let recorder: DatadogSessionReplay.Recorder.Context
+  @_spi(Internal) public let ids: DatadogSessionReplay.NodeIDGenerator
+}
+@_spi(Internal) public struct SRSegment {
+  @_spi(Internal) public let application: DatadogSessionReplay.SRSegment.Application
+  @_spi(Internal) public let end: Swift.Int64
+  @_spi(Internal) public let hasFullSnapshot: Swift.Bool?
+  @_spi(Internal) public let indexInView: Swift.Int64?
+  @_spi(Internal) public let records: [DatadogSessionReplay.SRRecord]
+  @_spi(Internal) public let recordsCount: Swift.Int64
+  @_spi(Internal) public let session: DatadogSessionReplay.SRSegment.Session
+  @_spi(Internal) public let source: DatadogSessionReplay.SRSegment.Source
+  @_spi(Internal) public let start: Swift.Int64
+  @_spi(Internal) public let view: DatadogSessionReplay.SRSegment.View
+  @_spi(Internal) public struct Application : Swift.Codable {
+    @_spi(Internal) public let id: Swift.String
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(Internal) public struct Session : Swift.Codable {
+    @_spi(Internal) public let id: Swift.String
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(Internal) public enum Source : Swift.String, Swift.Codable {
+    @_spi(Internal) case android
+    @_spi(Internal) case ios
+    @_spi(Internal) case flutter
+    @_spi(Internal) case reactNative
+    @_spi(Internal) case kotlinMultiplatform
+    @_spi(Internal) public init?(rawValue: Swift.String)
+    @_spi(Internal) public typealias RawValue = Swift.String
+    @_spi(Internal) public var rawValue: Swift.String {
+      @_spi(Internal) get
+    }
+  }
+  @_spi(Internal) public struct View : Swift.Codable {
+    @_spi(Internal) public let id: Swift.String
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRShapeBorder : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public let color: Swift.String
+  @_spi(Internal) public let width: Swift.Int64
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SRShapeBorder, b: DatadogSessionReplay.SRShapeBorder) -> Swift.Bool
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRContentClip : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public let bottom: Swift.Int64?
+  @_spi(Internal) public let left: Swift.Int64?
+  @_spi(Internal) public let right: Swift.Int64?
+  @_spi(Internal) public let top: Swift.Int64?
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SRContentClip, b: DatadogSessionReplay.SRContentClip) -> Swift.Bool
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRShapeStyle : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public let backgroundColor: Swift.String?
+  @_spi(Internal) public let cornerRadius: Swift.Double?
+  @_spi(Internal) public let opacity: Swift.Double?
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SRShapeStyle, b: DatadogSessionReplay.SRShapeStyle) -> Swift.Bool
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRShapeWireframe : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public let border: DatadogSessionReplay.SRShapeBorder?
+  @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+  @_spi(Internal) public let height: Swift.Int64
+  @_spi(Internal) public let id: Swift.Int64
+  @_spi(Internal) public let shapeStyle: DatadogSessionReplay.SRShapeStyle?
+  @_spi(Internal) public let type: Swift.String
+  @_spi(Internal) public let width: Swift.Int64
+  @_spi(Internal) public let x: Swift.Int64
+  @_spi(Internal) public let y: Swift.Int64
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SRShapeWireframe, b: DatadogSessionReplay.SRShapeWireframe) -> Swift.Bool
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRTextPosition : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public let alignment: DatadogSessionReplay.SRTextPosition.Alignment?
+  @_spi(Internal) public let padding: DatadogSessionReplay.SRTextPosition.Padding?
+  @_spi(Internal) public struct Alignment : Swift.Codable, Swift.Hashable {
+    @_spi(Internal) public let horizontal: DatadogSessionReplay.SRTextPosition.Alignment.Horizontal?
+    @_spi(Internal) public let vertical: DatadogSessionReplay.SRTextPosition.Alignment.Vertical?
+    @_spi(Internal) public enum Horizontal : Swift.String, Swift.Codable {
+      @_spi(Internal) case left
+      @_spi(Internal) case right
+      @_spi(Internal) case center
+      @_spi(Internal) public init?(rawValue: Swift.String)
+      @_spi(Internal) public typealias RawValue = Swift.String
+      @_spi(Internal) public var rawValue: Swift.String {
+        @_spi(Internal) get
+      }
+    }
+    @_spi(Internal) public enum Vertical : Swift.String, Swift.Codable {
+      @_spi(Internal) case top
+      @_spi(Internal) case bottom
+      @_spi(Internal) case center
+      @_spi(Internal) public init?(rawValue: Swift.String)
+      @_spi(Internal) public typealias RawValue = Swift.String
+      @_spi(Internal) public var rawValue: Swift.String {
+        @_spi(Internal) get
+      }
+    }
+    @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(Internal) public static func == (a: DatadogSessionReplay.SRTextPosition.Alignment, b: DatadogSessionReplay.SRTextPosition.Alignment) -> Swift.Bool
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public var hashValue: Swift.Int {
+      @_spi(Internal) get
+    }
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(Internal) public struct Padding : Swift.Codable, Swift.Hashable {
+    @_spi(Internal) public let bottom: Swift.Int64?
+    @_spi(Internal) public let left: Swift.Int64?
+    @_spi(Internal) public let right: Swift.Int64?
+    @_spi(Internal) public let top: Swift.Int64?
+    @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(Internal) public static func == (a: DatadogSessionReplay.SRTextPosition.Padding, b: DatadogSessionReplay.SRTextPosition.Padding) -> Swift.Bool
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public var hashValue: Swift.Int {
+      @_spi(Internal) get
+    }
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SRTextPosition, b: DatadogSessionReplay.SRTextPosition) -> Swift.Bool
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRTextStyle : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public let color: Swift.String
+  @_spi(Internal) public let family: Swift.String
+  @_spi(Internal) public let size: Swift.Int64
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SRTextStyle, b: DatadogSessionReplay.SRTextStyle) -> Swift.Bool
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRTextWireframe : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public let border: DatadogSessionReplay.SRShapeBorder?
+  @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+  @_spi(Internal) public let height: Swift.Int64
+  @_spi(Internal) public let id: Swift.Int64
+  @_spi(Internal) public let shapeStyle: DatadogSessionReplay.SRShapeStyle?
+  @_spi(Internal) public var text: Swift.String
+  @_spi(Internal) public let textPosition: DatadogSessionReplay.SRTextPosition?
+  @_spi(Internal) public let textStyle: DatadogSessionReplay.SRTextStyle
+  @_spi(Internal) public let type: Swift.String
+  @_spi(Internal) public let width: Swift.Int64
+  @_spi(Internal) public let x: Swift.Int64
+  @_spi(Internal) public let y: Swift.Int64
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SRTextWireframe, b: DatadogSessionReplay.SRTextWireframe) -> Swift.Bool
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRImageWireframe : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public var base64: Swift.String?
+  @_spi(Internal) public let border: DatadogSessionReplay.SRShapeBorder?
+  @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+  @_spi(Internal) public let height: Swift.Int64
+  @_spi(Internal) public let id: Swift.Int64
+  @_spi(Internal) public var isEmpty: Swift.Bool?
+  @_spi(Internal) public var mimeType: Swift.String?
+  @_spi(Internal) public var resourceId: Swift.String?
+  @_spi(Internal) public let shapeStyle: DatadogSessionReplay.SRShapeStyle?
+  @_spi(Internal) public let type: Swift.String
+  @_spi(Internal) public let width: Swift.Int64
+  @_spi(Internal) public let x: Swift.Int64
+  @_spi(Internal) public let y: Swift.Int64
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRPlaceholderWireframe : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+  @_spi(Internal) public let height: Swift.Int64
+  @_spi(Internal) public let id: Swift.Int64
+  @_spi(Internal) public var label: Swift.String?
+  @_spi(Internal) public let type: Swift.String
+  @_spi(Internal) public let width: Swift.Int64
+  @_spi(Internal) public let x: Swift.Int64
+  @_spi(Internal) public let y: Swift.Int64
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SRPlaceholderWireframe, b: DatadogSessionReplay.SRPlaceholderWireframe) -> Swift.Bool
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRWebviewWireframe : Swift.Codable, Swift.Hashable {
+  @_spi(Internal) public let border: DatadogSessionReplay.SRShapeBorder?
+  @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+  @_spi(Internal) public let height: Swift.Int64
+  @_spi(Internal) public let id: Swift.Int64
+  @_spi(Internal) public let isVisible: Swift.Bool?
+  @_spi(Internal) public let shapeStyle: DatadogSessionReplay.SRShapeStyle?
+  @_spi(Internal) public let slotId: Swift.String
+  @_spi(Internal) public let type: Swift.String
+  @_spi(Internal) public let width: Swift.Int64
+  @_spi(Internal) public let x: Swift.Int64
+  @_spi(Internal) public let y: Swift.Int64
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SRWebviewWireframe, b: DatadogSessionReplay.SRWebviewWireframe) -> Swift.Bool
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public enum SRWireframe : Swift.Codable {
+  @_spi(Internal) case shapeWireframe(value: DatadogSessionReplay.SRShapeWireframe)
+  @_spi(Internal) case textWireframe(value: DatadogSessionReplay.SRTextWireframe)
+  @_spi(Internal) case imageWireframe(value: DatadogSessionReplay.SRImageWireframe)
+  @_spi(Internal) case placeholderWireframe(value: DatadogSessionReplay.SRPlaceholderWireframe)
+  @_spi(Internal) case webviewWireframe(value: DatadogSessionReplay.SRWebviewWireframe)
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRFullSnapshotRecord : Swift.Codable {
+  @_spi(Internal) public let data: DatadogSessionReplay.SRFullSnapshotRecord.Data
+  @_spi(Internal) public let timestamp: Swift.Int64
+  @_spi(Internal) public let type: Swift.Int64
+  @_spi(Internal) public struct Data : Swift.Codable {
+    @_spi(Internal) public let wireframes: [DatadogSessionReplay.SRWireframe]
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRIncrementalSnapshotRecord : Swift.Codable {
+  @_spi(Internal) public let data: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data
+  @_spi(Internal) public let timestamp: Swift.Int64
+  @_spi(Internal) public let type: Swift.Int64
+  @_spi(Internal) public enum Data : Swift.Codable {
+    @_spi(Internal) case mutationData(value: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.MutationData)
+    @_spi(Internal) case touchData(value: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.TouchData)
+    @_spi(Internal) case viewportResizeData(value: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.ViewportResizeData)
+    @_spi(Internal) case pointerInteractionData(value: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.PointerInteractionData)
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+    @_spi(Internal) public struct MutationData : Swift.Codable {
+      @_spi(Internal) public let adds: [DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.MutationData.Adds]
+      @_spi(Internal) public let removes: [DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.MutationData.Removes]
+      @_spi(Internal) public let source: Swift.Int64
+      @_spi(Internal) public let updates: [DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.MutationData.Updates]
+      @_spi(Internal) public struct Adds : Swift.Codable {
+        @_spi(Internal) public let previousId: Swift.Int64?
+        @_spi(Internal) public let wireframe: DatadogSessionReplay.SRWireframe
+        @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+        @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+      }
+      @_spi(Internal) public struct Removes : Swift.Codable {
+        @_spi(Internal) public let id: Swift.Int64
+        @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+        @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+      }
+      @_spi(Internal) public enum Updates : Swift.Codable {
+        @_spi(Internal) case textWireframeUpdate(value: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.MutationData.Updates.TextWireframeUpdate)
+        @_spi(Internal) case shapeWireframeUpdate(value: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.MutationData.Updates.ShapeWireframeUpdate)
+        @_spi(Internal) case imageWireframeUpdate(value: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.MutationData.Updates.ImageWireframeUpdate)
+        @_spi(Internal) case placeholderWireframeUpdate(value: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.MutationData.Updates.PlaceholderWireframeUpdate)
+        @_spi(Internal) case webviewWireframeUpdate(value: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.MutationData.Updates.WebviewWireframeUpdate)
+        @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+        @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+        @_spi(Internal) public struct TextWireframeUpdate : Swift.Codable {
+          @_spi(Internal) public let border: DatadogSessionReplay.SRShapeBorder?
+          @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+          @_spi(Internal) public let height: Swift.Int64?
+          @_spi(Internal) public let id: Swift.Int64
+          @_spi(Internal) public let shapeStyle: DatadogSessionReplay.SRShapeStyle?
+          @_spi(Internal) public var text: Swift.String?
+          @_spi(Internal) public let textPosition: DatadogSessionReplay.SRTextPosition?
+          @_spi(Internal) public let textStyle: DatadogSessionReplay.SRTextStyle?
+          @_spi(Internal) public let type: Swift.String
+          @_spi(Internal) public let width: Swift.Int64?
+          @_spi(Internal) public let x: Swift.Int64?
+          @_spi(Internal) public let y: Swift.Int64?
+          @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+          @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+        }
+        @_spi(Internal) public struct ShapeWireframeUpdate : Swift.Codable {
+          @_spi(Internal) public let border: DatadogSessionReplay.SRShapeBorder?
+          @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+          @_spi(Internal) public let height: Swift.Int64?
+          @_spi(Internal) public let id: Swift.Int64
+          @_spi(Internal) public let shapeStyle: DatadogSessionReplay.SRShapeStyle?
+          @_spi(Internal) public let type: Swift.String
+          @_spi(Internal) public let width: Swift.Int64?
+          @_spi(Internal) public let x: Swift.Int64?
+          @_spi(Internal) public let y: Swift.Int64?
+          @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+          @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+        }
+        @_spi(Internal) public struct ImageWireframeUpdate : Swift.Codable {
+          @_spi(Internal) public var base64: Swift.String?
+          @_spi(Internal) public let border: DatadogSessionReplay.SRShapeBorder?
+          @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+          @_spi(Internal) public let height: Swift.Int64?
+          @_spi(Internal) public let id: Swift.Int64
+          @_spi(Internal) public var isEmpty: Swift.Bool?
+          @_spi(Internal) public var mimeType: Swift.String?
+          @_spi(Internal) public var resourceId: Swift.String?
+          @_spi(Internal) public let shapeStyle: DatadogSessionReplay.SRShapeStyle?
+          @_spi(Internal) public let type: Swift.String
+          @_spi(Internal) public let width: Swift.Int64?
+          @_spi(Internal) public let x: Swift.Int64?
+          @_spi(Internal) public let y: Swift.Int64?
+          @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+          @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+        }
+        @_spi(Internal) public struct PlaceholderWireframeUpdate : Swift.Codable {
+          @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+          @_spi(Internal) public let height: Swift.Int64?
+          @_spi(Internal) public let id: Swift.Int64
+          @_spi(Internal) public var label: Swift.String?
+          @_spi(Internal) public let type: Swift.String
+          @_spi(Internal) public let width: Swift.Int64?
+          @_spi(Internal) public let x: Swift.Int64?
+          @_spi(Internal) public let y: Swift.Int64?
+          @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+          @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+        }
+        @_spi(Internal) public struct WebviewWireframeUpdate : Swift.Codable {
+          @_spi(Internal) public let border: DatadogSessionReplay.SRShapeBorder?
+          @_spi(Internal) public let clip: DatadogSessionReplay.SRContentClip?
+          @_spi(Internal) public let height: Swift.Int64?
+          @_spi(Internal) public let id: Swift.Int64
+          @_spi(Internal) public let isVisible: Swift.Bool?
+          @_spi(Internal) public let shapeStyle: DatadogSessionReplay.SRShapeStyle?
+          @_spi(Internal) public let slotId: Swift.String
+          @_spi(Internal) public let type: Swift.String
+          @_spi(Internal) public let width: Swift.Int64?
+          @_spi(Internal) public let x: Swift.Int64?
+          @_spi(Internal) public let y: Swift.Int64?
+          @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+          @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+        }
+      }
+      @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+      @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+    }
+    @_spi(Internal) public struct TouchData : Swift.Codable {
+      @_spi(Internal) public let positions: [DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.TouchData.Positions]?
+      @_spi(Internal) public let source: Swift.Int64
+      @_spi(Internal) public struct Positions : Swift.Codable {
+        @_spi(Internal) public let id: Swift.Int64
+        @_spi(Internal) public let timestamp: Swift.Int64
+        @_spi(Internal) public let x: Swift.Int64
+        @_spi(Internal) public let y: Swift.Int64
+        @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+        @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+      }
+      @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+      @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+    }
+    @_spi(Internal) public struct ViewportResizeData : Swift.Codable {
+      @_spi(Internal) public let height: Swift.Int64
+      @_spi(Internal) public let source: Swift.Int64
+      @_spi(Internal) public let width: Swift.Int64
+      @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+      @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+    }
+    @_spi(Internal) public struct PointerInteractionData : Swift.Codable {
+      @_spi(Internal) public let pointerEventType: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.PointerInteractionData.PointerEventType
+      @_spi(Internal) public let pointerId: Swift.Int64
+      @_spi(Internal) public let pointerType: DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.PointerInteractionData.PointerType
+      @_spi(Internal) public let source: Swift.Int64
+      @_spi(Internal) public let x: Swift.Double
+      @_spi(Internal) public let y: Swift.Double
+      @_spi(Internal) public enum PointerEventType : Swift.String, Swift.Codable {
+        @_spi(Internal) case down
+        @_spi(Internal) case up
+        @_spi(Internal) case move
+        @_spi(Internal) public init?(rawValue: Swift.String)
+        @_spi(Internal) public typealias RawValue = Swift.String
+        @_spi(Internal) public var rawValue: Swift.String {
+          @_spi(Internal) get
+        }
+      }
+      @_spi(Internal) public enum PointerType : Swift.String, Swift.Codable {
+        @_spi(Internal) case mouse
+        @_spi(Internal) case touch
+        @_spi(Internal) case pen
+        @_spi(Internal) public init?(rawValue: Swift.String)
+        @_spi(Internal) public typealias RawValue = Swift.String
+        @_spi(Internal) public var rawValue: Swift.String {
+          @_spi(Internal) get
+        }
+      }
+      @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+      @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+    }
+  }
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRMetaRecord : Swift.Codable {
+  @_spi(Internal) public let data: DatadogSessionReplay.SRMetaRecord.Data
+  @_spi(Internal) public let slotId: Swift.String?
+  @_spi(Internal) public let timestamp: Swift.Int64
+  @_spi(Internal) public let type: Swift.Int64
+  @_spi(Internal) public struct Data : Swift.Codable {
+    @_spi(Internal) public let height: Swift.Int64
+    @_spi(Internal) public let href: Swift.String?
+    @_spi(Internal) public let width: Swift.Int64
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRFocusRecord : Swift.Codable {
+  @_spi(Internal) public let data: DatadogSessionReplay.SRFocusRecord.Data
+  @_spi(Internal) public let slotId: Swift.String?
+  @_spi(Internal) public let timestamp: Swift.Int64
+  @_spi(Internal) public let type: Swift.Int64
+  @_spi(Internal) public struct Data : Swift.Codable {
+    @_spi(Internal) public let hasFocus: Swift.Bool
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRViewEndRecord : Swift.Codable {
+  @_spi(Internal) public let slotId: Swift.String?
+  @_spi(Internal) public let timestamp: Swift.Int64
+  @_spi(Internal) public let type: Swift.Int64
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct SRVisualViewportRecord : Swift.Codable {
+  @_spi(Internal) public let data: DatadogSessionReplay.SRVisualViewportRecord.Data
+  @_spi(Internal) public let slotId: Swift.String?
+  @_spi(Internal) public let timestamp: Swift.Int64
+  @_spi(Internal) public let type: Swift.Int64
+  @_spi(Internal) public struct Data : Swift.Codable {
+    @_spi(Internal) public let height: Swift.Double
+    @_spi(Internal) public let offsetLeft: Swift.Double
+    @_spi(Internal) public let offsetTop: Swift.Double
+    @_spi(Internal) public let pageLeft: Swift.Double
+    @_spi(Internal) public let pageTop: Swift.Double
+    @_spi(Internal) public let scale: Swift.Double
+    @_spi(Internal) public let width: Swift.Double
+    @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public enum SRRecord : Swift.Codable {
+  @_spi(Internal) case fullSnapshotRecord(value: DatadogSessionReplay.SRFullSnapshotRecord)
+  @_spi(Internal) case incrementalSnapshotRecord(value: DatadogSessionReplay.SRIncrementalSnapshotRecord)
+  @_spi(Internal) case metaRecord(value: DatadogSessionReplay.SRMetaRecord)
+  @_spi(Internal) case focusRecord(value: DatadogSessionReplay.SRFocusRecord)
+  @_spi(Internal) case viewEndRecord(value: DatadogSessionReplay.SRViewEndRecord)
+  @_spi(Internal) case visualViewportRecord(value: DatadogSessionReplay.SRVisualViewportRecord)
+  @_spi(Internal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(Internal) public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(objc) @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(DDSessionReplay) @objcMembers final public class objc_SessionReplay : ObjectiveC.NSObject {
+  @_spi(objc) @objc public static func enable(with configuration: DatadogSessionReplay.objc_SessionReplayConfiguration)
+  @_spi(objc) @objc public static func startRecording()
+  @_spi(objc) @objc public static func stopRecording()
+  @_spi(objc) @objc deinit
+}
+@_spi(objc) @objc(DDSessionReplayConfiguration) @objcMembers final public class objc_SessionReplayConfiguration : ObjectiveC.NSObject {
+  @_spi(objc) @objc final public var replaySampleRate: Swift.Float {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use the new privacy levels instead.")
+  @objc final public var defaultPrivacyLevel: DatadogSessionReplay.objc_SessionReplayConfigurationPrivacyLevel {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc final public var textAndInputPrivacyLevel: DatadogSessionReplay.objc_TextAndInputPrivacyLevel {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc final public var imagePrivacyLevel: DatadogSessionReplay.objc_ImagePrivacyLevel {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc final public var touchPrivacyLevel: DatadogSessionReplay.objc_TouchPrivacyLevel {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc final public var startRecordingImmediately: Swift.Bool {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc final public var customEndpoint: Foundation.URL? {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc final public var featureFlags: [Swift.String : Swift.Bool] {
+    @_spi(objc) @objc get
+    @_spi(objc) @objc set
+  }
+  @_spi(objc) @objc required public init(replaySampleRate: Swift.Float, textAndInputPrivacyLevel: DatadogSessionReplay.objc_TextAndInputPrivacyLevel, imagePrivacyLevel: DatadogSessionReplay.objc_ImagePrivacyLevel, touchPrivacyLevel: DatadogSessionReplay.objc_TouchPrivacyLevel, featureFlags: [Swift.String : Swift.Bool]?)
+  @_spi(objc) @objc convenience public init(replaySampleRate: Swift.Float, textAndInputPrivacyLevel: DatadogSessionReplay.objc_TextAndInputPrivacyLevel, imagePrivacyLevel: DatadogSessionReplay.objc_ImagePrivacyLevel, touchPrivacyLevel: DatadogSessionReplay.objc_TouchPrivacyLevel)
+  @_spi(objc) @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(replaySampleRate:textAndInputPrivacyLevel:imagePrivacyLevel:touchPrivacyLevel:)` instead.")
+  @objc required public init(replaySampleRate: Swift.Float)
+  @_spi(objc) @objc deinit
+}
+@_spi(objc) @objc(DDSessionReplayConfigurationPrivacyLevel) public enum objc_SessionReplayConfigurationPrivacyLevel : Swift.Int {
+  @_spi(objc) case allow
+  @_spi(objc) case mask
+  @_spi(objc) case maskUserInput
+  @_spi(objc) public init?(rawValue: Swift.Int)
+  @_spi(objc) public typealias RawValue = Swift.Int
+  @_spi(objc) public var rawValue: Swift.Int {
+    @_spi(objc) get
+  }
+}
+@_spi(objc) @objc(DDTextAndInputPrivacyLevel) public enum objc_TextAndInputPrivacyLevel : Swift.Int {
+  @_spi(objc) case maskSensitiveInputs
+  @_spi(objc) case maskAllInputs
+  @_spi(objc) case maskAll
+  @_spi(objc) public init?(rawValue: Swift.Int)
+  @_spi(objc) public typealias RawValue = Swift.Int
+  @_spi(objc) public var rawValue: Swift.Int {
+    @_spi(objc) get
+  }
+}
+@_spi(objc) @objc(DDImagePrivacyLevel) public enum objc_ImagePrivacyLevel : Swift.Int {
+  @_spi(objc) case maskNonBundledOnly
+  @_spi(objc) case maskAll
+  @_spi(objc) case maskNone
+  @_spi(objc) public init?(rawValue: Swift.Int)
+  @_spi(objc) public typealias RawValue = Swift.Int
+  @_spi(objc) public var rawValue: Swift.Int {
+    @_spi(objc) get
+  }
+}
+@_spi(objc) @objc(DDTouchPrivacyLevel) public enum objc_TouchPrivacyLevel : Swift.Int {
+  @_spi(objc) case show
+  @_spi(objc) case hide
+  @_spi(objc) public init?(rawValue: Swift.Int)
+  @_spi(objc) public typealias RawValue = Swift.Int
+  @_spi(objc) public var rawValue: Swift.Int {
+    @_spi(objc) get
+  }
+}
+@_spi(Internal) public struct SessionReplayNode {
+  @_spi(Internal) public let viewAttributes: DatadogSessionReplay.SessionReplayViewAttributes
+  @_spi(Internal) public let wireframesBuilder: any DatadogSessionReplay.SessionReplayNodeWireframesBuilder
+  @_spi(Internal) public init(viewAttributes: DatadogSessionReplay.SessionReplayViewAttributes, wireframesBuilder: any DatadogSessionReplay.SessionReplayNodeWireframesBuilder)
+}
+@_spi(Internal) public protocol SessionReplayResource {
+  @_spi(Internal) func calculateIdentifier() -> Swift.String
+  @_spi(Internal) func calculateData() -> Foundation.Data
+}
+@_spi(Internal) public struct SessionReplayViewAttributes : Swift.Equatable {
+  @_spi(Internal) public var frame: CoreFoundation.CGRect {
+    get
+  }
+  @_spi(Internal) public var clip: CoreFoundation.CGRect {
+    get
+  }
+  @_spi(Internal) public var backgroundColor: CoreGraphics.CGColor? {
+    get
+  }
+  @_spi(Internal) public var layerBorderColor: CoreGraphics.CGColor? {
+    get
+  }
+  @_spi(Internal) public var layerBorderWidth: CoreFoundation.CGFloat {
+    get
+  }
+  @_spi(Internal) public var layerCornerRadius: CoreFoundation.CGFloat {
+    get
+  }
+  @_spi(Internal) public var alpha: CoreFoundation.CGFloat {
+    get
+  }
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SessionReplayViewAttributes, b: DatadogSessionReplay.SessionReplayViewAttributes) -> Swift.Bool
+}
+@_spi(Internal) public protocol SessionReplayNodeSemantics {
+  @_spi(Internal) static var importance: Swift.Int { get }
+  @_spi(Internal) var subtreeStrategy: DatadogSessionReplay.SessionReplayNodeSubtreeStrategy { get }
+  @_spi(Internal) var nodes: [DatadogSessionReplay.SessionReplayNode] { get }
+}
+@_spi(Internal) public enum SessionReplayNodeSubtreeStrategy {
+  @_spi(Internal) case record
+  @_spi(Internal) case ignore
+  @_spi(Internal) public static func == (a: DatadogSessionReplay.SessionReplayNodeSubtreeStrategy, b: DatadogSessionReplay.SessionReplayNodeSubtreeStrategy) -> Swift.Bool
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+}
+@_spi(Internal) public struct SessionReplayInvisibleElement : DatadogSessionReplay.SessionReplayNodeSemantics {
+  @_spi(Internal) public static let importance: Swift.Int
+  @_spi(Internal) public let subtreeStrategy: DatadogSessionReplay.SessionReplayNodeSubtreeStrategy
+  @_spi(Internal) public let nodes: [DatadogSessionReplay.SessionReplayNode]
+  @_spi(Internal) public static let constant: DatadogSessionReplay.SessionReplayInvisibleElement
+}
+@_spi(Internal) public struct SessionReplaySpecificElement : DatadogSessionReplay.SessionReplayNodeSemantics {
+  @_spi(Internal) public static let importance: Swift.Int
+  @_spi(Internal) public let subtreeStrategy: DatadogSessionReplay.SessionReplayNodeSubtreeStrategy
+  @_spi(Internal) public let nodes: [DatadogSessionReplay.SessionReplayNode]
+  @_spi(Internal) public init(subtreeStrategy: DatadogSessionReplay.SessionReplayNodeSubtreeStrategy, nodes: [DatadogSessionReplay.SessionReplayNode])
+}
+@_spi(Internal) extension Swift.Int64 {
+  @_spi(Internal) public static func positiveRandom<T>(using generator: inout T) -> Swift.Int64 where T : Swift.RandomNumberGenerator
+}
+@_spi(Internal) extension DatadogInternal.TextAndInputPrivacyLevel {
+  @_spi(Internal) public var sensitiveTextObfuscator: any DatadogSessionReplay.SessionReplayTextObfuscating {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public var inputAndOptionTextObfuscator: any DatadogSessionReplay.SessionReplayTextObfuscating {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public var staticTextObfuscator: any DatadogSessionReplay.SessionReplayTextObfuscating {
+    @_spi(Internal) get
+  }
+  @_spi(Internal) public var hintTextObfuscator: any DatadogSessionReplay.SessionReplayTextObfuscating {
+    @_spi(Internal) get
+  }
+}
+extension UIKit.UIColor : DatadogInternal.DatadogExtended {
+  @available(iOS 2.0, *)
+  public typealias ExtendedType = UIKit.UIColor
+}
+@_spi(objc) @objc(DDTextAndInputPrivacyLevelOverride) public enum objc_TextAndInputPrivacyLevelOverride : Swift.Int {
+  @_spi(objc) case none
+  @_spi(objc) case maskSensitiveInputs
+  @_spi(objc) case maskAllInputs
+  @_spi(objc) case maskAll
+  @_spi(objc) public init?(rawValue: Swift.Int)
+  @_spi(objc) public typealias RawValue = Swift.Int
+  @_spi(objc) public var rawValue: Swift.Int {
+    @_spi(objc) get
+  }
+}
+@_spi(objc) @objc(DDImagePrivacyLevelOverride) public enum objc_ImagePrivacyLevelOverride : Swift.Int {
+  @_spi(objc) case none
+  @_spi(objc) case maskNone
+  @_spi(objc) case maskNonBundledOnly
+  @_spi(objc) case maskAll
+  @_spi(objc) public init?(rawValue: Swift.Int)
+  @_spi(objc) public typealias RawValue = Swift.Int
+  @_spi(objc) public var rawValue: Swift.Int {
+    @_spi(objc) get
+  }
+}
+@_spi(objc) @objc(DDTouchPrivacyLevelOverride) public enum objc_TouchPrivacyLevelOverride : Swift.Int {
+  @_spi(objc) case none
+  @_spi(objc) case show
+  @_spi(objc) case hide
+  @_spi(objc) public init?(rawValue: Swift.Int)
+  @_spi(objc) public typealias RawValue = Swift.Int
+  @_spi(objc) public var rawValue: Swift.Int {
+    @_spi(objc) get
+  }
+}
+extension DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag : Swift.Equatable {}
+extension DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag : Swift.Hashable {}
+extension DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag : Swift.RawRepresentable {}
+@_spi(Internal) extension DatadogSessionReplay.SRSegment : Swift.Encodable {}
+@_spi(Internal) extension DatadogSessionReplay.SRSegment : Swift.Decodable {}
+@_spi(Internal) extension DatadogSessionReplay.SRSegment.Source : Swift.Equatable {}
+@_spi(Internal) extension DatadogSessionReplay.SRSegment.Source : Swift.Hashable {}
+@_spi(Internal) extension DatadogSessionReplay.SRSegment.Source : Swift.RawRepresentable {}
+@_spi(Internal) extension DatadogSessionReplay.SRTextPosition.Alignment.Horizontal : Swift.Equatable {}
+@_spi(Internal) extension DatadogSessionReplay.SRTextPosition.Alignment.Horizontal : Swift.Hashable {}
+@_spi(Internal) extension DatadogSessionReplay.SRTextPosition.Alignment.Horizontal : Swift.RawRepresentable {}
+@_spi(Internal) extension DatadogSessionReplay.SRTextPosition.Alignment.Vertical : Swift.Equatable {}
+@_spi(Internal) extension DatadogSessionReplay.SRTextPosition.Alignment.Vertical : Swift.Hashable {}
+@_spi(Internal) extension DatadogSessionReplay.SRTextPosition.Alignment.Vertical : Swift.RawRepresentable {}
+@_spi(Internal) extension DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.PointerInteractionData.PointerEventType : Swift.Equatable {}
+@_spi(Internal) extension DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.PointerInteractionData.PointerEventType : Swift.Hashable {}
+@_spi(Internal) extension DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.PointerInteractionData.PointerEventType : Swift.RawRepresentable {}
+@_spi(Internal) extension DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.PointerInteractionData.PointerType : Swift.Equatable {}
+@_spi(Internal) extension DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.PointerInteractionData.PointerType : Swift.Hashable {}
+@_spi(Internal) extension DatadogSessionReplay.SRIncrementalSnapshotRecord.Data.PointerInteractionData.PointerType : Swift.RawRepresentable {}
+@_spi(objc) extension DatadogSessionReplay.objc_SessionReplayConfigurationPrivacyLevel : Swift.Equatable {}
+@_spi(objc) extension DatadogSessionReplay.objc_SessionReplayConfigurationPrivacyLevel : Swift.Hashable {}
+@_spi(objc) extension DatadogSessionReplay.objc_SessionReplayConfigurationPrivacyLevel : Swift.RawRepresentable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TextAndInputPrivacyLevel : Swift.Equatable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TextAndInputPrivacyLevel : Swift.Hashable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TextAndInputPrivacyLevel : Swift.RawRepresentable {}
+@_spi(objc) extension DatadogSessionReplay.objc_ImagePrivacyLevel : Swift.Equatable {}
+@_spi(objc) extension DatadogSessionReplay.objc_ImagePrivacyLevel : Swift.Hashable {}
+@_spi(objc) extension DatadogSessionReplay.objc_ImagePrivacyLevel : Swift.RawRepresentable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TouchPrivacyLevel : Swift.Equatable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TouchPrivacyLevel : Swift.Hashable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TouchPrivacyLevel : Swift.RawRepresentable {}
+@_spi(Internal) extension DatadogSessionReplay.SessionReplayNodeSubtreeStrategy : Swift.Equatable {}
+@_spi(Internal) extension DatadogSessionReplay.SessionReplayNodeSubtreeStrategy : Swift.Hashable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TextAndInputPrivacyLevelOverride : Swift.Equatable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TextAndInputPrivacyLevelOverride : Swift.Hashable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TextAndInputPrivacyLevelOverride : Swift.RawRepresentable {}
+@_spi(objc) extension DatadogSessionReplay.objc_ImagePrivacyLevelOverride : Swift.Equatable {}
+@_spi(objc) extension DatadogSessionReplay.objc_ImagePrivacyLevelOverride : Swift.Hashable {}
+@_spi(objc) extension DatadogSessionReplay.objc_ImagePrivacyLevelOverride : Swift.RawRepresentable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TouchPrivacyLevelOverride : Swift.Equatable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TouchPrivacyLevelOverride : Swift.Hashable {}
+@_spi(objc) extension DatadogSessionReplay.objc_TouchPrivacyLevelOverride : Swift.RawRepresentable {}

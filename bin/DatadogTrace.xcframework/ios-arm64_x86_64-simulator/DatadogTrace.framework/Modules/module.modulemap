@@ -1,0 +1,4 @@
+framework module DatadogTrace {
+  header "DatadogTrace-Swift.h"
+  requires objc
+}

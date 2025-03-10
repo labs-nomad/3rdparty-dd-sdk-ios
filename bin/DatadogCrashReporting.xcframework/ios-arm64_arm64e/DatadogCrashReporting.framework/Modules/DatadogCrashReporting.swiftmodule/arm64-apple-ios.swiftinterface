@@ -1,0 +1,28 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogCrashReporting
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CrashReporter
+@_exported import DatadogCrashReporting
+import DatadogInternal
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers final public class CrashReporting {
+  public static func enable(in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+  public static func enable(with plugin: any DatadogCrashReporting.CrashReportingPlugin, in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(swift, obsoleted: 1)
+@objc(DDCrashReporter) final public class objc_CrashReporting : ObjectiveC.NSObject {
+  @objc public static func enable()
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol CrashReportingPlugin : AnyObject {
+  func readPendingCrashReport(completion: @escaping (DatadogInternal.DDCrashReport?) -> Swift.Bool)
+  func inject(context: Foundation.Data)
+  var backtraceReporter: (any DatadogInternal.BacktraceReporting)? { get }
+}

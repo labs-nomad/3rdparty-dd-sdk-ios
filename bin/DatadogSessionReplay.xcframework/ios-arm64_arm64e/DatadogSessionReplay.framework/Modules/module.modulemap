@@ -1,0 +1,4 @@
+framework module DatadogSessionReplay {
+  header "DatadogSessionReplay-Swift.h"
+  requires objc
+}
