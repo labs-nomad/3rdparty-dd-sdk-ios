@@ -1,0 +1,3 @@
+[submodule "submodules/dev-ops"]
+	path = submodules/dev-ops
+	url = git@github.com:labs-nomad/dev-ops.git
