@@ -1,0 +1,233 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-tvos12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogTrace
+import DatadogInternal
+@_exported import DatadogInternal/*.B3HTTPHeadersWriter*/
+@_exported import DatadogInternal/*.DDURLSessionDelegate*/
+@_exported import DatadogInternal/*.DatadogURLSessionDelegate*/
+@_exported import DatadogInternal/*.HTTPHeadersWriter*/
+@_exported import DatadogInternal/*.TraceContextInjection*/
+@_exported import DatadogInternal/*.TraceSamplingStrategy*/
+@_exported import DatadogInternal/*.TracingHeaderType*/
+@_exported import DatadogInternal/*.URLSessionInstrumentation*/
+@_exported import DatadogInternal/*.W3CHTTPHeadersWriter*/
+@_exported import DatadogInternal/*.__URLSessionDelegateProviding*/
+import Foundation
+import OpenTelemetryApi
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.activity
+import os
+extension OpenTelemetryApi.TraceState {
+  public func w3c() -> Swift.String
+}
+public enum SpanTags {
+  public static let resource: Swift.String
+  public static let operation: Swift.String
+  public static let service: Swift.String
+}
+@_hasMissingDesignatedInitializers public class Tracer {
+  public static func shared(in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default) -> any DatadogTrace.OTTracer
+  @objc deinit
+}
+public protocol OTSpan {
+  var context: any DatadogTrace.OTSpanContext { get }
+  func tracer() -> any DatadogTrace.OTTracer
+  func setOperationName(_ operationName: Swift.String)
+  func setTag(key: Swift.String, value: any Swift.Encodable)
+  func log(fields: [Swift.String : any Swift.Encodable], timestamp: Foundation.Date)
+  func setBaggageItem(key: Swift.String, value: Swift.String)
+  func baggageItem(withKey key: Swift.String) -> Swift.String?
+  func finish(at time: Foundation.Date)
+  @discardableResult
+  func setActive() -> any DatadogTrace.OTSpan
+}
+extension DatadogTrace.OTSpan {
+  public func log(fields: [Swift.String : any Swift.Encodable])
+  public func finish()
+}
+extension DatadogTrace.OTSpan {
+  public func setError(_ error: any Swift.Error, file: Swift.StaticString = #fileID, line: Swift.UInt = #line)
+  public func setError(kind: Swift.String, message: Swift.String, stack: Swift.String = "", file: Swift.StaticString = #fileID, line: Swift.UInt = #line)
+}
+public protocol OTSpanContext {
+  func forEachBaggageItem(callback: (_ key: Swift.String, _ value: Swift.String) -> Swift.Bool)
+}
+public struct OTReference {
+  public let type: DatadogTrace.OTReferenceType
+  public let context: any DatadogTrace.OTSpanContext
+  public static func child(of parent: any DatadogTrace.OTSpanContext) -> DatadogTrace.OTReference
+  public static func follows(from precedingContext: any DatadogTrace.OTSpanContext) -> DatadogTrace.OTReference
+}
+public enum OTReferenceType : Swift.String {
+  case childOf
+  case followsFrom
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension DatadogTrace.Trace {
+  public struct Configuration : DatadogInternal.SampledTelemetry {
+    public typealias EventMapper = (DatadogTrace.SpanEvent) -> DatadogTrace.SpanEvent
+    public var sampleRate: DatadogInternal.SampleRate
+    public var service: Swift.String?
+    public var tags: [Swift.String : any Swift.Encodable]?
+    public var urlSessionTracking: DatadogTrace.Trace.Configuration.URLSessionTracking?
+    public var bundleWithRumEnabled: Swift.Bool
+    public var networkInfoEnabled: Swift.Bool
+    public var eventMapper: DatadogTrace.Trace.Configuration.EventMapper?
+    public var customEndpoint: Foundation.URL?
+    public struct URLSessionTracking {
+      public var firstPartyHostsTracing: DatadogTrace.Trace.Configuration.URLSessionTracking.FirstPartyHostsTracing
+      public enum FirstPartyHostsTracing {
+        case trace(hosts: Swift.Set<Swift.String>, sampleRate: Swift.Float = 20, traceControlInjection: DatadogInternal.TraceContextInjection = .all)
+        case traceWithHeaders(hostsWithHeaders: [Swift.String : Swift.Set<DatadogInternal.TracingHeaderType>], sampleRate: Swift.Float = 20, traceControlInjection: DatadogInternal.TraceContextInjection = .all)
+      }
+      public init(firstPartyHostsTracing: DatadogTrace.Trace.Configuration.URLSessionTracking.FirstPartyHostsTracing)
+    }
+    public init(sampleRate: DatadogInternal.SampleRate = .maxSampleRate, service: Swift.String? = nil, tags: [Swift.String : any Swift.Encodable]? = nil, urlSessionTracking: DatadogTrace.Trace.Configuration.URLSessionTracking? = nil, bundleWithRumEnabled: Swift.Bool = true, networkInfoEnabled: Swift.Bool = false, eventMapper: DatadogTrace.Trace.Configuration.EventMapper? = nil, customEndpoint: Foundation.URL? = nil)
+  }
+}
+public enum Trace {
+  public static func enable(with configuration: DatadogTrace.Trace.Configuration = .init(), in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+}
+public struct SpanEvent : Swift.Encodable {
+  public var operationName: Swift.String
+  public let serviceName: Swift.String
+  public var resource: Swift.String
+  public let startTime: Foundation.Date
+  public let duration: Foundation.TimeInterval
+  public let isError: Swift.Bool
+  public let tracerVersion: Swift.String
+  public let applicationVersion: Swift.String
+  public let networkConnectionInfo: DatadogInternal.NetworkConnectionInfo?
+  public let mobileCarrierInfo: DatadogInternal.CarrierInfo?
+  public struct DeviceInfo : Swift.Codable {
+    public enum DeviceType : Swift.String, Swift.Codable {
+      case mobile
+      case tablet
+      case tv
+      case other
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public let brand: Swift.String
+    public let name: Swift.String
+    public let model: Swift.String
+    public let architecture: Swift.String
+    public let type: DatadogTrace.SpanEvent.DeviceInfo.DeviceType
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public let deviceInfo: DatadogTrace.SpanEvent.DeviceInfo
+  public struct OperatingSystemInfo : Swift.Codable {
+    public let name: Swift.String
+    public let version: Swift.String
+    public let build: Swift.String?
+    public let versionMajor: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public let osInfo: DatadogTrace.SpanEvent.OperatingSystemInfo
+  public struct UserInfo {
+    public let id: Swift.String?
+    public let name: Swift.String?
+    public let email: Swift.String?
+    public var extraInfo: [Swift.String : Swift.String]
+  }
+  public var userInfo: DatadogTrace.SpanEvent.UserInfo
+  public var tags: [Swift.String : Swift.String]
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public typealias SpanEventMapper = (DatadogTrace.SpanEvent) -> DatadogTrace.SpanEvent
+extension DatadogInternal.HTTPHeadersReader : DatadogTrace.OTFormatReader {
+}
+extension DatadogInternal.W3CHTTPHeadersReader : DatadogTrace.OTFormatReader {
+}
+extension DatadogInternal.B3HTTPHeadersReader : DatadogTrace.OTFormatReader {
+}
+extension DatadogInternal.HTTPHeadersWriter : DatadogTrace.OTFormatWriter {
+}
+extension DatadogInternal.W3CHTTPHeadersWriter : DatadogTrace.OTFormatWriter {
+}
+extension DatadogInternal.B3HTTPHeadersWriter : DatadogTrace.OTFormatWriter {
+}
+extension DatadogInternal.TracePropagationHeadersWriter where Self : DatadogTrace.OTFormatWriter {
+  public func inject(spanContext: any DatadogTrace.OTSpanContext)
+}
+extension DatadogInternal.TracePropagationHeadersReader where Self : DatadogTrace.OTFormatReader {
+  public func extract() -> (any DatadogTrace.OTSpanContext)?
+}
+public struct OTTags {
+  public static let component: Swift.String
+  public static let dbInstance: Swift.String
+  public static let dbStatement: Swift.String
+  public static let dbType: Swift.String
+  public static let dbUser: Swift.String
+  public static let error: Swift.String
+  public static let httpMethod: Swift.String
+  public static let httpStatusCode: Swift.String
+  public static let httpUrl: Swift.String
+  public static let messageBusDestination: Swift.String
+  public static let peerAddress: Swift.String
+  public static let peerHostname: Swift.String
+  public static let peerIPv4: Swift.String
+  public static let peerIPv6: Swift.String
+  public static let peerPort: Swift.String
+  public static let peerService: Swift.String
+  public static let samplingPriority: Swift.String
+  public static let spanKind: Swift.String
+}
+public struct OTLogFields {
+  public static let errorKind: Swift.String
+  public static let event: Swift.String
+  public static let message: Swift.String
+  public static let stack: Swift.String
+}
+public protocol OTTracer {
+  func startSpan(operationName: Swift.String, references: [DatadogTrace.OTReference]?, tags: [Swift.String : any Swift.Encodable]?, startTime: Foundation.Date?) -> any DatadogTrace.OTSpan
+  func startRootSpan(operationName: Swift.String, tags: [Swift.String : any Swift.Encodable]?, startTime: Foundation.Date?) -> any DatadogTrace.OTSpan
+  func inject(spanContext: any DatadogTrace.OTSpanContext, writer: any DatadogTrace.OTFormatWriter)
+  func extract(reader: any DatadogTrace.OTFormatReader) -> (any DatadogTrace.OTSpanContext)?
+  var activeSpan: (any DatadogTrace.OTSpan)? { get }
+}
+extension DatadogTrace.OTTracer {
+  public func startSpan(operationName: Swift.String, childOf parent: (any DatadogTrace.OTSpanContext)? = nil, tags: [Swift.String : any Swift.Encodable]? = nil, startTime: Foundation.Date? = nil) -> any DatadogTrace.OTSpan
+  public func startRootSpan(operationName: Swift.String, tags: [Swift.String : any Swift.Encodable]? = nil, startTime: Foundation.Date? = nil) -> any DatadogTrace.OTSpan
+}
+public protocol OTFormatReader : DatadogTrace.OTCustomFormatReader {
+}
+public protocol OTFormatWriter : DatadogTrace.OTCustomFormatWriter {
+}
+public protocol OTTextMapReader : DatadogTrace.OTFormatReader {
+}
+public protocol OTTextMapWriter : DatadogTrace.OTFormatWriter {
+}
+public protocol OTHTTPHeadersReader : DatadogTrace.OTTextMapReader {
+}
+public protocol OTHTTPHeadersWriter : DatadogTrace.OTTextMapWriter {
+}
+public protocol OTCustomFormatReader {
+  func extract() -> (any DatadogTrace.OTSpanContext)?
+}
+public protocol OTCustomFormatWriter {
+  func inject(spanContext: any DatadogTrace.OTSpanContext)
+}
+public class OTelTracerProvider : OpenTelemetryApi.TracerProvider {
+  public init(in core: any DatadogInternal.DatadogCoreProtocol = CoreRegistry.default)
+  public func get(instrumentationName: Swift.String, instrumentationVersion: Swift.String?) -> any OpenTelemetryApi.Tracer
+  @objc deinit
+}
+extension DatadogTrace.OTReferenceType : Swift.Equatable {}
+extension DatadogTrace.OTReferenceType : Swift.Hashable {}
+extension DatadogTrace.OTReferenceType : Swift.RawRepresentable {}
+extension DatadogTrace.SpanEvent.DeviceInfo.DeviceType : Swift.Equatable {}
+extension DatadogTrace.SpanEvent.DeviceInfo.DeviceType : Swift.Hashable {}
+extension DatadogTrace.SpanEvent.DeviceInfo.DeviceType : Swift.RawRepresentable {}

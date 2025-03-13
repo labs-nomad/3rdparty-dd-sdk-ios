@@ -1,0 +1,5784 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-tvos12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogObjc
+import DatadogCore
+import DatadogInternal
+import DatadogInternal/*.B3HTTPHeadersWriter*/
+import DatadogInternal/*.HTTPHeadersWriter*/
+import DatadogInternal/*.W3CHTTPHeadersWriter*/
+import DatadogLogs
+@_exported import DatadogObjc
+import DatadogRUM
+import DatadogTrace
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @objc public class DDLogEvent : ObjectiveC.NSObject {
+  @objc public var date: Foundation.Date {
+    @objc get
+  }
+  @objc public var status: DatadogObjc.DDLogEventStatus {
+    @objc get
+  }
+  @objc public var message: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var error: DatadogObjc.DDLogEventError? {
+    @objc get
+  }
+  @objc public var serviceName: Swift.String {
+    @objc get
+  }
+  @objc public var environment: Swift.String {
+    @objc get
+  }
+  @objc public var loggerName: Swift.String {
+    @objc get
+  }
+  @objc public var loggerVersion: Swift.String {
+    @objc get
+  }
+  @objc public var threadName: Swift.String? {
+    @objc get
+  }
+  @objc public var applicationVersion: Swift.String {
+    @objc get
+  }
+  @objc public var applicationBuildNumber: Swift.String {
+    @objc get
+  }
+  @objc public var buildId: Swift.String? {
+    @objc get
+  }
+  @objc public var variant: Swift.String? {
+    @objc get
+  }
+  @objc public var dd: DatadogObjc.DDLogEventDd {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDLogEventOperatingSystem {
+    @objc get
+  }
+  @objc public var userInfo: DatadogObjc.DDLogEventUserInfo {
+    @objc get
+  }
+  @objc public var networkConnectionInfo: DatadogObjc.DDLogEventNetworkConnectionInfo? {
+    @objc get
+  }
+  @objc public var mobileCarrierInfo: DatadogObjc.DDLogEventCarrierInfo? {
+    @objc get
+  }
+  @objc public var attributes: DatadogObjc.DDLogEventAttributes {
+    @objc get
+  }
+  @objc public var tags: [Swift.String]? {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc public enum DDLogEventStatus : Swift.Int {
+  case debug
+  case info
+  case notice
+  case warn
+  case error
+  case critical
+  case emergency
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogEventAttributes : ObjectiveC.NSObject {
+  @objc public var userAttributes: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogEventUserInfo : ObjectiveC.NSObject {
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var email: Swift.String? {
+    @objc get
+  }
+  @objc public var extraInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogEventError : ObjectiveC.NSObject {
+  @objc public var kind: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var message: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var stack: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var sourceType: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var fingerprint: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var binaryImages: [DatadogObjc.DDLogEventBinaryImage]? {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogEventBinaryImage : ObjectiveC.NSObject {
+  @objc public var arch: Swift.String? {
+    @objc get
+  }
+  @objc public var isSystem: Swift.Bool {
+    @objc get
+  }
+  @objc public var loadAddress: Swift.String? {
+    @objc get
+  }
+  @objc public var maxAddress: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var uuid: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogEventOperatingSystem : ObjectiveC.NSObject {
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogEventDd : ObjectiveC.NSObject {
+  @objc public var device: DatadogObjc.DDLogEventDeviceInfo {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogEventDeviceInfo : ObjectiveC.NSObject {
+  @objc public var brand: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var model: Swift.String {
+    @objc get
+  }
+  @objc public var architecture: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogEventNetworkConnectionInfo : ObjectiveC.NSObject {
+  @objc public var reachability: DatadogObjc.DDLogEventReachability {
+    @objc get
+  }
+  @objc public var availableInterfaces: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var supportsIPv4: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var supportsIPv6: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var isExpensive: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var isConstrained: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDLogEventReachability : Swift.Int {
+  case yes
+  case maybe
+  case no
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDLogEventInterface : Swift.Int {
+  case wifi
+  case wiredEthernet
+  case cellular
+  case loopback
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogEventCarrierInfo : ObjectiveC.NSObject {
+  @objc public var carrierName: Swift.String? {
+    @objc get
+  }
+  @objc public var carrierISOCountryCode: Swift.String? {
+    @objc get
+  }
+  @objc public var carrierAllowsVOIP: Swift.Bool {
+    @objc get
+  }
+  @objc public var radioAccessTechnology: DatadogObjc.DDLogEventRadioAccessTechnology {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDLogEventRadioAccessTechnology : Swift.Int {
+  case GPRS
+  case Edge
+  case WCDMA
+  case HSDPA
+  case HSUPA
+  case CDMA1x
+  case CDMAEVDORev0
+  case CDMAEVDORevA
+  case CDMAEVDORevB
+  case eHRPD
+  case LTE
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class DDInternalLogger : ObjectiveC.NSObject {
+  @objc public static func consolePrint(_ message: Swift.String, _ level: DatadogObjc.DDCoreLoggerLevel)
+  @objc public static func telemetryDebug(id: Swift.String, message: Swift.String)
+  @objc public static func telemetryError(id: Swift.String, message: Swift.String, kind: Swift.String?, stack: Swift.String?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum DDCoreLoggerLevel : Swift.Int {
+  case debug
+  case warn
+  case error
+  case critical
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEvent : ObjectiveC.NSObject {
+  @objc public var dd: DatadogObjc.DDRUMActionEventDD {
+    @objc get
+  }
+  @objc public var account: DatadogObjc.DDRUMActionEventAccount? {
+    @objc get
+  }
+  @objc public var action: DatadogObjc.DDRUMActionEventAction {
+    @objc get
+  }
+  @objc public var application: DatadogObjc.DDRUMActionEventApplication {
+    @objc get
+  }
+  @objc public var buildId: Swift.String? {
+    @objc get
+  }
+  @objc public var buildVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var ciTest: DatadogObjc.DDRUMActionEventRUMCITest? {
+    @objc get
+  }
+  @objc public var connectivity: DatadogObjc.DDRUMActionEventRUMConnectivity? {
+    @objc get
+  }
+  @objc public var container: DatadogObjc.DDRUMActionEventContainer? {
+    @objc get
+  }
+  @objc public var context: DatadogObjc.DDRUMActionEventRUMEventAttributes? {
+    @objc get
+  }
+  @objc public var date: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var device: DatadogObjc.DDRUMActionEventRUMDevice? {
+    @objc get
+  }
+  @objc public var display: DatadogObjc.DDRUMActionEventDisplay? {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDRUMActionEventRUMOperatingSystem? {
+    @objc get
+  }
+  @objc public var service: Swift.String? {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMActionEventSession {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDRUMActionEventSource {
+    @objc get
+  }
+  @objc public var synthetics: DatadogObjc.DDRUMActionEventRUMSyntheticsTest? {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var usr: DatadogObjc.DDRUMActionEventRUMUser? {
+    @objc get
+  }
+  @objc public var version: Swift.String? {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMActionEventView {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventDD : ObjectiveC.NSObject {
+  @objc public var action: DatadogObjc.DDRUMActionEventDDAction? {
+    @objc get
+  }
+  @objc public var browserSdkVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var configuration: DatadogObjc.DDRUMActionEventDDConfiguration? {
+    @objc get
+  }
+  @objc public var formatVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMActionEventDDSession? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventDDAction : ObjectiveC.NSObject {
+  @objc public var nameSource: DatadogObjc.DDRUMActionEventDDActionNameSource {
+    @objc get
+    @objc set
+  }
+  @objc public var position: DatadogObjc.DDRUMActionEventDDActionPosition? {
+    @objc get
+  }
+  @objc public var target: DatadogObjc.DDRUMActionEventDDActionTarget? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMActionEventDDActionNameSource : Swift.Int {
+  case none
+  case customAttribute
+  case maskPlaceholder
+  case standardAttribute
+  case textContent
+  case maskDisallowed
+  case blank
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventDDActionPosition : ObjectiveC.NSObject {
+  @objc public var x: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var y: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventDDActionTarget : ObjectiveC.NSObject {
+  @objc public var height: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var selector: Swift.String? {
+    @objc get
+  }
+  @objc public var width: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventDDConfiguration : ObjectiveC.NSObject {
+  @objc public var sessionReplaySampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var sessionSampleRate: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventDDSession : ObjectiveC.NSObject {
+  @objc public var plan: DatadogObjc.DDRUMActionEventDDSessionPlan {
+    @objc get
+  }
+  @objc public var sessionPrecondition: DatadogObjc.DDRUMActionEventDDSessionRUMSessionPrecondition {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMActionEventDDSessionPlan : Swift.Int {
+  case none
+  case plan1
+  case plan2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMActionEventDDSessionRUMSessionPrecondition : Swift.Int {
+  case none
+  case userAppLaunch
+  case inactivityTimeout
+  case maxDuration
+  case backgroundLaunch
+  case prewarm
+  case fromNonInteractiveSession
+  case explicitStop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventAccount : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var accountInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventAction : ObjectiveC.NSObject {
+  @objc public var crash: DatadogObjc.DDRUMActionEventActionCrash? {
+    @objc get
+  }
+  @objc public var error: DatadogObjc.DDRUMActionEventActionError? {
+    @objc get
+  }
+  @objc public var frustration: DatadogObjc.DDRUMActionEventActionFrustration? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var loadingTime: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var longTask: DatadogObjc.DDRUMActionEventActionLongTask? {
+    @objc get
+  }
+  @objc public var resource: DatadogObjc.DDRUMActionEventActionResource? {
+    @objc get
+  }
+  @objc public var target: DatadogObjc.DDRUMActionEventActionTarget? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMActionEventActionActionType {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventActionCrash : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventActionError : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventActionFrustration : ObjectiveC.NSObject {
+  @objc public var type: [Swift.Int] {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMActionEventActionFrustrationFrustrationType : Swift.Int {
+  case rageClick
+  case deadClick
+  case errorClick
+  case rageTap
+  case errorTap
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventActionLongTask : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventActionResource : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventActionTarget : ObjectiveC.NSObject {
+  @objc public var name: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc public enum DDRUMActionEventActionActionType : Swift.Int {
+  case custom
+  case click
+  case tap
+  case scroll
+  case swipe
+  case applicationStart
+  case back
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventApplication : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventRUMCITest : ObjectiveC.NSObject {
+  @objc public var testExecutionId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventRUMConnectivity : ObjectiveC.NSObject {
+  @objc public var cellular: DatadogObjc.DDRUMActionEventRUMConnectivityCellular? {
+    @objc get
+  }
+  @objc public var effectiveType: DatadogObjc.DDRUMActionEventRUMConnectivityEffectiveType {
+    @objc get
+  }
+  @objc public var interfaces: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var status: DatadogObjc.DDRUMActionEventRUMConnectivityStatus {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventRUMConnectivityCellular : ObjectiveC.NSObject {
+  @objc public var carrierName: Swift.String? {
+    @objc get
+  }
+  @objc public var technology: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMActionEventRUMConnectivityEffectiveType : Swift.Int {
+  case none
+  case slow2g
+  case effectiveType2g
+  case effectiveType3g
+  case effectiveType4g
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMActionEventRUMConnectivityInterfaces : Swift.Int {
+  case none
+  case bluetooth
+  case cellular
+  case ethernet
+  case wifi
+  case wimax
+  case mixed
+  case other
+  case unknown
+  case interfacesNone
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMActionEventRUMConnectivityStatus : Swift.Int {
+  case connected
+  case notConnected
+  case maybe
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventContainer : ObjectiveC.NSObject {
+  @objc public var source: DatadogObjc.DDRUMActionEventContainerSource {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMActionEventContainerView {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMActionEventContainerSource : Swift.Int {
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventContainerView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventRUMEventAttributes : ObjectiveC.NSObject {
+  @objc public var contextInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventRUMDevice : ObjectiveC.NSObject {
+  @objc public var architecture: Swift.String? {
+    @objc get
+  }
+  @objc public var brand: Swift.String? {
+    @objc get
+  }
+  @objc public var model: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMActionEventRUMDeviceRUMDeviceType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMActionEventRUMDeviceRUMDeviceType : Swift.Int {
+  case mobile
+  case desktop
+  case tablet
+  case tv
+  case gamingConsole
+  case bot
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventDisplay : ObjectiveC.NSObject {
+  @objc public var viewport: DatadogObjc.DDRUMActionEventDisplayViewport? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventDisplayViewport : ObjectiveC.NSObject {
+  @objc public var height: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var width: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventRUMOperatingSystem : ObjectiveC.NSObject {
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var versionMajor: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventSession : ObjectiveC.NSObject {
+  @objc public var hasReplay: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMActionEventSessionRUMSessionType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMActionEventSessionRUMSessionType : Swift.Int {
+  case user
+  case synthetics
+  case ciTest
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMActionEventSource : Swift.Int {
+  case none
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventRUMSyntheticsTest : ObjectiveC.NSObject {
+  @objc public var injected: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var resultId: Swift.String {
+    @objc get
+  }
+  @objc public var testId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventRUMUser : ObjectiveC.NSObject {
+  @objc public var anonymousId: Swift.String? {
+    @objc get
+  }
+  @objc public var email: Swift.String? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var usrInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMActionEventView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var inForeground: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var referrer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var url: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEvent : ObjectiveC.NSObject {
+  @objc public var dd: DatadogObjc.DDRUMErrorEventDD {
+    @objc get
+  }
+  @objc public var account: DatadogObjc.DDRUMErrorEventAccount? {
+    @objc get
+  }
+  @objc public var action: DatadogObjc.DDRUMErrorEventAction? {
+    @objc get
+  }
+  @objc public var application: DatadogObjc.DDRUMErrorEventApplication {
+    @objc get
+  }
+  @objc public var buildId: Swift.String? {
+    @objc get
+  }
+  @objc public var buildVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var ciTest: DatadogObjc.DDRUMErrorEventRUMCITest? {
+    @objc get
+  }
+  @objc public var connectivity: DatadogObjc.DDRUMErrorEventRUMConnectivity? {
+    @objc get
+  }
+  @objc public var container: DatadogObjc.DDRUMErrorEventContainer? {
+    @objc get
+  }
+  @objc public var context: DatadogObjc.DDRUMErrorEventRUMEventAttributes? {
+    @objc get
+  }
+  @objc public var date: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var device: DatadogObjc.DDRUMErrorEventRUMDevice? {
+    @objc get
+  }
+  @objc public var display: DatadogObjc.DDRUMErrorEventDisplay? {
+    @objc get
+  }
+  @objc public var error: DatadogObjc.DDRUMErrorEventError {
+    @objc get
+  }
+  @objc public var featureFlags: DatadogObjc.DDRUMErrorEventFeatureFlags? {
+    @objc get
+  }
+  @objc public var freeze: DatadogObjc.DDRUMErrorEventFreeze? {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDRUMErrorEventRUMOperatingSystem? {
+    @objc get
+  }
+  @objc public var service: Swift.String? {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMErrorEventSession {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDRUMErrorEventSource {
+    @objc get
+  }
+  @objc public var synthetics: DatadogObjc.DDRUMErrorEventRUMSyntheticsTest? {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var usr: DatadogObjc.DDRUMErrorEventRUMUser? {
+    @objc get
+  }
+  @objc public var version: Swift.String? {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMErrorEventView {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventDD : ObjectiveC.NSObject {
+  @objc public var browserSdkVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var configuration: DatadogObjc.DDRUMErrorEventDDConfiguration? {
+    @objc get
+  }
+  @objc public var formatVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMErrorEventDDSession? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventDDConfiguration : ObjectiveC.NSObject {
+  @objc public var sessionReplaySampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var sessionSampleRate: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventDDSession : ObjectiveC.NSObject {
+  @objc public var plan: DatadogObjc.DDRUMErrorEventDDSessionPlan {
+    @objc get
+  }
+  @objc public var sessionPrecondition: DatadogObjc.DDRUMErrorEventDDSessionRUMSessionPrecondition {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventDDSessionPlan : Swift.Int {
+  case none
+  case plan1
+  case plan2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMErrorEventDDSessionRUMSessionPrecondition : Swift.Int {
+  case none
+  case userAppLaunch
+  case inactivityTimeout
+  case maxDuration
+  case backgroundLaunch
+  case prewarm
+  case fromNonInteractiveSession
+  case explicitStop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventAccount : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var accountInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventAction : ObjectiveC.NSObject {
+  @objc public var id: DatadogObjc.DDRUMErrorEventActionRUMActionID {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventActionRUMActionID : ObjectiveC.NSObject {
+  @objc public var string: Swift.String? {
+    @objc get
+  }
+  @objc public var stringsArray: [Swift.String]? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventApplication : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventRUMCITest : ObjectiveC.NSObject {
+  @objc public var testExecutionId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventRUMConnectivity : ObjectiveC.NSObject {
+  @objc public var cellular: DatadogObjc.DDRUMErrorEventRUMConnectivityCellular? {
+    @objc get
+  }
+  @objc public var effectiveType: DatadogObjc.DDRUMErrorEventRUMConnectivityEffectiveType {
+    @objc get
+  }
+  @objc public var interfaces: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var status: DatadogObjc.DDRUMErrorEventRUMConnectivityStatus {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventRUMConnectivityCellular : ObjectiveC.NSObject {
+  @objc public var carrierName: Swift.String? {
+    @objc get
+  }
+  @objc public var technology: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventRUMConnectivityEffectiveType : Swift.Int {
+  case none
+  case slow2g
+  case effectiveType2g
+  case effectiveType3g
+  case effectiveType4g
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMErrorEventRUMConnectivityInterfaces : Swift.Int {
+  case none
+  case bluetooth
+  case cellular
+  case ethernet
+  case wifi
+  case wimax
+  case mixed
+  case other
+  case unknown
+  case interfacesNone
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMErrorEventRUMConnectivityStatus : Swift.Int {
+  case connected
+  case notConnected
+  case maybe
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventContainer : ObjectiveC.NSObject {
+  @objc public var source: DatadogObjc.DDRUMErrorEventContainerSource {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMErrorEventContainerView {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventContainerSource : Swift.Int {
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventContainerView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventRUMEventAttributes : ObjectiveC.NSObject {
+  @objc public var contextInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventRUMDevice : ObjectiveC.NSObject {
+  @objc public var architecture: Swift.String? {
+    @objc get
+  }
+  @objc public var brand: Swift.String? {
+    @objc get
+  }
+  @objc public var model: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMErrorEventRUMDeviceRUMDeviceType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventRUMDeviceRUMDeviceType : Swift.Int {
+  case mobile
+  case desktop
+  case tablet
+  case tv
+  case gamingConsole
+  case bot
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventDisplay : ObjectiveC.NSObject {
+  @objc public var viewport: DatadogObjc.DDRUMErrorEventDisplayViewport? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventDisplayViewport : ObjectiveC.NSObject {
+  @objc public var height: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var width: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventError : ObjectiveC.NSObject {
+  @objc public var binaryImages: [DatadogObjc.DDRUMErrorEventErrorBinaryImages]? {
+    @objc get
+  }
+  @objc public var category: DatadogObjc.DDRUMErrorEventErrorCategory {
+    @objc get
+  }
+  @objc public var causes: [DatadogObjc.DDRUMErrorEventErrorCauses]? {
+    @objc get
+    @objc set
+  }
+  @objc public var csp: DatadogObjc.DDRUMErrorEventErrorCSP? {
+    @objc get
+  }
+  @objc public var fingerprint: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var handling: DatadogObjc.DDRUMErrorEventErrorHandling {
+    @objc get
+  }
+  @objc public var handlingStack: Swift.String? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var isCrash: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var message: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var meta: DatadogObjc.DDRUMErrorEventErrorMeta? {
+    @objc get
+  }
+  @objc public var resource: DatadogObjc.DDRUMErrorEventErrorResource? {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDRUMErrorEventErrorSource {
+    @objc get
+  }
+  @objc public var sourceType: DatadogObjc.DDRUMErrorEventErrorSourceType {
+    @objc get
+  }
+  @objc public var stack: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var threads: [DatadogObjc.DDRUMErrorEventErrorThreads]? {
+    @objc get
+  }
+  @objc public var timeSinceAppStart: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var type: Swift.String? {
+    @objc get
+  }
+  @objc public var wasTruncated: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventErrorBinaryImages : ObjectiveC.NSObject {
+  @objc public var arch: Swift.String? {
+    @objc get
+  }
+  @objc public var isSystem: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var loadAddress: Swift.String? {
+    @objc get
+  }
+  @objc public var maxAddress: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var uuid: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventErrorCategory : Swift.Int {
+  case none
+  case aNR
+  case appHang
+  case exception
+  case watchdogTermination
+  case memoryWarning
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventErrorCauses : ObjectiveC.NSObject {
+  @objc public var message: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var source: DatadogObjc.DDRUMErrorEventErrorCausesSource {
+    @objc get
+  }
+  @objc public var stack: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var type: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventErrorCausesSource : Swift.Int {
+  case network
+  case source
+  case console
+  case logger
+  case agent
+  case webview
+  case custom
+  case report
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventErrorCSP : ObjectiveC.NSObject {
+  @objc public var disposition: DatadogObjc.DDRUMErrorEventErrorCSPDisposition {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventErrorCSPDisposition : Swift.Int {
+  case none
+  case enforce
+  case report
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMErrorEventErrorHandling : Swift.Int {
+  case none
+  case handled
+  case unhandled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventErrorMeta : ObjectiveC.NSObject {
+  @objc public var codeType: Swift.String? {
+    @objc get
+  }
+  @objc public var exceptionCodes: Swift.String? {
+    @objc get
+  }
+  @objc public var exceptionType: Swift.String? {
+    @objc get
+  }
+  @objc public var incidentIdentifier: Swift.String? {
+    @objc get
+  }
+  @objc public var parentProcess: Swift.String? {
+    @objc get
+  }
+  @objc public var path: Swift.String? {
+    @objc get
+  }
+  @objc public var process: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventErrorResource : ObjectiveC.NSObject {
+  @objc public var method: DatadogObjc.DDRUMErrorEventErrorResourceRUMMethod {
+    @objc get
+  }
+  @objc public var provider: DatadogObjc.DDRUMErrorEventErrorResourceProvider? {
+    @objc get
+  }
+  @objc public var statusCode: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var url: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventErrorResourceRUMMethod : Swift.Int {
+  case post
+  case get
+  case head
+  case put
+  case delete
+  case patch
+  case trace
+  case options
+  case connect
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventErrorResourceProvider : ObjectiveC.NSObject {
+  @objc public var domain: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMErrorEventErrorResourceProviderProviderType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventErrorResourceProviderProviderType : Swift.Int {
+  case none
+  case ad
+  case advertising
+  case analytics
+  case cdn
+  case content
+  case customerSuccess
+  case firstParty
+  case hosting
+  case marketing
+  case other
+  case social
+  case tagManager
+  case utility
+  case video
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMErrorEventErrorSource : Swift.Int {
+  case network
+  case source
+  case console
+  case logger
+  case agent
+  case webview
+  case custom
+  case report
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMErrorEventErrorSourceType : Swift.Int {
+  case none
+  case android
+  case browser
+  case ios
+  case reactNative
+  case flutter
+  case roku
+  case ndk
+  case iosIl2cpp
+  case ndkIl2cpp
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventErrorThreads : ObjectiveC.NSObject {
+  @objc public var crashed: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var stack: Swift.String {
+    @objc get
+  }
+  @objc public var state: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventFeatureFlags : ObjectiveC.NSObject {
+  @objc public var featureFlagsInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventFreeze : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventRUMOperatingSystem : ObjectiveC.NSObject {
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var versionMajor: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventSession : ObjectiveC.NSObject {
+  @objc public var hasReplay: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMErrorEventSessionRUMSessionType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMErrorEventSessionRUMSessionType : Swift.Int {
+  case user
+  case synthetics
+  case ciTest
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMErrorEventSource : Swift.Int {
+  case none
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventRUMSyntheticsTest : ObjectiveC.NSObject {
+  @objc public var injected: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var resultId: Swift.String {
+    @objc get
+  }
+  @objc public var testId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventRUMUser : ObjectiveC.NSObject {
+  @objc public var anonymousId: Swift.String? {
+    @objc get
+  }
+  @objc public var email: Swift.String? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var usrInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMErrorEventView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var inForeground: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var referrer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var url: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEvent : ObjectiveC.NSObject {
+  @objc public var dd: DatadogObjc.DDRUMLongTaskEventDD {
+    @objc get
+  }
+  @objc public var account: DatadogObjc.DDRUMLongTaskEventAccount? {
+    @objc get
+  }
+  @objc public var action: DatadogObjc.DDRUMLongTaskEventAction? {
+    @objc get
+  }
+  @objc public var application: DatadogObjc.DDRUMLongTaskEventApplication {
+    @objc get
+  }
+  @objc public var buildId: Swift.String? {
+    @objc get
+  }
+  @objc public var buildVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var ciTest: DatadogObjc.DDRUMLongTaskEventRUMCITest? {
+    @objc get
+  }
+  @objc public var connectivity: DatadogObjc.DDRUMLongTaskEventRUMConnectivity? {
+    @objc get
+  }
+  @objc public var container: DatadogObjc.DDRUMLongTaskEventContainer? {
+    @objc get
+  }
+  @objc public var context: DatadogObjc.DDRUMLongTaskEventRUMEventAttributes? {
+    @objc get
+  }
+  @objc public var date: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var device: DatadogObjc.DDRUMLongTaskEventRUMDevice? {
+    @objc get
+  }
+  @objc public var display: DatadogObjc.DDRUMLongTaskEventDisplay? {
+    @objc get
+  }
+  @objc public var longTask: DatadogObjc.DDRUMLongTaskEventLongTask {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDRUMLongTaskEventRUMOperatingSystem? {
+    @objc get
+  }
+  @objc public var service: Swift.String? {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMLongTaskEventSession {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDRUMLongTaskEventSource {
+    @objc get
+  }
+  @objc public var synthetics: DatadogObjc.DDRUMLongTaskEventRUMSyntheticsTest? {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var usr: DatadogObjc.DDRUMLongTaskEventRUMUser? {
+    @objc get
+  }
+  @objc public var version: Swift.String? {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMLongTaskEventView {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventDD : ObjectiveC.NSObject {
+  @objc public var browserSdkVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var configuration: DatadogObjc.DDRUMLongTaskEventDDConfiguration? {
+    @objc get
+  }
+  @objc public var discarded: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var formatVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMLongTaskEventDDSession? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventDDConfiguration : ObjectiveC.NSObject {
+  @objc public var sessionReplaySampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var sessionSampleRate: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventDDSession : ObjectiveC.NSObject {
+  @objc public var plan: DatadogObjc.DDRUMLongTaskEventDDSessionPlan {
+    @objc get
+  }
+  @objc public var sessionPrecondition: DatadogObjc.DDRUMLongTaskEventDDSessionRUMSessionPrecondition {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMLongTaskEventDDSessionPlan : Swift.Int {
+  case none
+  case plan1
+  case plan2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMLongTaskEventDDSessionRUMSessionPrecondition : Swift.Int {
+  case none
+  case userAppLaunch
+  case inactivityTimeout
+  case maxDuration
+  case backgroundLaunch
+  case prewarm
+  case fromNonInteractiveSession
+  case explicitStop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventAccount : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var accountInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventAction : ObjectiveC.NSObject {
+  @objc public var id: DatadogObjc.DDRUMLongTaskEventActionRUMActionID {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventActionRUMActionID : ObjectiveC.NSObject {
+  @objc public var string: Swift.String? {
+    @objc get
+  }
+  @objc public var stringsArray: [Swift.String]? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventApplication : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventRUMCITest : ObjectiveC.NSObject {
+  @objc public var testExecutionId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventRUMConnectivity : ObjectiveC.NSObject {
+  @objc public var cellular: DatadogObjc.DDRUMLongTaskEventRUMConnectivityCellular? {
+    @objc get
+  }
+  @objc public var effectiveType: DatadogObjc.DDRUMLongTaskEventRUMConnectivityEffectiveType {
+    @objc get
+  }
+  @objc public var interfaces: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var status: DatadogObjc.DDRUMLongTaskEventRUMConnectivityStatus {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventRUMConnectivityCellular : ObjectiveC.NSObject {
+  @objc public var carrierName: Swift.String? {
+    @objc get
+  }
+  @objc public var technology: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMLongTaskEventRUMConnectivityEffectiveType : Swift.Int {
+  case none
+  case slow2g
+  case effectiveType2g
+  case effectiveType3g
+  case effectiveType4g
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMLongTaskEventRUMConnectivityInterfaces : Swift.Int {
+  case none
+  case bluetooth
+  case cellular
+  case ethernet
+  case wifi
+  case wimax
+  case mixed
+  case other
+  case unknown
+  case interfacesNone
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMLongTaskEventRUMConnectivityStatus : Swift.Int {
+  case connected
+  case notConnected
+  case maybe
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventContainer : ObjectiveC.NSObject {
+  @objc public var source: DatadogObjc.DDRUMLongTaskEventContainerSource {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMLongTaskEventContainerView {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMLongTaskEventContainerSource : Swift.Int {
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventContainerView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventRUMEventAttributes : ObjectiveC.NSObject {
+  @objc public var contextInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventRUMDevice : ObjectiveC.NSObject {
+  @objc public var architecture: Swift.String? {
+    @objc get
+  }
+  @objc public var brand: Swift.String? {
+    @objc get
+  }
+  @objc public var model: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMLongTaskEventRUMDeviceRUMDeviceType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMLongTaskEventRUMDeviceRUMDeviceType : Swift.Int {
+  case mobile
+  case desktop
+  case tablet
+  case tv
+  case gamingConsole
+  case bot
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventDisplay : ObjectiveC.NSObject {
+  @objc public var viewport: DatadogObjc.DDRUMLongTaskEventDisplayViewport? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventDisplayViewport : ObjectiveC.NSObject {
+  @objc public var height: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var width: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventLongTask : ObjectiveC.NSObject {
+  @objc public var blockingDuration: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var entryType: DatadogObjc.DDRUMLongTaskEventLongTaskEntryType {
+    @objc get
+  }
+  @objc public var firstUiEventTimestamp: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var isFrozenFrame: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var renderStart: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var scripts: [DatadogObjc.DDRUMLongTaskEventLongTaskScripts]? {
+    @objc get
+  }
+  @objc public var startTime: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var styleAndLayoutStart: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMLongTaskEventLongTaskEntryType : Swift.Int {
+  case none
+  case longTask
+  case longAnimationFrame
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventLongTaskScripts : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var executionStart: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var forcedStyleAndLayoutDuration: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var invoker: Swift.String? {
+    @objc get
+  }
+  @objc public var invokerType: DatadogObjc.DDRUMLongTaskEventLongTaskScriptsInvokerType {
+    @objc get
+  }
+  @objc public var pauseDuration: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var sourceCharPosition: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var sourceFunctionName: Swift.String? {
+    @objc get
+  }
+  @objc public var sourceUrl: Swift.String? {
+    @objc get
+  }
+  @objc public var startTime: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var windowAttribution: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMLongTaskEventLongTaskScriptsInvokerType : Swift.Int {
+  case none
+  case userCallback
+  case eventListener
+  case resolvePromise
+  case rejectPromise
+  case classicScript
+  case moduleScript
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventRUMOperatingSystem : ObjectiveC.NSObject {
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var versionMajor: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventSession : ObjectiveC.NSObject {
+  @objc public var hasReplay: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMLongTaskEventSessionRUMSessionType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMLongTaskEventSessionRUMSessionType : Swift.Int {
+  case user
+  case synthetics
+  case ciTest
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMLongTaskEventSource : Swift.Int {
+  case none
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventRUMSyntheticsTest : ObjectiveC.NSObject {
+  @objc public var injected: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var resultId: Swift.String {
+    @objc get
+  }
+  @objc public var testId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventRUMUser : ObjectiveC.NSObject {
+  @objc public var anonymousId: Swift.String? {
+    @objc get
+  }
+  @objc public var email: Swift.String? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var usrInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMLongTaskEventView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var referrer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var url: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEvent : ObjectiveC.NSObject {
+  @objc public var dd: DatadogObjc.DDRUMResourceEventDD {
+    @objc get
+  }
+  @objc public var account: DatadogObjc.DDRUMResourceEventAccount? {
+    @objc get
+  }
+  @objc public var action: DatadogObjc.DDRUMResourceEventAction? {
+    @objc get
+  }
+  @objc public var application: DatadogObjc.DDRUMResourceEventApplication {
+    @objc get
+  }
+  @objc public var buildId: Swift.String? {
+    @objc get
+  }
+  @objc public var buildVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var ciTest: DatadogObjc.DDRUMResourceEventRUMCITest? {
+    @objc get
+  }
+  @objc public var connectivity: DatadogObjc.DDRUMResourceEventRUMConnectivity? {
+    @objc get
+  }
+  @objc public var container: DatadogObjc.DDRUMResourceEventContainer? {
+    @objc get
+  }
+  @objc public var context: DatadogObjc.DDRUMResourceEventRUMEventAttributes? {
+    @objc get
+  }
+  @objc public var date: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var device: DatadogObjc.DDRUMResourceEventRUMDevice? {
+    @objc get
+  }
+  @objc public var display: DatadogObjc.DDRUMResourceEventDisplay? {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDRUMResourceEventRUMOperatingSystem? {
+    @objc get
+  }
+  @objc public var resource: DatadogObjc.DDRUMResourceEventResource {
+    @objc get
+  }
+  @objc public var service: Swift.String? {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMResourceEventSession {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDRUMResourceEventSource {
+    @objc get
+  }
+  @objc public var synthetics: DatadogObjc.DDRUMResourceEventRUMSyntheticsTest? {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var usr: DatadogObjc.DDRUMResourceEventRUMUser? {
+    @objc get
+  }
+  @objc public var version: Swift.String? {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMResourceEventView {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventDD : ObjectiveC.NSObject {
+  @objc public var browserSdkVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var configuration: DatadogObjc.DDRUMResourceEventDDConfiguration? {
+    @objc get
+  }
+  @objc public var discarded: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var formatVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var rulePsr: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMResourceEventDDSession? {
+    @objc get
+  }
+  @objc public var spanId: Swift.String? {
+    @objc get
+  }
+  @objc public var traceId: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventDDConfiguration : ObjectiveC.NSObject {
+  @objc public var sessionReplaySampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var sessionSampleRate: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventDDSession : ObjectiveC.NSObject {
+  @objc public var plan: DatadogObjc.DDRUMResourceEventDDSessionPlan {
+    @objc get
+  }
+  @objc public var sessionPrecondition: DatadogObjc.DDRUMResourceEventDDSessionRUMSessionPrecondition {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventDDSessionPlan : Swift.Int {
+  case none
+  case plan1
+  case plan2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMResourceEventDDSessionRUMSessionPrecondition : Swift.Int {
+  case none
+  case userAppLaunch
+  case inactivityTimeout
+  case maxDuration
+  case backgroundLaunch
+  case prewarm
+  case fromNonInteractiveSession
+  case explicitStop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventAccount : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var accountInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventAction : ObjectiveC.NSObject {
+  @objc public var id: DatadogObjc.DDRUMResourceEventActionRUMActionID {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventActionRUMActionID : ObjectiveC.NSObject {
+  @objc public var string: Swift.String? {
+    @objc get
+  }
+  @objc public var stringsArray: [Swift.String]? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventApplication : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventRUMCITest : ObjectiveC.NSObject {
+  @objc public var testExecutionId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventRUMConnectivity : ObjectiveC.NSObject {
+  @objc public var cellular: DatadogObjc.DDRUMResourceEventRUMConnectivityCellular? {
+    @objc get
+  }
+  @objc public var effectiveType: DatadogObjc.DDRUMResourceEventRUMConnectivityEffectiveType {
+    @objc get
+  }
+  @objc public var interfaces: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var status: DatadogObjc.DDRUMResourceEventRUMConnectivityStatus {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventRUMConnectivityCellular : ObjectiveC.NSObject {
+  @objc public var carrierName: Swift.String? {
+    @objc get
+  }
+  @objc public var technology: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventRUMConnectivityEffectiveType : Swift.Int {
+  case none
+  case slow2g
+  case effectiveType2g
+  case effectiveType3g
+  case effectiveType4g
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMResourceEventRUMConnectivityInterfaces : Swift.Int {
+  case none
+  case bluetooth
+  case cellular
+  case ethernet
+  case wifi
+  case wimax
+  case mixed
+  case other
+  case unknown
+  case interfacesNone
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMResourceEventRUMConnectivityStatus : Swift.Int {
+  case connected
+  case notConnected
+  case maybe
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventContainer : ObjectiveC.NSObject {
+  @objc public var source: DatadogObjc.DDRUMResourceEventContainerSource {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMResourceEventContainerView {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventContainerSource : Swift.Int {
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventContainerView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventRUMEventAttributes : ObjectiveC.NSObject {
+  @objc public var contextInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventRUMDevice : ObjectiveC.NSObject {
+  @objc public var architecture: Swift.String? {
+    @objc get
+  }
+  @objc public var brand: Swift.String? {
+    @objc get
+  }
+  @objc public var model: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMResourceEventRUMDeviceRUMDeviceType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventRUMDeviceRUMDeviceType : Swift.Int {
+  case mobile
+  case desktop
+  case tablet
+  case tv
+  case gamingConsole
+  case bot
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventDisplay : ObjectiveC.NSObject {
+  @objc public var viewport: DatadogObjc.DDRUMResourceEventDisplayViewport? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventDisplayViewport : ObjectiveC.NSObject {
+  @objc public var height: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var width: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventRUMOperatingSystem : ObjectiveC.NSObject {
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var versionMajor: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResource : ObjectiveC.NSObject {
+  @objc public var connect: DatadogObjc.DDRUMResourceEventResourceConnect? {
+    @objc get
+  }
+  @objc public var decodedBodySize: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var deliveryType: DatadogObjc.DDRUMResourceEventResourceDeliveryType {
+    @objc get
+  }
+  @objc public var dns: DatadogObjc.DDRUMResourceEventResourceDNS? {
+    @objc get
+  }
+  @objc public var download: DatadogObjc.DDRUMResourceEventResourceDownload? {
+    @objc get
+  }
+  @objc public var duration: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var encodedBodySize: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var firstByte: DatadogObjc.DDRUMResourceEventResourceFirstByte? {
+    @objc get
+  }
+  @objc public var graphql: DatadogObjc.DDRUMResourceEventResourceGraphql? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var method: DatadogObjc.DDRUMResourceEventResourceRUMMethod {
+    @objc get
+  }
+  @objc public var `protocol`: Swift.String? {
+    @objc get
+  }
+  @objc public var provider: DatadogObjc.DDRUMResourceEventResourceProvider? {
+    @objc get
+  }
+  @objc public var redirect: DatadogObjc.DDRUMResourceEventResourceRedirect? {
+    @objc get
+  }
+  @objc public var renderBlockingStatus: DatadogObjc.DDRUMResourceEventResourceRenderBlockingStatus {
+    @objc get
+  }
+  @objc public var size: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var ssl: DatadogObjc.DDRUMResourceEventResourceSSL? {
+    @objc get
+  }
+  @objc public var statusCode: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var transferSize: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMResourceEventResourceResourceType {
+    @objc get
+  }
+  @objc public var url: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var worker: DatadogObjc.DDRUMResourceEventResourceWorker? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResourceConnect : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var start: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventResourceDeliveryType : Swift.Int {
+  case none
+  case cache
+  case navigationalPrefetch
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResourceDNS : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var start: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResourceDownload : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var start: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResourceFirstByte : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var start: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResourceGraphql : ObjectiveC.NSObject {
+  @objc public var operationName: Swift.String? {
+    @objc get
+  }
+  @objc public var operationType: DatadogObjc.DDRUMResourceEventResourceGraphqlOperationType {
+    @objc get
+  }
+  @objc public var payload: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var variables: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventResourceGraphqlOperationType : Swift.Int {
+  case query
+  case mutation
+  case subscription
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMResourceEventResourceRUMMethod : Swift.Int {
+  case none
+  case post
+  case get
+  case head
+  case put
+  case delete
+  case patch
+  case trace
+  case options
+  case connect
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResourceProvider : ObjectiveC.NSObject {
+  @objc public var domain: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMResourceEventResourceProviderProviderType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventResourceProviderProviderType : Swift.Int {
+  case none
+  case ad
+  case advertising
+  case analytics
+  case cdn
+  case content
+  case customerSuccess
+  case firstParty
+  case hosting
+  case marketing
+  case other
+  case social
+  case tagManager
+  case utility
+  case video
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResourceRedirect : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var start: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventResourceRenderBlockingStatus : Swift.Int {
+  case none
+  case blocking
+  case nonBlocking
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResourceSSL : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var start: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventResourceResourceType : Swift.Int {
+  case document
+  case xhr
+  case beacon
+  case fetch
+  case css
+  case js
+  case image
+  case font
+  case media
+  case other
+  case native
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventResourceWorker : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var start: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventSession : ObjectiveC.NSObject {
+  @objc public var hasReplay: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMResourceEventSessionRUMSessionType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMResourceEventSessionRUMSessionType : Swift.Int {
+  case user
+  case synthetics
+  case ciTest
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMResourceEventSource : Swift.Int {
+  case none
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventRUMSyntheticsTest : ObjectiveC.NSObject {
+  @objc public var injected: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var resultId: Swift.String {
+    @objc get
+  }
+  @objc public var testId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventRUMUser : ObjectiveC.NSObject {
+  @objc public var anonymousId: Swift.String? {
+    @objc get
+  }
+  @objc public var email: Swift.String? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var usrInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMResourceEventView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var referrer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var url: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEvent : ObjectiveC.NSObject {
+  @objc public var dd: DatadogObjc.DDRUMViewEventDD {
+    @objc get
+  }
+  @objc public var account: DatadogObjc.DDRUMViewEventAccount? {
+    @objc get
+  }
+  @objc public var application: DatadogObjc.DDRUMViewEventApplication {
+    @objc get
+  }
+  @objc public var buildId: Swift.String? {
+    @objc get
+  }
+  @objc public var buildVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var ciTest: DatadogObjc.DDRUMViewEventRUMCITest? {
+    @objc get
+  }
+  @objc public var connectivity: DatadogObjc.DDRUMViewEventRUMConnectivity? {
+    @objc get
+  }
+  @objc public var container: DatadogObjc.DDRUMViewEventContainer? {
+    @objc get
+  }
+  @objc public var context: DatadogObjc.DDRUMViewEventRUMEventAttributes? {
+    @objc get
+  }
+  @objc public var date: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var device: DatadogObjc.DDRUMViewEventRUMDevice? {
+    @objc get
+  }
+  @objc public var display: DatadogObjc.DDRUMViewEventDisplay? {
+    @objc get
+  }
+  @objc public var featureFlags: DatadogObjc.DDRUMViewEventFeatureFlags? {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDRUMViewEventRUMOperatingSystem? {
+    @objc get
+  }
+  @objc public var privacy: DatadogObjc.DDRUMViewEventPrivacy? {
+    @objc get
+  }
+  @objc public var service: Swift.String? {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMViewEventSession {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDRUMViewEventSource {
+    @objc get
+  }
+  @objc public var synthetics: DatadogObjc.DDRUMViewEventRUMSyntheticsTest? {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var usr: DatadogObjc.DDRUMViewEventRUMUser? {
+    @objc get
+  }
+  @objc public var version: Swift.String? {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMViewEventView {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventDD : ObjectiveC.NSObject {
+  @objc public var browserSdkVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var configuration: DatadogObjc.DDRUMViewEventDDConfiguration? {
+    @objc get
+  }
+  @objc public var documentVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var formatVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var pageStates: [DatadogObjc.DDRUMViewEventDDPageStates]? {
+    @objc get
+  }
+  @objc public var replayStats: DatadogObjc.DDRUMViewEventDDReplayStats? {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMViewEventDDSession? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventDDConfiguration : ObjectiveC.NSObject {
+  @objc public var sessionReplaySampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var sessionSampleRate: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var startSessionReplayRecordingManually: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventDDPageStates : ObjectiveC.NSObject {
+  @objc public var start: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var state: DatadogObjc.DDRUMViewEventDDPageStatesState {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMViewEventDDPageStatesState : Swift.Int {
+  case active
+  case passive
+  case hidden
+  case frozen
+  case terminated
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventDDReplayStats : ObjectiveC.NSObject {
+  @objc public var recordsCount: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var segmentsCount: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var segmentsTotalRawSize: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventDDSession : ObjectiveC.NSObject {
+  @objc public var plan: DatadogObjc.DDRUMViewEventDDSessionPlan {
+    @objc get
+  }
+  @objc public var sessionPrecondition: DatadogObjc.DDRUMViewEventDDSessionRUMSessionPrecondition {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMViewEventDDSessionPlan : Swift.Int {
+  case none
+  case plan1
+  case plan2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMViewEventDDSessionRUMSessionPrecondition : Swift.Int {
+  case none
+  case userAppLaunch
+  case inactivityTimeout
+  case maxDuration
+  case backgroundLaunch
+  case prewarm
+  case fromNonInteractiveSession
+  case explicitStop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventAccount : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var accountInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventApplication : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventRUMCITest : ObjectiveC.NSObject {
+  @objc public var testExecutionId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventRUMConnectivity : ObjectiveC.NSObject {
+  @objc public var cellular: DatadogObjc.DDRUMViewEventRUMConnectivityCellular? {
+    @objc get
+  }
+  @objc public var effectiveType: DatadogObjc.DDRUMViewEventRUMConnectivityEffectiveType {
+    @objc get
+  }
+  @objc public var interfaces: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var status: DatadogObjc.DDRUMViewEventRUMConnectivityStatus {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventRUMConnectivityCellular : ObjectiveC.NSObject {
+  @objc public var carrierName: Swift.String? {
+    @objc get
+  }
+  @objc public var technology: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMViewEventRUMConnectivityEffectiveType : Swift.Int {
+  case none
+  case slow2g
+  case effectiveType2g
+  case effectiveType3g
+  case effectiveType4g
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMViewEventRUMConnectivityInterfaces : Swift.Int {
+  case none
+  case bluetooth
+  case cellular
+  case ethernet
+  case wifi
+  case wimax
+  case mixed
+  case other
+  case unknown
+  case interfacesNone
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMViewEventRUMConnectivityStatus : Swift.Int {
+  case connected
+  case notConnected
+  case maybe
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventContainer : ObjectiveC.NSObject {
+  @objc public var source: DatadogObjc.DDRUMViewEventContainerSource {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMViewEventContainerView {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMViewEventContainerSource : Swift.Int {
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventContainerView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventRUMEventAttributes : ObjectiveC.NSObject {
+  @objc public var contextInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventRUMDevice : ObjectiveC.NSObject {
+  @objc public var architecture: Swift.String? {
+    @objc get
+  }
+  @objc public var brand: Swift.String? {
+    @objc get
+  }
+  @objc public var model: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMViewEventRUMDeviceRUMDeviceType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMViewEventRUMDeviceRUMDeviceType : Swift.Int {
+  case mobile
+  case desktop
+  case tablet
+  case tv
+  case gamingConsole
+  case bot
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventDisplay : ObjectiveC.NSObject {
+  @objc public var scroll: DatadogObjc.DDRUMViewEventDisplayScroll? {
+    @objc get
+  }
+  @objc public var viewport: DatadogObjc.DDRUMViewEventDisplayViewport? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventDisplayScroll : ObjectiveC.NSObject {
+  @objc public var maxDepth: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var maxDepthScrollTop: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var maxScrollHeight: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var maxScrollHeightTime: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventDisplayViewport : ObjectiveC.NSObject {
+  @objc public var height: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var width: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventFeatureFlags : ObjectiveC.NSObject {
+  @objc public var featureFlagsInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventRUMOperatingSystem : ObjectiveC.NSObject {
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var versionMajor: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventPrivacy : ObjectiveC.NSObject {
+  @objc public var replayLevel: DatadogObjc.DDRUMViewEventPrivacyReplayLevel {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMViewEventPrivacyReplayLevel : Swift.Int {
+  case allow
+  case mask
+  case maskUserInput
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventSession : ObjectiveC.NSObject {
+  @objc public var hasReplay: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var isActive: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var sampledForReplay: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMViewEventSessionRUMSessionType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMViewEventSessionRUMSessionType : Swift.Int {
+  case user
+  case synthetics
+  case ciTest
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMViewEventSource : Swift.Int {
+  case none
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventRUMSyntheticsTest : ObjectiveC.NSObject {
+  @objc public var injected: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var resultId: Swift.String {
+    @objc get
+  }
+  @objc public var testId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventRUMUser : ObjectiveC.NSObject {
+  @objc public var anonymousId: Swift.String? {
+    @objc get
+  }
+  @objc public var email: Swift.String? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var usrInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventView : ObjectiveC.NSObject {
+  @objc public var action: DatadogObjc.DDRUMViewEventViewAction {
+    @objc get
+  }
+  @objc public var cpuTicksCount: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var cpuTicksPerSecond: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var crash: DatadogObjc.DDRUMViewEventViewCrash? {
+    @objc get
+  }
+  @objc public var cumulativeLayoutShift: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var cumulativeLayoutShiftTargetSelector: Swift.String? {
+    @objc get
+  }
+  @objc public var cumulativeLayoutShiftTime: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var customTimings: [Swift.String : Foundation.NSNumber]? {
+    @objc get
+  }
+  @objc public var domComplete: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var domContentLoaded: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var domInteractive: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var error: DatadogObjc.DDRUMViewEventViewError {
+    @objc get
+  }
+  @objc public var firstByte: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var firstContentfulPaint: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var firstInputDelay: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var firstInputTargetSelector: Swift.String? {
+    @objc get
+  }
+  @objc public var firstInputTime: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var flutterBuildTime: DatadogObjc.DDRUMViewEventViewFlutterBuildTime? {
+    @objc get
+  }
+  @objc public var flutterRasterTime: DatadogObjc.DDRUMViewEventViewFlutterRasterTime? {
+    @objc get
+  }
+  @objc public var frozenFrame: DatadogObjc.DDRUMViewEventViewFrozenFrame? {
+    @objc get
+  }
+  @objc public var frustration: DatadogObjc.DDRUMViewEventViewFrustration? {
+    @objc get
+  }
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var inForegroundPeriods: [DatadogObjc.DDRUMViewEventViewInForegroundPeriods]? {
+    @objc get
+  }
+  @objc public var interactionToNextPaint: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var interactionToNextPaintTargetSelector: Swift.String? {
+    @objc get
+  }
+  @objc public var interactionToNextPaintTime: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var interactionToNextViewTime: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var isActive: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var isSlowRendered: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var jsRefreshRate: DatadogObjc.DDRUMViewEventViewJsRefreshRate? {
+    @objc get
+  }
+  @objc public var largestContentfulPaint: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var largestContentfulPaintTargetSelector: Swift.String? {
+    @objc get
+  }
+  @objc public var loadEvent: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var loadingTime: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var loadingType: DatadogObjc.DDRUMViewEventViewLoadingType {
+    @objc get
+  }
+  @objc public var longTask: DatadogObjc.DDRUMViewEventViewLongTask? {
+    @objc get
+  }
+  @objc public var memoryAverage: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var memoryMax: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var networkSettledTime: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var performance: DatadogObjc.DDRUMViewEventViewPerformance? {
+    @objc get
+  }
+  @objc public var referrer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var refreshRateAverage: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var refreshRateMin: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var resource: DatadogObjc.DDRUMViewEventViewResource {
+    @objc get
+  }
+  @objc public var timeSpent: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var url: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewAction : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewCrash : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewError : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewFlutterBuildTime : ObjectiveC.NSObject {
+  @objc public var average: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var max: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var metricMax: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var min: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewFlutterRasterTime : ObjectiveC.NSObject {
+  @objc public var average: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var max: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var metricMax: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var min: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewFrozenFrame : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewFrustration : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewInForegroundPeriods : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var start: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewJsRefreshRate : ObjectiveC.NSObject {
+  @objc public var average: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var max: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var metricMax: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var min: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMViewEventViewLoadingType : Swift.Int {
+  case none
+  case initialLoad
+  case routeChange
+  case activityDisplay
+  case activityRedisplay
+  case fragmentDisplay
+  case fragmentRedisplay
+  case viewControllerDisplay
+  case viewControllerRedisplay
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewLongTask : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewPerformance : ObjectiveC.NSObject {
+  @objc public var cls: DatadogObjc.DDRUMViewEventViewPerformanceCLS? {
+    @objc get
+  }
+  @objc public var fbc: DatadogObjc.DDRUMViewEventViewPerformanceFBC? {
+    @objc get
+  }
+  @objc public var fcp: DatadogObjc.DDRUMViewEventViewPerformanceFCP? {
+    @objc get
+  }
+  @objc public var fid: DatadogObjc.DDRUMViewEventViewPerformanceFID? {
+    @objc get
+  }
+  @objc public var inp: DatadogObjc.DDRUMViewEventViewPerformanceINP? {
+    @objc get
+  }
+  @objc public var lcp: DatadogObjc.DDRUMViewEventViewPerformanceLCP? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewPerformanceCLS : ObjectiveC.NSObject {
+  @objc public var currentRect: DatadogObjc.DDRUMViewEventViewPerformanceCLSCurrentRect? {
+    @objc get
+  }
+  @objc public var previousRect: DatadogObjc.DDRUMViewEventViewPerformanceCLSPreviousRect? {
+    @objc get
+  }
+  @objc public var score: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var targetSelector: Swift.String? {
+    @objc get
+  }
+  @objc public var timestamp: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewPerformanceCLSCurrentRect : ObjectiveC.NSObject {
+  @objc public var height: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var width: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var x: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var y: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewPerformanceCLSPreviousRect : ObjectiveC.NSObject {
+  @objc public var height: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var width: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var x: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var y: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewPerformanceFBC : ObjectiveC.NSObject {
+  @objc public var timestamp: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewPerformanceFCP : ObjectiveC.NSObject {
+  @objc public var timestamp: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewPerformanceFID : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var targetSelector: Swift.String? {
+    @objc get
+  }
+  @objc public var timestamp: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewPerformanceINP : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var targetSelector: Swift.String? {
+    @objc get
+  }
+  @objc public var timestamp: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewPerformanceLCP : ObjectiveC.NSObject {
+  @objc public var resourceUrl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var targetSelector: Swift.String? {
+    @objc get
+  }
+  @objc public var timestamp: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMViewEventViewResource : ObjectiveC.NSObject {
+  @objc public var count: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEvent : ObjectiveC.NSObject {
+  @objc public var dd: DatadogObjc.DDRUMVitalEventDD {
+    @objc get
+  }
+  @objc public var account: DatadogObjc.DDRUMVitalEventAccount? {
+    @objc get
+  }
+  @objc public var application: DatadogObjc.DDRUMVitalEventApplication {
+    @objc get
+  }
+  @objc public var buildId: Swift.String? {
+    @objc get
+  }
+  @objc public var buildVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var ciTest: DatadogObjc.DDRUMVitalEventRUMCITest? {
+    @objc get
+  }
+  @objc public var connectivity: DatadogObjc.DDRUMVitalEventRUMConnectivity? {
+    @objc get
+  }
+  @objc public var container: DatadogObjc.DDRUMVitalEventContainer? {
+    @objc get
+  }
+  @objc public var context: DatadogObjc.DDRUMVitalEventRUMEventAttributes? {
+    @objc get
+  }
+  @objc public var date: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var device: DatadogObjc.DDRUMVitalEventRUMDevice? {
+    @objc get
+  }
+  @objc public var display: DatadogObjc.DDRUMVitalEventDisplay? {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDRUMVitalEventRUMOperatingSystem? {
+    @objc get
+  }
+  @objc public var service: Swift.String? {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMVitalEventSession {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDRUMVitalEventSource {
+    @objc get
+  }
+  @objc public var synthetics: DatadogObjc.DDRUMVitalEventRUMSyntheticsTest? {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var usr: DatadogObjc.DDRUMVitalEventRUMUser? {
+    @objc get
+  }
+  @objc public var version: Swift.String? {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMVitalEventView {
+    @objc get
+  }
+  @objc public var vital: DatadogObjc.DDRUMVitalEventVital {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventDD : ObjectiveC.NSObject {
+  @objc public var browserSdkVersion: Swift.String? {
+    @objc get
+  }
+  @objc public var configuration: DatadogObjc.DDRUMVitalEventDDConfiguration? {
+    @objc get
+  }
+  @objc public var formatVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDRUMVitalEventDDSession? {
+    @objc get
+  }
+  @objc public var vital: DatadogObjc.DDRUMVitalEventDDVital? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventDDConfiguration : ObjectiveC.NSObject {
+  @objc public var sessionReplaySampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var sessionSampleRate: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventDDSession : ObjectiveC.NSObject {
+  @objc public var plan: DatadogObjc.DDRUMVitalEventDDSessionPlan {
+    @objc get
+  }
+  @objc public var sessionPrecondition: DatadogObjc.DDRUMVitalEventDDSessionRUMSessionPrecondition {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMVitalEventDDSessionPlan : Swift.Int {
+  case none
+  case plan1
+  case plan2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMVitalEventDDSessionRUMSessionPrecondition : Swift.Int {
+  case none
+  case userAppLaunch
+  case inactivityTimeout
+  case maxDuration
+  case backgroundLaunch
+  case prewarm
+  case fromNonInteractiveSession
+  case explicitStop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventDDVital : ObjectiveC.NSObject {
+  @objc public var computedValue: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventAccount : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var accountInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventApplication : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventRUMCITest : ObjectiveC.NSObject {
+  @objc public var testExecutionId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventRUMConnectivity : ObjectiveC.NSObject {
+  @objc public var cellular: DatadogObjc.DDRUMVitalEventRUMConnectivityCellular? {
+    @objc get
+  }
+  @objc public var effectiveType: DatadogObjc.DDRUMVitalEventRUMConnectivityEffectiveType {
+    @objc get
+  }
+  @objc public var interfaces: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var status: DatadogObjc.DDRUMVitalEventRUMConnectivityStatus {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventRUMConnectivityCellular : ObjectiveC.NSObject {
+  @objc public var carrierName: Swift.String? {
+    @objc get
+  }
+  @objc public var technology: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMVitalEventRUMConnectivityEffectiveType : Swift.Int {
+  case none
+  case slow2g
+  case effectiveType2g
+  case effectiveType3g
+  case effectiveType4g
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMVitalEventRUMConnectivityInterfaces : Swift.Int {
+  case none
+  case bluetooth
+  case cellular
+  case ethernet
+  case wifi
+  case wimax
+  case mixed
+  case other
+  case unknown
+  case interfacesNone
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMVitalEventRUMConnectivityStatus : Swift.Int {
+  case connected
+  case notConnected
+  case maybe
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventContainer : ObjectiveC.NSObject {
+  @objc public var source: DatadogObjc.DDRUMVitalEventContainerSource {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDRUMVitalEventContainerView {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMVitalEventContainerSource : Swift.Int {
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventContainerView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventRUMEventAttributes : ObjectiveC.NSObject {
+  @objc public var contextInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventRUMDevice : ObjectiveC.NSObject {
+  @objc public var architecture: Swift.String? {
+    @objc get
+  }
+  @objc public var brand: Swift.String? {
+    @objc get
+  }
+  @objc public var model: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMVitalEventRUMDeviceRUMDeviceType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMVitalEventRUMDeviceRUMDeviceType : Swift.Int {
+  case mobile
+  case desktop
+  case tablet
+  case tv
+  case gamingConsole
+  case bot
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventDisplay : ObjectiveC.NSObject {
+  @objc public var viewport: DatadogObjc.DDRUMVitalEventDisplayViewport? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventDisplayViewport : ObjectiveC.NSObject {
+  @objc public var height: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var width: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventRUMOperatingSystem : ObjectiveC.NSObject {
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var versionMajor: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventSession : ObjectiveC.NSObject {
+  @objc public var hasReplay: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMVitalEventSessionRUMSessionType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMVitalEventSessionRUMSessionType : Swift.Int {
+  case user
+  case synthetics
+  case ciTest
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMVitalEventSource : Swift.Int {
+  case none
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case roku
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventRUMSyntheticsTest : ObjectiveC.NSObject {
+  @objc public var injected: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var resultId: Swift.String {
+    @objc get
+  }
+  @objc public var testId: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventRUMUser : ObjectiveC.NSObject {
+  @objc public var anonymousId: Swift.String? {
+    @objc get
+  }
+  @objc public var email: Swift.String? {
+    @objc get
+  }
+  @objc public var id: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var usrInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var referrer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var url: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMVitalEventVital : ObjectiveC.NSObject {
+  @objc public var custom: [Swift.String : Foundation.NSNumber]? {
+    @objc get
+  }
+  @objc public var vitalDescription: Swift.String? {
+    @objc get
+  }
+  @objc public var duration: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var type: DatadogObjc.DDRUMVitalEventVitalVitalType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDRUMVitalEventVitalVitalType : Swift.Int {
+  case duration
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEvent : ObjectiveC.NSObject {
+  @objc public var dd: DatadogObjc.DDTelemetryErrorEventDD {
+    @objc get
+  }
+  @objc public var action: DatadogObjc.DDTelemetryErrorEventAction? {
+    @objc get
+  }
+  @objc public var application: DatadogObjc.DDTelemetryErrorEventApplication? {
+    @objc get
+  }
+  @objc public var date: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var effectiveSampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var experimentalFeatures: [Swift.String]? {
+    @objc get
+  }
+  @objc public var service: Swift.String {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDTelemetryErrorEventSession? {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDTelemetryErrorEventSource {
+    @objc get
+  }
+  @objc public var telemetry: DatadogObjc.DDTelemetryErrorEventTelemetry {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDTelemetryErrorEventView? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEventDD : ObjectiveC.NSObject {
+  @objc public var formatVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEventAction : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEventApplication : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEventSession : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDTelemetryErrorEventSource : Swift.Int {
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEventTelemetry : ObjectiveC.NSObject {
+  @objc public var device: DatadogObjc.DDTelemetryErrorEventTelemetryRUMTelemetryDevice? {
+    @objc get
+  }
+  @objc public var error: DatadogObjc.DDTelemetryErrorEventTelemetryError? {
+    @objc get
+  }
+  @objc public var message: Swift.String {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDTelemetryErrorEventTelemetryRUMTelemetryOperatingSystem? {
+    @objc get
+  }
+  @objc public var status: Swift.String {
+    @objc get
+  }
+  @objc public var type: Swift.String? {
+    @objc get
+  }
+  @objc public var telemetryInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEventTelemetryRUMTelemetryDevice : ObjectiveC.NSObject {
+  @objc public var architecture: Swift.String? {
+    @objc get
+  }
+  @objc public var brand: Swift.String? {
+    @objc get
+  }
+  @objc public var model: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEventTelemetryError : ObjectiveC.NSObject {
+  @objc public var kind: Swift.String? {
+    @objc get
+  }
+  @objc public var stack: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEventTelemetryRUMTelemetryOperatingSystem : ObjectiveC.NSObject {
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var version: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryErrorEventView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryDebugEvent : ObjectiveC.NSObject {
+  @objc public var dd: DatadogObjc.DDTelemetryDebugEventDD {
+    @objc get
+  }
+  @objc public var action: DatadogObjc.DDTelemetryDebugEventAction? {
+    @objc get
+  }
+  @objc public var application: DatadogObjc.DDTelemetryDebugEventApplication? {
+    @objc get
+  }
+  @objc public var date: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var effectiveSampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var experimentalFeatures: [Swift.String]? {
+    @objc get
+  }
+  @objc public var service: Swift.String {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDTelemetryDebugEventSession? {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDTelemetryDebugEventSource {
+    @objc get
+  }
+  @objc public var telemetry: DatadogObjc.DDTelemetryDebugEventTelemetry {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDTelemetryDebugEventView? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryDebugEventDD : ObjectiveC.NSObject {
+  @objc public var formatVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryDebugEventAction : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryDebugEventApplication : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryDebugEventSession : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDTelemetryDebugEventSource : Swift.Int {
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryDebugEventTelemetry : ObjectiveC.NSObject {
+  @objc public var device: DatadogObjc.DDTelemetryDebugEventTelemetryRUMTelemetryDevice? {
+    @objc get
+  }
+  @objc public var message: Swift.String {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDTelemetryDebugEventTelemetryRUMTelemetryOperatingSystem? {
+    @objc get
+  }
+  @objc public var status: Swift.String {
+    @objc get
+  }
+  @objc public var type: Swift.String? {
+    @objc get
+  }
+  @objc public var telemetryInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryDebugEventTelemetryRUMTelemetryDevice : ObjectiveC.NSObject {
+  @objc public var architecture: Swift.String? {
+    @objc get
+  }
+  @objc public var brand: Swift.String? {
+    @objc get
+  }
+  @objc public var model: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryDebugEventTelemetryRUMTelemetryOperatingSystem : ObjectiveC.NSObject {
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var version: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryDebugEventView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEvent : ObjectiveC.NSObject {
+  @objc public var dd: DatadogObjc.DDTelemetryConfigurationEventDD {
+    @objc get
+  }
+  @objc public var action: DatadogObjc.DDTelemetryConfigurationEventAction? {
+    @objc get
+  }
+  @objc public var application: DatadogObjc.DDTelemetryConfigurationEventApplication? {
+    @objc get
+  }
+  @objc public var date: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public var effectiveSampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var experimentalFeatures: [Swift.String]? {
+    @objc get
+  }
+  @objc public var service: Swift.String {
+    @objc get
+  }
+  @objc public var session: DatadogObjc.DDTelemetryConfigurationEventSession? {
+    @objc get
+  }
+  @objc public var source: DatadogObjc.DDTelemetryConfigurationEventSource {
+    @objc get
+  }
+  @objc public var telemetry: DatadogObjc.DDTelemetryConfigurationEventTelemetry {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var view: DatadogObjc.DDTelemetryConfigurationEventView? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventDD : ObjectiveC.NSObject {
+  @objc public var formatVersion: Foundation.NSNumber {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventAction : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventApplication : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventSession : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum DDTelemetryConfigurationEventSource : Swift.Int {
+  case android
+  case ios
+  case browser
+  case flutter
+  case reactNative
+  case unity
+  case kotlinMultiplatform
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventTelemetry : ObjectiveC.NSObject {
+  @objc public var configuration: DatadogObjc.DDTelemetryConfigurationEventTelemetryConfiguration {
+    @objc get
+  }
+  @objc public var device: DatadogObjc.DDTelemetryConfigurationEventTelemetryRUMTelemetryDevice? {
+    @objc get
+  }
+  @objc public var os: DatadogObjc.DDTelemetryConfigurationEventTelemetryRUMTelemetryOperatingSystem? {
+    @objc get
+  }
+  @objc public var type: Swift.String {
+    @objc get
+  }
+  @objc public var telemetryInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventTelemetryConfiguration : ObjectiveC.NSObject {
+  @objc public var actionNameAttribute: Swift.String? {
+    @objc get
+  }
+  @objc public var allowFallbackToLocalStorage: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var allowUntrustedEvents: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var appHangThreshold: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var backgroundTasksEnabled: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var batchProcessingLevel: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var batchSize: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var batchUploadFrequency: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var compressIntakeRequests: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var dartVersion: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var defaultPrivacyLevel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var enablePrivacyForActionName: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var forwardConsoleLogs: DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationForwardConsoleLogs? {
+    @objc get
+  }
+  @objc public var forwardErrorsToLogs: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var forwardReports: DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationForwardReports? {
+    @objc get
+  }
+  @objc public var imagePrivacyLevel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var initializationType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var invTimeThresholdMs: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var isMainProcess: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var mobileVitalsUpdatePeriod: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var plugins: [DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationPlugins]? {
+    @objc get
+    @objc set
+  }
+  @objc public var premiumSampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var reactNativeVersion: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var reactVersion: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var replaySampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var selectedTracingPropagators: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var sendLogsAfterSessionExpiration: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var sessionPersistence: DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationSessionPersistence {
+    @objc get
+  }
+  @objc public var sessionReplaySampleRate: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var sessionSampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var silentMultipleInit: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var startRecordingImmediately: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var startSessionReplayRecordingManually: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var storeContextsAcrossPages: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var telemetryConfigurationSampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var telemetrySampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var telemetryUsageSampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var textAndInputPrivacyLevel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var tnsTimeThresholdMs: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var touchPrivacyLevel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var traceContextInjection: DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTraceContextInjection {
+    @objc get
+    @objc set
+  }
+  @objc public var traceSampleRate: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var tracerApi: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var tracerApiVersion: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackAnonymousUser: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackBackgroundEvents: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackCrossPlatformLongTasks: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackErrors: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackFeatureFlagsForEvents: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var trackFlutterPerformance: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackFrustrations: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackInteractions: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackLongTask: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackNativeErrors: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackNativeLongTasks: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackNativeViews: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackNetworkRequests: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackResources: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackSessionAcrossSubdomains: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var trackUserInteractions: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackViewsManually: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackingConsent: DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTrackingConsent {
+    @objc get
+  }
+  @objc public var unityVersion: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var useAllowedTracingOrigins: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var useAllowedTracingUrls: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var useBeforeSend: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var useCrossSiteSessionCookie: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var useExcludedActivityUrls: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var useFirstPartyHosts: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var useLocalEncryption: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var usePartitionedCrossSiteSessionCookie: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var usePciIntake: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var useProxy: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var useSecureSessionCookie: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var useTracing: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var useWorkerUrl: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var viewTrackingStrategy: DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationViewTrackingStrategy {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventTelemetryConfigurationForwardConsoleLogs : ObjectiveC.NSObject {
+  @objc public var stringsArray: [Swift.String]? {
+    @objc get
+  }
+  @objc public var string: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventTelemetryConfigurationForwardReports : ObjectiveC.NSObject {
+  @objc public var stringsArray: [Swift.String]? {
+    @objc get
+  }
+  @objc public var string: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventTelemetryConfigurationPlugins : ObjectiveC.NSObject {
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var pluginsInfo: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc public enum DDTelemetryConfigurationEventTelemetryConfigurationSelectedTracingPropagators : Swift.Int {
+  case none
+  case datadog
+  case b3
+  case b3multi
+  case tracecontext
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDTelemetryConfigurationEventTelemetryConfigurationSessionPersistence : Swift.Int {
+  case none
+  case localStorage
+  case cookie
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDTelemetryConfigurationEventTelemetryConfigurationTraceContextInjection : Swift.Int {
+  case none
+  case all
+  case sampled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDTelemetryConfigurationEventTelemetryConfigurationTrackFeatureFlagsForEvents : Swift.Int {
+  case none
+  case vital
+  case resource
+  case action
+  case longTask
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDTelemetryConfigurationEventTelemetryConfigurationTrackingConsent : Swift.Int {
+  case none
+  case granted
+  case notGranted
+  case pending
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDTelemetryConfigurationEventTelemetryConfigurationViewTrackingStrategy : Swift.Int {
+  case none
+  case activityViewTrackingStrategy
+  case fragmentViewTrackingStrategy
+  case mixedViewTrackingStrategy
+  case navigationViewTrackingStrategy
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventTelemetryRUMTelemetryDevice : ObjectiveC.NSObject {
+  @objc public var architecture: Swift.String? {
+    @objc get
+  }
+  @objc public var brand: Swift.String? {
+    @objc get
+  }
+  @objc public var model: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventTelemetryRUMTelemetryOperatingSystem : ObjectiveC.NSObject {
+  @objc public var build: Swift.String? {
+    @objc get
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+  }
+  @objc public var version: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTelemetryConfigurationEventView : ObjectiveC.NSObject {
+  @objc public var id: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class OT : ObjectiveC.NSObject {
+  @objc public static let formatTextMap: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol OTTracer {
+  @objc func startSpan(_ operationName: Swift.String) -> any DatadogObjc.OTSpan
+  @objc func startSpan(_ operationName: Swift.String, tags: Foundation.NSDictionary?) -> any DatadogObjc.OTSpan
+  @objc func startSpan(_ operationName: Swift.String, childOf parent: (any DatadogObjc.OTSpanContext)?) -> any DatadogObjc.OTSpan
+  @objc func startSpan(_ operationName: Swift.String, childOf parent: (any DatadogObjc.OTSpanContext)?, tags: Foundation.NSDictionary?) -> any DatadogObjc.OTSpan
+  @objc func startSpan(_ operationName: Swift.String, childOf parent: (any DatadogObjc.OTSpanContext)?, tags: Foundation.NSDictionary?, startTime: Foundation.Date?) -> any DatadogObjc.OTSpan
+  @objc func inject(_ spanContext: any DatadogObjc.OTSpanContext, format: Swift.String, carrier: Any) throws
+  @objc func extractWithFormat(_ format: Swift.String, carrier: Any) throws
+}
+@objc public class DDW3CHTTPHeadersWriter : ObjectiveC.NSObject {
+  @objc public var traceHeaderFields: [Swift.String : Swift.String] {
+    @objc get
+  }
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
+  @objc convenience public init(samplingRate: Swift.Float)
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
+  @objc public init(sampleRate: Swift.Float = 20)
+  @objc public init(samplingStrategy: DatadogObjc.DDTraceSamplingStrategy, traceContextInjection: DatadogObjc.DDTraceContextInjection)
+  @objc deinit
+}
+@objc public enum DDInjectEncoding : Swift.Int {
+  case multiple = 0
+  case single = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @available(*, deprecated, renamed: "DDB3HTTPHeadersWriter")
+@objc public class DDOTelHTTPHeadersWriter : DatadogObjc.DDB3HTTPHeadersWriter {
+  @available(*, deprecated, renamed: "DDB3HTTPHeadersWriter", message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
+  @objc override public init(sampleRate: Swift.Float = super, injectEncoding: DatadogObjc.DDInjectEncoding = super)
+  @objc override public init(samplingStrategy: DatadogObjc.DDTraceSamplingStrategy, injectEncoding: DatadogObjc.DDInjectEncoding = super, traceContextInjection: DatadogObjc.DDTraceContextInjection = super)
+  @objc deinit
+}
+@objc public class DDB3HTTPHeadersWriter : ObjectiveC.NSObject {
+  @objc public var traceHeaderFields: [Swift.String : Swift.String] {
+    @objc get
+  }
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
+  @objc convenience public init(samplingRate: Swift.Float, injectEncoding: DatadogObjc.DDInjectEncoding = .single)
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
+  @objc public init(sampleRate: Swift.Float = 20, injectEncoding: DatadogObjc.DDInjectEncoding = .single)
+  @objc public init(samplingStrategy: DatadogObjc.DDTraceSamplingStrategy, injectEncoding: DatadogObjc.DDInjectEncoding = .single, traceContextInjection: DatadogObjc.DDTraceContextInjection = .all)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTrackingConsent : ObjectiveC.NSObject {
+  @objc public static func granted() -> DatadogObjc.DDTrackingConsent
+  @objc public static func notGranted() -> DatadogObjc.DDTrackingConsent
+  @objc public static func pending() -> DatadogObjc.DDTrackingConsent
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class DDDatadog : ObjectiveC.NSObject {
+  @objc public static func initialize(configuration: DatadogObjc.DDConfiguration, trackingConsent: DatadogObjc.DDTrackingConsent)
+  @objc public static func setVerbosityLevel(_ verbosityLevel: DatadogObjc.DDSDKVerbosityLevel)
+  @objc public static func verbosityLevel() -> DatadogObjc.DDSDKVerbosityLevel
+  @objc public static func setUserInfo(userId: Swift.String, name: Swift.String? = nil, email: Swift.String? = nil, extraInfo: [Swift.String : Any] = [:])
+  @available(*, deprecated, message: "UserInfo id property is now mandatory.")
+  @objc public static func setUserInfo(id: Swift.String? = nil, name: Swift.String? = nil, email: Swift.String? = nil, extraInfo: [Swift.String : Any] = [:])
+  @objc public static func addUserExtraInfo(_ extraInfo: [Swift.String : Any])
+  @objc public static func setTrackingConsent(consent: DatadogObjc.DDTrackingConsent)
+  @objc public static func isInitialized() -> Swift.Bool
+  @objc public static func stopInstance()
+  @objc public static func clearAllData()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum DDSDKVerbosityLevel : Swift.Int {
+  case none
+  case debug
+  case warn
+  case error
+  case critical
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDLogLevel : Swift.Int {
+  case debug
+  case info
+  case notice
+  case warn
+  case error
+  case critical
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class DDLogsConfiguration : ObjectiveC.NSObject {
+  @objc public var customEndpoint: Foundation.URL? {
+    @objc get
+    @objc set
+  }
+  @objc public init(customEndpoint: Foundation.URL? = nil)
+  @objc public func setEventMapper(_ mapper: @escaping (DatadogObjc.DDLogEvent) -> DatadogObjc.DDLogEvent?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class DDLogs : ObjectiveC.NSObject {
+  @objc public static func enable(with configuration: DatadogObjc.DDLogsConfiguration = .init())
+  @objc public static func addAttribute(forKey key: Swift.String, value: Any)
+  @objc public static func removeAttribute(forKey key: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class DDLoggerConfiguration : ObjectiveC.NSObject {
+  @objc public var service: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var networkInfoEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var bundleWithRumEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var bundleWithTraceEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var remoteSampleRate: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var printLogsToConsole: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var remoteLogThreshold: DatadogObjc.DDLogLevel {
+    @objc get
+    @objc set
+  }
+  @objc public init(service: Swift.String? = nil, name: Swift.String? = nil, networkInfoEnabled: Swift.Bool = false, bundleWithRumEnabled: Swift.Bool = true, bundleWithTraceEnabled: Swift.Bool = true, remoteSampleRate: DatadogInternal.SampleRate = .maxSampleRate, remoteLogThreshold: DatadogObjc.DDLogLevel = .debug, printLogsToConsole: Swift.Bool = false)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDLogger : ObjectiveC.NSObject {
+  @objc public func debug(_ message: Swift.String)
+  @objc public func debug(_ message: Swift.String, attributes: [Swift.String : Any])
+  @objc public func debug(_ message: Swift.String, error: Foundation.NSError, attributes: [Swift.String : Any])
+  @objc public func info(_ message: Swift.String)
+  @objc public func info(_ message: Swift.String, attributes: [Swift.String : Any])
+  @objc public func info(_ message: Swift.String, error: Foundation.NSError, attributes: [Swift.String : Any])
+  @objc public func notice(_ message: Swift.String)
+  @objc public func notice(_ message: Swift.String, attributes: [Swift.String : Any])
+  @objc public func notice(_ message: Swift.String, error: Foundation.NSError, attributes: [Swift.String : Any])
+  @objc public func warn(_ message: Swift.String)
+  @objc public func warn(_ message: Swift.String, attributes: [Swift.String : Any])
+  @objc public func warn(_ message: Swift.String, error: Foundation.NSError, attributes: [Swift.String : Any])
+  @objc public func error(_ message: Swift.String)
+  @objc public func error(_ message: Swift.String, attributes: [Swift.String : Any])
+  @objc public func error(_ message: Swift.String, error: Foundation.NSError, attributes: [Swift.String : Any])
+  @objc public func critical(_ message: Swift.String)
+  @objc public func critical(_ message: Swift.String, attributes: [Swift.String : Any])
+  @objc public func critical(_ message: Swift.String, error: Foundation.NSError, attributes: [Swift.String : Any])
+  @objc public func addAttribute(forKey key: Swift.String, value: Any)
+  @objc public func removeAttribute(forKey key: Swift.String)
+  @objc public func addTag(withKey key: Swift.String, value: Swift.String)
+  @objc public func removeTag(withKey key: Swift.String)
+  @objc public func add(tag: Swift.String)
+  @objc public func remove(tag: Swift.String)
+  @objc public static func create(with configuration: DatadogObjc.DDLoggerConfiguration = .init()) -> DatadogObjc.DDLogger
+  @objc deinit
+}
+@objc public class DDURLSessionInstrumentationConfiguration : ObjectiveC.NSObject {
+  @objc public init(delegateClass: any Foundation.URLSessionDataDelegate.Type)
+  @objc public func setFirstPartyHostsTracing(_ firstPartyHostsTracing: DatadogObjc.DDURLSessionInstrumentationFirstPartyHostsTracing)
+  @objc public var delegateClass: any Foundation.URLSessionDataDelegate.Type {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc public class DDURLSessionInstrumentationFirstPartyHostsTracing : ObjectiveC.NSObject {
+  @objc public init(hostsWithHeaderTypes: [Swift.String : Swift.Set<DatadogObjc.DDTracingHeaderType>])
+  @objc public init(hosts: Swift.Set<Swift.String>)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class DDURLSessionInstrumentation : ObjectiveC.NSObject {
+  @objc public static func enable(configuration: DatadogObjc.DDURLSessionInstrumentationConfiguration)
+  @objc public static func disable(delegateClass: any Foundation.URLSessionDataDelegate.Type)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class DDTraceConfiguration : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public var sampleRate: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var service: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var tags: [Swift.String : Any]? {
+    @objc get
+    @objc set
+  }
+  @objc public func setURLSessionTracking(_ tracking: DatadogObjc.DDTraceURLSessionTracking)
+  @objc public var bundleWithRumEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var networkInfoEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var customEndpoint: Foundation.URL? {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc public class DDTraceFirstPartyHostsTracing : ObjectiveC.NSObject {
+  @objc public init(hostsWithHeaderTypes: [Swift.String : Swift.Set<DatadogObjc.DDTracingHeaderType>])
+  @objc public init(hostsWithHeaderTypes: [Swift.String : Swift.Set<DatadogObjc.DDTracingHeaderType>], sampleRate: Swift.Float)
+  @objc public init(hosts: Swift.Set<Swift.String>)
+  @objc public init(hosts: Swift.Set<Swift.String>, sampleRate: Swift.Float)
+  @objc deinit
+}
+@objc public class DDTraceURLSessionTracking : ObjectiveC.NSObject {
+  @objc public init(firstPartyHostsTracing: DatadogObjc.DDTraceFirstPartyHostsTracing)
+  @objc public func setFirstPartyHostsTracing(_ firstPartyHostsTracing: DatadogObjc.DDTraceFirstPartyHostsTracing)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class DDTrace : ObjectiveC.NSObject {
+  @objc public static func enable(with configuration: DatadogObjc.DDTraceConfiguration)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTracer : ObjectiveC.NSObject, DatadogObjc.OTTracer {
+  @objc public static func shared() -> any DatadogObjc.OTTracer
+  @objc public func startSpan(_ operationName: Swift.String) -> any DatadogObjc.OTSpan
+  @objc public func startSpan(_ operationName: Swift.String, tags: Foundation.NSDictionary?) -> any DatadogObjc.OTSpan
+  @objc public func startSpan(_ operationName: Swift.String, childOf parent: (any DatadogObjc.OTSpanContext)?) -> any DatadogObjc.OTSpan
+  @objc public func startSpan(_ operationName: Swift.String, childOf parent: (any DatadogObjc.OTSpanContext)?, tags: Foundation.NSDictionary?) -> any DatadogObjc.OTSpan
+  @objc public func startSpan(_ operationName: Swift.String, childOf parent: (any DatadogObjc.OTSpanContext)?, tags: Foundation.NSDictionary?, startTime: Foundation.Date?) -> any DatadogObjc.OTSpan
+  @objc public func inject(_ spanContext: any DatadogObjc.OTSpanContext, format: Swift.String, carrier: Any) throws
+  @objc public func extractWithFormat(_ format: Swift.String, carrier: Any) throws
+  @objc deinit
+}
+@objc public class DDHTTPHeadersWriter : ObjectiveC.NSObject {
+  @objc public var traceHeaderFields: [Swift.String : Swift.String] {
+    @objc get
+  }
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
+  @objc convenience public init(samplingRate: Swift.Float)
+  @available(*, deprecated, message: "This will be removed in future versions of the SDK. Use `init(samplingStrategy: .custom(sampleRate:))` instead.")
+  @objc public init(sampleRate: Swift.Float = 20)
+  @objc public init(samplingStrategy: DatadogObjc.DDTraceSamplingStrategy, traceContextInjection: DatadogObjc.DDTraceContextInjection)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDTraceSamplingStrategy : ObjectiveC.NSObject {
+  @objc public static func headBased() -> DatadogObjc.DDTraceSamplingStrategy
+  @objc public static func custom(sampleRate: Swift.Float) -> DatadogObjc.DDTraceSamplingStrategy
+  @objc deinit
+}
+@objc public enum DDTraceContextInjection : Swift.Int {
+  case all
+  case sampled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol OTSpan {
+  @objc var context: any DatadogObjc.OTSpanContext { get }
+  @objc var tracer: any DatadogObjc.OTTracer { get }
+  @objc func setOperationName(_ operationName: Swift.String)
+  @objc func setTag(_ key: Swift.String, value: Foundation.NSString)
+  @objc func setTag(_ key: Swift.String, numberValue: Foundation.NSNumber)
+  @objc func setTag(_ key: Swift.String, boolValue: Swift.Bool)
+  @objc func log(_ fields: [Swift.String : ObjectiveC.NSObject])
+  @objc func log(_ fields: [Swift.String : ObjectiveC.NSObject], timestamp: Foundation.Date?)
+  @objc func setBaggageItem(_ key: Swift.String, value: Swift.String) -> any DatadogObjc.OTSpan
+  @objc func getBaggageItem(_ key: Swift.String) -> Swift.String?
+  @objc func setError(_ error: any Swift.Error)
+  @objc func setError(kind: Swift.String, message: Swift.String, stack: Swift.String?)
+  @objc func finish()
+  @objc func finishWithTime(_ finishTime: Foundation.Date?)
+  @objc @discardableResult
+  func setActive() -> any DatadogObjc.OTSpan
+}
+@_inheritsConvenienceInitializers @available(*, deprecated, message: "Use `URLSessionInstrumentation.enable(with:)` instead.")
+@objc open class DDNSURLSessionDelegate : ObjectiveC.NSObject, Foundation.URLSessionTaskDelegate, Foundation.URLSessionDataDelegate {
+  @objc override dynamic public init()
+  @objc public init(additionalFirstPartyHostsWithHeaderTypes: [Swift.String : Swift.Set<DatadogObjc.DDTracingHeaderType>])
+  @objc convenience public init(additionalFirstPartyHosts: Swift.Set<Swift.String>)
+  @objc deinit
+}
+@objc public class DDRUMView : ObjectiveC.NSObject {
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var attributes: [Swift.String : Any] {
+    @objc get
+  }
+  @objc public init(name: Swift.String, attributes: [Swift.String : Any])
+  @objc deinit
+}
+@objc public protocol DDUIKitRUMViewsPredicate {
+  @objc func rumView(for viewController: UIKit.UIViewController) -> DatadogObjc.DDRUMView?
+}
+@_inheritsConvenienceInitializers @objc public class DDDefaultUIKitRUMViewsPredicate : ObjectiveC.NSObject, DatadogObjc.DDUIKitRUMViewsPredicate {
+  @objc public func rumView(for viewController: UIKit.UIViewController) -> DatadogObjc.DDRUMView?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class DDDefaultUIKitRUMActionsPredicate : ObjectiveC.NSObject, DatadogObjc.DDUIKitRUMActionsPredicate {
+  @objc public func rumAction(press type: UIKit.UIPress.PressType, targetView: UIKit.UIView) -> DatadogObjc.DDRUMAction?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class DDRUMAction : ObjectiveC.NSObject {
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var attributes: [Swift.String : Any] {
+    @objc get
+  }
+  @objc public init(name: Swift.String, attributes: [Swift.String : Any])
+  @objc deinit
+}
+@objc public protocol DDUIKitRUMActionsPredicate : DatadogObjc.DDUIPressRUMActionsPredicate {
+}
+@objc public protocol DDUITouchRUMActionsPredicate {
+  @objc func rumAction(targetView: UIKit.UIView) -> DatadogObjc.DDRUMAction?
+}
+@objc public protocol DDUIPressRUMActionsPredicate {
+  @objc func rumAction(press type: UIKit.UIPress.PressType, targetView: UIKit.UIView) -> DatadogObjc.DDRUMAction?
+}
+@objc public enum DDRUMErrorSource : Swift.Int {
+  case source
+  case network
+  case webview
+  case console
+  case custom
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMActionType : Swift.Int {
+  case tap
+  case scroll
+  case swipe
+  case custom
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMResourceType : Swift.Int {
+  case image
+  case xhr
+  case beacon
+  case css
+  case document
+  case fetch
+  case font
+  case js
+  case media
+  case other
+  case native
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMMethod : Swift.Int {
+  case post
+  case get
+  case head
+  case put
+  case delete
+  case patch
+  case connect
+  case trace
+  case options
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDRUMVitalsFrequency : Swift.Int {
+  case frequent
+  case average
+  case rare
+  case never
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class DDRUMFirstPartyHostsTracing : ObjectiveC.NSObject {
+  @objc public init(hostsWithHeaderTypes: [Swift.String : Swift.Set<DatadogObjc.DDTracingHeaderType>])
+  @objc public init(hostsWithHeaderTypes: [Swift.String : Swift.Set<DatadogObjc.DDTracingHeaderType>], sampleRate: Swift.Float)
+  @objc public init(hosts: Swift.Set<Swift.String>)
+  @objc public init(hosts: Swift.Set<Swift.String>, sampleRate: Swift.Float)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class DDRUMURLSessionTracking : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func setFirstPartyHostsTracing(_ firstPartyHostsTracing: DatadogObjc.DDRUMFirstPartyHostsTracing)
+  @objc public func setResourceAttributesProvider(_ provider: @escaping (Foundation.URLRequest, Foundation.URLResponse?, Foundation.Data?, (any Swift.Error)?) -> [Swift.String : Any]?)
+  @objc deinit
+}
+@objc public class DDRUMConfiguration : ObjectiveC.NSObject {
+  @objc public init(applicationID: Swift.String)
+  @objc public var applicationID: Swift.String {
+    @objc get
+  }
+  @objc public var sessionSampleRate: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var telemetrySampleRate: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc public var uiKitViewsPredicate: (any DatadogObjc.DDUIKitRUMViewsPredicate)? {
+    @objc get
+    @objc set
+  }
+  @objc public var uiKitActionsPredicate: (any DatadogObjc.DDUIKitRUMActionsPredicate)? {
+    @objc get
+    @objc set
+  }
+  @objc public func setURLSessionTracking(_ tracking: DatadogObjc.DDRUMURLSessionTracking)
+  @objc public var trackFrustrations: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var trackBackgroundEvents: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var trackWatchdogTerminations: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var longTaskThreshold: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc public var appHangThreshold: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc public var vitalsUpdateFrequency: DatadogObjc.DDRUMVitalsFrequency {
+    @objc get
+    @objc set
+  }
+  @objc public func setViewEventMapper(_ mapper: @escaping (DatadogObjc.DDRUMViewEvent) -> DatadogObjc.DDRUMViewEvent)
+  @objc public func setResourceEventMapper(_ mapper: @escaping (DatadogObjc.DDRUMResourceEvent) -> DatadogObjc.DDRUMResourceEvent?)
+  @objc public func setActionEventMapper(_ mapper: @escaping (DatadogObjc.DDRUMActionEvent) -> DatadogObjc.DDRUMActionEvent?)
+  @objc public func setErrorEventMapper(_ mapper: @escaping (DatadogObjc.DDRUMErrorEvent) -> DatadogObjc.DDRUMErrorEvent?)
+  @objc public func setLongTaskEventMapper(_ mapper: @escaping (DatadogObjc.DDRUMLongTaskEvent) -> DatadogObjc.DDRUMLongTaskEvent?)
+  @objc public var onSessionStart: ((Swift.String, Swift.Bool) -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc public var customEndpoint: Foundation.URL? {
+    @objc get
+    @objc set
+  }
+  @objc public var trackAnonymousUser: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class DDRUM : ObjectiveC.NSObject {
+  @objc public static func enable(with configuration: DatadogObjc.DDRUMConfiguration)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DDRUMMonitor : ObjectiveC.NSObject {
+  @objc public static func shared() -> DatadogObjc.DDRUMMonitor
+  @objc public func currentSessionID(completion: @escaping (Swift.String?) -> Swift.Void)
+  @objc public func stopSession()
+  @objc public func startView(viewController: UIKit.UIViewController, name: Swift.String?, attributes: [Swift.String : Any])
+  @objc public func stopView(viewController: UIKit.UIViewController, attributes: [Swift.String : Any])
+  @objc public func startView(key: Swift.String, name: Swift.String?, attributes: [Swift.String : Any])
+  @objc public func stopView(key: Swift.String, attributes: [Swift.String : Any])
+  @objc public func addTiming(name: Swift.String)
+  @objc public func addError(message: Swift.String, stack: Swift.String?, source: DatadogObjc.DDRUMErrorSource, attributes: [Swift.String : Any])
+  @objc public func addError(error: any Swift.Error, source: DatadogObjc.DDRUMErrorSource, attributes: [Swift.String : Any])
+  @objc public func startResource(resourceKey: Swift.String, request: Foundation.URLRequest, attributes: [Swift.String : Any])
+  @objc public func startResource(resourceKey: Swift.String, url: Foundation.URL, attributes: [Swift.String : Any])
+  @objc public func startResource(resourceKey: Swift.String, httpMethod: DatadogObjc.DDRUMMethod, urlString: Swift.String, attributes: [Swift.String : Any])
+  @objc public func addResourceMetrics(resourceKey: Swift.String, metrics: Foundation.URLSessionTaskMetrics, attributes: [Swift.String : Any])
+  @objc public func stopResource(resourceKey: Swift.String, response: Foundation.URLResponse, size: Foundation.NSNumber?, attributes: [Swift.String : Any])
+  @objc public func stopResource(resourceKey: Swift.String, statusCode: Foundation.NSNumber?, kind: DatadogObjc.DDRUMResourceType, size: Foundation.NSNumber?, attributes: [Swift.String : Any])
+  @objc public func stopResourceWithError(resourceKey: Swift.String, error: any Swift.Error, response: Foundation.URLResponse?, attributes: [Swift.String : Any])
+  @objc public func stopResourceWithError(resourceKey: Swift.String, message: Swift.String, response: Foundation.URLResponse?, attributes: [Swift.String : Any])
+  @objc public func startAction(type: DatadogObjc.DDRUMActionType, name: Swift.String, attributes: [Swift.String : Any])
+  @objc public func stopAction(type: DatadogObjc.DDRUMActionType, name: Swift.String?, attributes: [Swift.String : Any])
+  @objc public func addAction(type: DatadogObjc.DDRUMActionType, name: Swift.String, attributes: [Swift.String : Any])
+  @objc public func addAttribute(forKey key: Swift.String, value: Any)
+  @objc public func addAttributes(_ attributes: [Swift.String : Any])
+  @objc public func removeAttribute(forKey key: Swift.String)
+  @objc public func removeAttributes(forKeys keys: [Swift.String])
+  @objc public func addFeatureFlagEvaluation(name: Swift.String, value: Any)
+  @objc public var debug: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc public protocol OTSpanContext {
+  @objc func forEachBaggageItem(_ callback: (_ key: Swift.String, _ value: Swift.String) -> Swift.Bool)
+}
+@_hasMissingDesignatedInitializers @objc public class DDSite : ObjectiveC.NSObject {
+  @objc public static func us1() -> DatadogObjc.DDSite
+  @objc public static func us3() -> DatadogObjc.DDSite
+  @objc public static func us5() -> DatadogObjc.DDSite
+  @objc public static func eu1() -> DatadogObjc.DDSite
+  @objc public static func ap1() -> DatadogObjc.DDSite
+  @objc public static func us1_fed() -> DatadogObjc.DDSite
+  @objc deinit
+}
+@objc public enum DDBatchSize : Swift.Int {
+  case small
+  case medium
+  case large
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDUploadFrequency : Swift.Int {
+  case frequent
+  case average
+  case rare
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DDBatchProcessingLevel : Swift.Int {
+  case low
+  case medium
+  case high
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class DDTracingHeaderType : ObjectiveC.NSObject {
+  @objc public static let datadog: DatadogObjc.DDTracingHeaderType
+  @objc public static let b3multi: DatadogObjc.DDTracingHeaderType
+  @objc public static let b3: DatadogObjc.DDTracingHeaderType
+  @objc public static let tracecontext: DatadogObjc.DDTracingHeaderType
+  @objc deinit
+}
+@objc public protocol DDDataEncryption {
+  @objc func encrypt(data: Foundation.Data) throws -> Foundation.Data
+  @objc func decrypt(data: Foundation.Data) throws -> Foundation.Data
+}
+@objc public protocol DDServerDateProvider {
+  @objc func synchronize(update: @escaping (Foundation.TimeInterval) -> Swift.Void)
+}
+@objc public class DDConfiguration : ObjectiveC.NSObject {
+  @objc public var clientToken: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var env: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var site: DatadogObjc.DDSite {
+    @objc get
+    @objc set
+  }
+  @objc public var service: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var batchSize: DatadogObjc.DDBatchSize {
+    @objc get
+    @objc set
+  }
+  @objc public var uploadFrequency: DatadogObjc.DDUploadFrequency {
+    @objc get
+    @objc set
+  }
+  @objc public var batchProcessingLevel: DatadogObjc.DDBatchProcessingLevel {
+    @objc get
+    @objc set
+  }
+  @objc public var proxyConfiguration: [Swift.AnyHashable : Any]? {
+    @objc get
+    @objc set
+  }
+  @objc public func setEncryption(_ encryption: any DatadogObjc.DDDataEncryption)
+  @objc public func setServerDateProvider(_ serverDateProvider: any DatadogObjc.DDServerDateProvider)
+  @objc public var bundle: Foundation.Bundle {
+    @objc get
+    @objc set
+  }
+  @objc public var additionalConfiguration: [Swift.String : Any] {
+    @objc get
+    @objc set
+  }
+  @objc public var backgroundTasksEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public init(clientToken: Swift.String, env: Swift.String)
+  @objc deinit
+}
+extension DatadogObjc.DDLogEventStatus : Swift.Equatable {}
+extension DatadogObjc.DDLogEventStatus : Swift.Hashable {}
+extension DatadogObjc.DDLogEventStatus : Swift.RawRepresentable {}
+extension DatadogObjc.DDLogEventReachability : Swift.Equatable {}
+extension DatadogObjc.DDLogEventReachability : Swift.Hashable {}
+extension DatadogObjc.DDLogEventReachability : Swift.RawRepresentable {}
+extension DatadogObjc.DDLogEventInterface : Swift.Equatable {}
+extension DatadogObjc.DDLogEventInterface : Swift.Hashable {}
+extension DatadogObjc.DDLogEventInterface : Swift.RawRepresentable {}
+extension DatadogObjc.DDLogEventRadioAccessTechnology : Swift.Equatable {}
+extension DatadogObjc.DDLogEventRadioAccessTechnology : Swift.Hashable {}
+extension DatadogObjc.DDLogEventRadioAccessTechnology : Swift.RawRepresentable {}
+extension DatadogObjc.DDCoreLoggerLevel : Swift.Equatable {}
+extension DatadogObjc.DDCoreLoggerLevel : Swift.Hashable {}
+extension DatadogObjc.DDCoreLoggerLevel : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventDDActionNameSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventDDActionNameSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventDDActionNameSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventDDSessionPlan : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventDDSessionPlan : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventDDSessionPlan : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventDDSessionRUMSessionPrecondition : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventDDSessionRUMSessionPrecondition : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventDDSessionRUMSessionPrecondition : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventActionFrustrationFrustrationType : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventActionFrustrationFrustrationType : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventActionFrustrationFrustrationType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventActionActionType : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventActionActionType : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventActionActionType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventRUMConnectivityEffectiveType : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventRUMConnectivityEffectiveType : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventRUMConnectivityEffectiveType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventRUMConnectivityInterfaces : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventRUMConnectivityInterfaces : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventRUMConnectivityInterfaces : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventRUMConnectivityStatus : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventRUMConnectivityStatus : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventRUMConnectivityStatus : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventContainerSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventContainerSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventContainerSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventRUMDeviceRUMDeviceType : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventRUMDeviceRUMDeviceType : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventRUMDeviceRUMDeviceType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventSessionRUMSessionType : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventSessionRUMSessionType : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventSessionRUMSessionType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionEventSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionEventSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionEventSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventDDSessionPlan : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventDDSessionPlan : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventDDSessionPlan : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventDDSessionRUMSessionPrecondition : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventDDSessionRUMSessionPrecondition : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventDDSessionRUMSessionPrecondition : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventRUMConnectivityEffectiveType : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventRUMConnectivityEffectiveType : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventRUMConnectivityEffectiveType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventRUMConnectivityInterfaces : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventRUMConnectivityInterfaces : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventRUMConnectivityInterfaces : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventRUMConnectivityStatus : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventRUMConnectivityStatus : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventRUMConnectivityStatus : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventContainerSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventContainerSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventContainerSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventRUMDeviceRUMDeviceType : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventRUMDeviceRUMDeviceType : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventRUMDeviceRUMDeviceType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventErrorCategory : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventErrorCategory : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventErrorCategory : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventErrorCausesSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventErrorCausesSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventErrorCausesSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventErrorCSPDisposition : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventErrorCSPDisposition : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventErrorCSPDisposition : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventErrorHandling : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventErrorHandling : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventErrorHandling : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventErrorResourceRUMMethod : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventErrorResourceRUMMethod : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventErrorResourceRUMMethod : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventErrorResourceProviderProviderType : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventErrorResourceProviderProviderType : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventErrorResourceProviderProviderType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventErrorSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventErrorSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventErrorSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventErrorSourceType : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventErrorSourceType : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventErrorSourceType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventSessionRUMSessionType : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventSessionRUMSessionType : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventSessionRUMSessionType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorEventSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorEventSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorEventSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventDDSessionPlan : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventDDSessionPlan : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventDDSessionPlan : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventDDSessionRUMSessionPrecondition : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventDDSessionRUMSessionPrecondition : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventDDSessionRUMSessionPrecondition : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMConnectivityEffectiveType : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMConnectivityEffectiveType : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMConnectivityEffectiveType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMConnectivityInterfaces : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMConnectivityInterfaces : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMConnectivityInterfaces : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMConnectivityStatus : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMConnectivityStatus : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMConnectivityStatus : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventContainerSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventContainerSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventContainerSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMDeviceRUMDeviceType : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMDeviceRUMDeviceType : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventRUMDeviceRUMDeviceType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventLongTaskEntryType : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventLongTaskEntryType : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventLongTaskEntryType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventLongTaskScriptsInvokerType : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventLongTaskScriptsInvokerType : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventLongTaskScriptsInvokerType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventSessionRUMSessionType : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventSessionRUMSessionType : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventSessionRUMSessionType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMLongTaskEventSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMLongTaskEventSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMLongTaskEventSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventDDSessionPlan : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventDDSessionPlan : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventDDSessionPlan : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventDDSessionRUMSessionPrecondition : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventDDSessionRUMSessionPrecondition : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventDDSessionRUMSessionPrecondition : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventRUMConnectivityEffectiveType : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventRUMConnectivityEffectiveType : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventRUMConnectivityEffectiveType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventRUMConnectivityInterfaces : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventRUMConnectivityInterfaces : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventRUMConnectivityInterfaces : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventRUMConnectivityStatus : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventRUMConnectivityStatus : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventRUMConnectivityStatus : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventContainerSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventContainerSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventContainerSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventRUMDeviceRUMDeviceType : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventRUMDeviceRUMDeviceType : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventRUMDeviceRUMDeviceType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventResourceDeliveryType : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventResourceDeliveryType : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventResourceDeliveryType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventResourceGraphqlOperationType : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventResourceGraphqlOperationType : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventResourceGraphqlOperationType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventResourceRUMMethod : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventResourceRUMMethod : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventResourceRUMMethod : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventResourceProviderProviderType : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventResourceProviderProviderType : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventResourceProviderProviderType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventResourceRenderBlockingStatus : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventResourceRenderBlockingStatus : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventResourceRenderBlockingStatus : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventResourceResourceType : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventResourceResourceType : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventResourceResourceType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventSessionRUMSessionType : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventSessionRUMSessionType : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventSessionRUMSessionType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceEventSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceEventSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceEventSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventDDPageStatesState : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventDDPageStatesState : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventDDPageStatesState : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventDDSessionPlan : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventDDSessionPlan : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventDDSessionPlan : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventDDSessionRUMSessionPrecondition : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventDDSessionRUMSessionPrecondition : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventDDSessionRUMSessionPrecondition : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventRUMConnectivityEffectiveType : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventRUMConnectivityEffectiveType : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventRUMConnectivityEffectiveType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventRUMConnectivityInterfaces : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventRUMConnectivityInterfaces : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventRUMConnectivityInterfaces : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventRUMConnectivityStatus : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventRUMConnectivityStatus : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventRUMConnectivityStatus : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventContainerSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventContainerSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventContainerSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventRUMDeviceRUMDeviceType : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventRUMDeviceRUMDeviceType : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventRUMDeviceRUMDeviceType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventPrivacyReplayLevel : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventPrivacyReplayLevel : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventPrivacyReplayLevel : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventSessionRUMSessionType : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventSessionRUMSessionType : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventSessionRUMSessionType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMViewEventViewLoadingType : Swift.Equatable {}
+extension DatadogObjc.DDRUMViewEventViewLoadingType : Swift.Hashable {}
+extension DatadogObjc.DDRUMViewEventViewLoadingType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventDDSessionPlan : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventDDSessionPlan : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventDDSessionPlan : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventDDSessionRUMSessionPrecondition : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventDDSessionRUMSessionPrecondition : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventDDSessionRUMSessionPrecondition : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventRUMConnectivityEffectiveType : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventRUMConnectivityEffectiveType : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventRUMConnectivityEffectiveType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventRUMConnectivityInterfaces : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventRUMConnectivityInterfaces : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventRUMConnectivityInterfaces : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventRUMConnectivityStatus : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventRUMConnectivityStatus : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventRUMConnectivityStatus : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventContainerSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventContainerSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventContainerSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventRUMDeviceRUMDeviceType : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventRUMDeviceRUMDeviceType : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventRUMDeviceRUMDeviceType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventSessionRUMSessionType : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventSessionRUMSessionType : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventSessionRUMSessionType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalEventVitalVitalType : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalEventVitalVitalType : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalEventVitalVitalType : Swift.RawRepresentable {}
+extension DatadogObjc.DDTelemetryErrorEventSource : Swift.Equatable {}
+extension DatadogObjc.DDTelemetryErrorEventSource : Swift.Hashable {}
+extension DatadogObjc.DDTelemetryErrorEventSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDTelemetryDebugEventSource : Swift.Equatable {}
+extension DatadogObjc.DDTelemetryDebugEventSource : Swift.Hashable {}
+extension DatadogObjc.DDTelemetryDebugEventSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDTelemetryConfigurationEventSource : Swift.Equatable {}
+extension DatadogObjc.DDTelemetryConfigurationEventSource : Swift.Hashable {}
+extension DatadogObjc.DDTelemetryConfigurationEventSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationSelectedTracingPropagators : Swift.Equatable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationSelectedTracingPropagators : Swift.Hashable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationSelectedTracingPropagators : Swift.RawRepresentable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationSessionPersistence : Swift.Equatable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationSessionPersistence : Swift.Hashable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationSessionPersistence : Swift.RawRepresentable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTraceContextInjection : Swift.Equatable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTraceContextInjection : Swift.Hashable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTraceContextInjection : Swift.RawRepresentable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTrackFeatureFlagsForEvents : Swift.Equatable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTrackFeatureFlagsForEvents : Swift.Hashable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTrackFeatureFlagsForEvents : Swift.RawRepresentable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTrackingConsent : Swift.Equatable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTrackingConsent : Swift.Hashable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationTrackingConsent : Swift.RawRepresentable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationViewTrackingStrategy : Swift.Equatable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationViewTrackingStrategy : Swift.Hashable {}
+extension DatadogObjc.DDTelemetryConfigurationEventTelemetryConfigurationViewTrackingStrategy : Swift.RawRepresentable {}
+extension DatadogObjc.DDInjectEncoding : Swift.Equatable {}
+extension DatadogObjc.DDInjectEncoding : Swift.Hashable {}
+extension DatadogObjc.DDInjectEncoding : Swift.RawRepresentable {}
+extension DatadogObjc.DDSDKVerbosityLevel : Swift.Equatable {}
+extension DatadogObjc.DDSDKVerbosityLevel : Swift.Hashable {}
+extension DatadogObjc.DDSDKVerbosityLevel : Swift.RawRepresentable {}
+extension DatadogObjc.DDLogLevel : Swift.Equatable {}
+extension DatadogObjc.DDLogLevel : Swift.Hashable {}
+extension DatadogObjc.DDLogLevel : Swift.RawRepresentable {}
+extension DatadogObjc.DDTraceContextInjection : Swift.Equatable {}
+extension DatadogObjc.DDTraceContextInjection : Swift.Hashable {}
+extension DatadogObjc.DDTraceContextInjection : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMErrorSource : Swift.Equatable {}
+extension DatadogObjc.DDRUMErrorSource : Swift.Hashable {}
+extension DatadogObjc.DDRUMErrorSource : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMActionType : Swift.Equatable {}
+extension DatadogObjc.DDRUMActionType : Swift.Hashable {}
+extension DatadogObjc.DDRUMActionType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMResourceType : Swift.Equatable {}
+extension DatadogObjc.DDRUMResourceType : Swift.Hashable {}
+extension DatadogObjc.DDRUMResourceType : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMMethod : Swift.Equatable {}
+extension DatadogObjc.DDRUMMethod : Swift.Hashable {}
+extension DatadogObjc.DDRUMMethod : Swift.RawRepresentable {}
+extension DatadogObjc.DDRUMVitalsFrequency : Swift.Equatable {}
+extension DatadogObjc.DDRUMVitalsFrequency : Swift.Hashable {}
+extension DatadogObjc.DDRUMVitalsFrequency : Swift.RawRepresentable {}
+extension DatadogObjc.DDBatchSize : Swift.Equatable {}
+extension DatadogObjc.DDBatchSize : Swift.Hashable {}
+extension DatadogObjc.DDBatchSize : Swift.RawRepresentable {}
+extension DatadogObjc.DDUploadFrequency : Swift.Equatable {}
+extension DatadogObjc.DDUploadFrequency : Swift.Hashable {}
+extension DatadogObjc.DDUploadFrequency : Swift.RawRepresentable {}
+extension DatadogObjc.DDBatchProcessingLevel : Swift.Equatable {}
+extension DatadogObjc.DDBatchProcessingLevel : Swift.Hashable {}
+extension DatadogObjc.DDBatchProcessingLevel : Swift.RawRepresentable {}

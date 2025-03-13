@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DatadogCrashReporting-Swift.h</key>
 		<data>
-		ef1A/R9UShkORhS9C/wn7HO/ARQ=
+		wK2hJiHZqvC1stubOBjnskXU0yk=
 		</data>
 		<key>Headers/DatadogCrashReporting.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wl9oDe9N03KcgI0g/ru+4yM1818=
+		SuqD03UfujMYT3jhvobhkukKxTU=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		i9u8Dq0NLF1IXBzMoMT0vFn6WLw=
+		6xSrJef7pEeluLOh9NJZwq+NtfE=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rSkLfSPIwMhzCPa+H51/0AfZZfQ=
+		57hYN12eH7SCns/aIY/TT0QB1fE=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		AT9hd2uuZxSl2GkAoLE209RejxY=
+		UCfJDZhwlNGsOCW8b5uoLVspaGE=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rSkLfSPIwMhzCPa+H51/0AfZZfQ=
+		57hYN12eH7SCns/aIY/TT0QB1fE=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5TRLmW6Uq3xJJnhfTfXo2MuL+pM=
+		rBsPAKm0T0J853LFsDca9vRc0J8=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		i9u8Dq0NLF1IXBzMoMT0vFn6WLw=
+		6xSrJef7pEeluLOh9NJZwq+NtfE=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TvVc5C6dgl2Yvsh8RJ3ZSF9+eGY=
+		rzOS7UFni5iz0cCymHn6kBr/rAQ=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LHocr6FMN+vyWZ3MQB5GGlZypaQ=
+		RJuI9JuE4W6rqiCotCBhEy9/42Y=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TvVc5C6dgl2Yvsh8RJ3ZSF9+eGY=
+		rzOS7UFni5iz0cCymHn6kBr/rAQ=
 		</data>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YltqTIMAC+IcCAG5UB3DJ87Tu3o=
+		S8FX0F3WrqzChGSwi35UkwqZO/o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,21 +69,13 @@
 	<dict>
 		<key>Headers/DatadogCrashReporting-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ef1A/R9UShkORhS9C/wn7HO/ARQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			6FM1QRcRXee+QR87o/wWp8x5mhEiGOL/8Epk0vbKuqY=
+			WcxDZOwsOcds3pl794pN1SGmdqIr/bZTm7TPaHZXt2w=
 			</data>
 		</dict>
 		<key>Headers/DatadogCrashReporting.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PtQOMScMhBZL87jizrinSm3/R4A=
-			</data>
 			<key>hash2</key>
 			<data>
 			WbWKA3cjQm5X763QNgJPcKa5cGYcvNjmhey+ZuPaUfc=
@@ -91,120 +83,76 @@
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			i9u8Dq0NLF1IXBzMoMT0vFn6WLw=
-			</data>
 			<key>hash2</key>
 			<data>
-			zEn6juAfoQpj0iQ15bZNxqDKuSjr3C6O5eSuCdsBQC8=
+			1rkIquR3cqyQlTFsyI+61Msn8pT2ueUa0WRU8g8d+0Y=
 			</data>
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rSkLfSPIwMhzCPa+H51/0AfZZfQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			g/qpbOTk1A9UQfh0wQoYYlgfdgdK1lVI9m5gOeA16hk=
+			i4R/l/wSwVCexoU9KR4QS26tE+7XuLCg54Xj2CzUB+4=
 			</data>
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AT9hd2uuZxSl2GkAoLE209RejxY=
-			</data>
 			<key>hash2</key>
 			<data>
-			HPPyrWXUGYiQ1JKyf2jIQ2VPBQHEaa2G1aSVUaVDb8k=
+			q5+8rjck8lP4LL9IB6jEwwbgMP7ygj02V3xNeNV5mCY=
 			</data>
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rSkLfSPIwMhzCPa+H51/0AfZZfQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			g/qpbOTk1A9UQfh0wQoYYlgfdgdK1lVI9m5gOeA16hk=
+			i4R/l/wSwVCexoU9KR4QS26tE+7XuLCg54Xj2CzUB+4=
 			</data>
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5TRLmW6Uq3xJJnhfTfXo2MuL+pM=
-			</data>
 			<key>hash2</key>
 			<data>
-			vkZse+2gFJxr0kD1mCPo27v8Ve44m45cqwDZTKGjw9I=
+			+Hv+dpUI3ZvVgWUijYIb5696hGjhu9qs3HUt1s5gqeY=
 			</data>
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			i9u8Dq0NLF1IXBzMoMT0vFn6WLw=
-			</data>
 			<key>hash2</key>
 			<data>
-			zEn6juAfoQpj0iQ15bZNxqDKuSjr3C6O5eSuCdsBQC8=
+			1rkIquR3cqyQlTFsyI+61Msn8pT2ueUa0WRU8g8d+0Y=
 			</data>
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TvVc5C6dgl2Yvsh8RJ3ZSF9+eGY=
-			</data>
 			<key>hash2</key>
 			<data>
-			xVpTtaY0mAvLKkwaYHMlzK/+nP/XhGYcoyFfkGRY6Lo=
+			3tBi5W5Uj+lScx2xDH+Nmid0amZ6V8XPxXfhk7e9bPc=
 			</data>
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LHocr6FMN+vyWZ3MQB5GGlZypaQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			MsCOE8cuXmfvo9DjT/VRvInXe4TDPOXtgBoYmn0KXbk=
+			wJR0Dp4/uZ2i2hLViFz7HHuGUVbZYnfBbHliAGSPLVE=
 			</data>
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TvVc5C6dgl2Yvsh8RJ3ZSF9+eGY=
-			</data>
 			<key>hash2</key>
 			<data>
-			xVpTtaY0mAvLKkwaYHMlzK/+nP/XhGYcoyFfkGRY6Lo=
+			3tBi5W5Uj+lScx2xDH+Nmid0amZ6V8XPxXfhk7e9bPc=
 			</data>
 		</dict>
 		<key>Modules/DatadogCrashReporting.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YltqTIMAC+IcCAG5UB3DJ87Tu3o=
-			</data>
 			<key>hash2</key>
 			<data>
-			P6nATshSE9G+gCXW7YtsZQ10IDC95BtprcaPxql9xWM=
+			AlOVzfvJbMgb/yUGuRs8q1I4YOQOt+ZSOpzfU1RMIMQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4NNkEw5Nit4MwBdhMiyWPBpiSDY=
-			</data>
 			<key>hash2</key>
 			<data>
 			cqsHolrWab2t2aEIzclWXHSwX8j5ZGNVVHW56V8yLzU=
@@ -212,10 +160,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lbZy4IMF6myLy1VYRPpJk3drcGc=
-			</data>
 			<key>hash2</key>
 			<data>
 			htRkUY0cHD4UA6l/rLglJy/lsBpq58PEU3sJMfn9em0=

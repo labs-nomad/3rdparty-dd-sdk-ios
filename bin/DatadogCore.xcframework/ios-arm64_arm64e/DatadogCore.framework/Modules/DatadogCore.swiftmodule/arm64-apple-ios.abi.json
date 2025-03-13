@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "DatadogCore",
-    "printedName": "DatadogCore",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -439,22 +439,6 @@
         "moduleName": "DatadogCore",
         "declAttributes": [
           "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -652,22 +636,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -784,22 +752,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -1127,20 +1079,6 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
-                    "name": "Copyable",
-                    "printedName": "Copyable",
-                    "usr": "s:s8CopyableP",
-                    "mangledName": "$ss8CopyableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
@@ -1388,20 +1326,6 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
-                    "name": "Copyable",
-                    "printedName": "Copyable",
-                    "usr": "s:s8CopyableP",
-                    "mangledName": "$ss8CopyableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
@@ -1638,20 +1562,6 @@
                   "RawDocComment"
                 ],
                 "conformances": [
-                  {
-                    "kind": "Conformance",
-                    "name": "Copyable",
-                    "printedName": "Copyable",
-                    "usr": "s:s8CopyableP",
-                    "mangledName": "$ss8CopyableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
                   {
                     "kind": "Conformance",
                     "name": "Equatable",
@@ -2975,20 +2885,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "InternalExtended",
                 "printedName": "InternalExtended",
                 "children": [
@@ -3567,20 +3463,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "InternalExtended",
             "printedName": "InternalExtended",
             "children": [
@@ -3990,7 +3872,6 @@
         "intro_iOS": "2.0",
         "objc_name": "UIApplication",
         "declAttributes": [
-          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -4005,20 +3886,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4103,9 +3970,7 @@
         "objc_name": "NSProcessInfo",
         "declAttributes": [
           "ObjC",
-          "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -4115,27 +3980,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4408,23 +4252,7 @@
         "moduleName": "DatadogInternal",
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<ExtendedType>",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
+        "isExternal": true
       },
       {
         "kind": "TypeDecl",
@@ -4446,20 +4274,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4516,819 +4330,1239 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/FeatureDataStore.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/FeatureDataStore.swift",
       "kind": "IntegerLiteral",
       "offset": 680,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Context\/DatadogContextProvider.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Context\/DatadogContextProvider.swift",
       "kind": "StringLiteral",
       "offset": 1677,
       "length": 28,
       "value": "\"com.datadoghq.core-context\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
       "kind": "FloatLiteral",
       "offset": 601,
       "length": 15,
       "value": "2208988800.0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
       "kind": "FloatLiteral",
       "offset": 736,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
       "kind": "FloatLiteral",
       "offset": 773,
       "length": 5,
       "value": "100.0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
       "kind": "FloatLiteral",
       "offset": 3388,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 3776,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/DataStore+TLV.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/DataStore+TLV.swift",
       "kind": "IntegerLiteral",
       "offset": 447,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/DataStore+TLV.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/DataStore+TLV.swift",
       "kind": "IntegerLiteral",
       "offset": 512,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/EventGenerator.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/DataStore+TLV.swift",
+      "kind": "IntegerLiteral",
+      "offset": 447,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/DataStore+TLV.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/DataStore+TLV.swift",
+      "kind": "IntegerLiteral",
+      "offset": 447,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DataStore\/DataStore+TLV.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/EventGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 549,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/MessageBus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/MessageBus.swift",
       "kind": "StringLiteral",
       "offset": 529,
       "length": 35,
       "value": "\"com.datadoghq.ios-sdk-message-bus\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/MessageBus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/MessageBus.swift",
       "kind": "Dictionary",
       "offset": 949,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/MessageBus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/MessageBus.swift",
       "kind": "IntegerLiteral",
       "offset": 1592,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
       "kind": "IntegerLiteral",
       "offset": 395,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
       "kind": "IntegerLiteral",
       "offset": 537,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
       "kind": "IntegerLiteral",
       "offset": 691,
       "length": 4,
       "value": "0x01"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/FeaturesIntegration\/CITestIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
+      "kind": "IntegerLiteral",
+      "offset": 537,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
+      "kind": "IntegerLiteral",
+      "offset": 691,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
+      "kind": "IntegerLiteral",
+      "offset": 537,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Storage+TLV.swift",
+      "kind": "IntegerLiteral",
+      "offset": 691,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/FeaturesIntegration\/CITestIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 6,
       "value": "0x1111"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/FeaturesIntegration\/CITestIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/FeaturesIntegration\/CITestIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 378,
       "length": 6,
       "value": "0x2222"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/FeaturesIntegration\/CITestIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/FeaturesIntegration\/CITestIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 420,
       "length": 6,
       "value": "0x3333"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/FeaturesIntegration\/CITestIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/FeaturesIntegration\/CITestIntegration.swift",
       "kind": "StringLiteral",
       "offset": 840,
       "length": 12,
       "value": "\"ciapp-test\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNSTimer+ClosureKit.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNSTimer+ClosureKit.swift",
       "kind": "BooleanLiteral",
       "offset": 1503,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Context\/NetworkConnectionInfoPublisher.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Context\/NetworkConnectionInfoPublisher.swift",
       "kind": "StringLiteral",
       "offset": 1001,
       "length": 41,
       "value": "\"com.datadoghq.nw-path-monitor-publisher\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 393,
       "length": 7,
       "value": "\"track\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 1066,
       "length": 9,
       "value": "\"consent\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 1146,
       "length": 9,
       "value": "\"granted\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 1226,
       "length": 9,
       "value": "\"pending\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 1489,
       "length": 15,
       "value": "\"Batch Deleted\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 1559,
       "length": 15,
       "value": "\"batch deleted\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "FloatLiteral",
       "offset": 1732,
       "length": 3,
       "value": "1.5"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 1824,
       "length": 16,
       "value": "\"uploader_delay\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 1935,
       "length": 5,
       "value": "\"min\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 2035,
       "length": 5,
       "value": "\"max\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 2200,
       "length": 17,
       "value": "\"uploader_window\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 2316,
       "length": 11,
       "value": "\"batch_age\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 2405,
       "length": 22,
       "value": "\"batch_removal_reason\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 2513,
       "length": 15,
       "value": "\"in_background\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 2615,
       "length": 26,
       "value": "\"background_tasks_enabled\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 2723,
       "length": 17,
       "value": "\"pending_batches\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 5039,
       "length": 14,
       "value": "\"Batch Closed\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 5108,
       "length": 14,
       "value": "\"batch closed\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "FloatLiteral",
       "offset": 5280,
       "length": 3,
       "value": "1.5"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 5451,
       "length": 17,
       "value": "\"uploader_window\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 5549,
       "length": 12,
       "value": "\"batch_size\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 5666,
       "length": 20,
       "value": "\"batch_events_count\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 5788,
       "length": 16,
       "value": "\"batch_duration\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/SDKMetrics\/BatchMetrics.swift",
       "kind": "StringLiteral",
       "offset": 5921,
       "length": 12,
       "value": "\"forced_new\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Context\/ServerOffsetPublisher.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Context\/ServerOffsetPublisher.swift",
       "kind": "Array",
       "offset": 355,
       "length": 122,
       "value": "[\"0.datadog.pool.ntp.org\", \"1.datadog.pool.ntp.org\", \"2.datadog.pool.ntp.org\", \"3.datadog.pool.ntp.org\"]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosDNSResolver.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosDNSResolver.swift",
       "kind": "IntegerLiteral",
       "offset": 582,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosDNSResolver.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosDNSResolver.swift",
       "kind": "FloatLiteral",
       "offset": 660,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosClock.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosClock.swift",
       "kind": "StringLiteral",
       "offset": 5741,
       "length": 16,
       "value": "\"time.apple.com\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosClock.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosClock.swift",
       "kind": "IntegerLiteral",
       "offset": 5782,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Datadog.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Datadog.swift",
       "kind": "BooleanLiteral",
       "offset": 9767,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Datadog.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Datadog.swift",
       "kind": "Dictionary",
       "offset": 10938,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Datadog.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Datadog.swift",
       "kind": "Dictionary",
       "offset": 13755,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Datadog.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Datadog.swift",
       "kind": "Dictionary",
       "offset": 14269,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
       "kind": "StringLiteral",
       "offset": 958,
       "length": 34,
       "value": "\"com.datadoghq.ios-sdk-read-write\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
       "kind": "Dictionary",
       "offset": 1910,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
       "kind": "Dictionary",
       "offset": 2018,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
       "kind": "BooleanLiteral",
       "offset": 3341,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/DatadogCore.swift",
       "kind": "Dictionary",
       "offset": 4993,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploader.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploader.swift",
       "kind": "BooleanLiteral",
       "offset": 783,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploader.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploader.swift",
       "kind": "StringLiteral",
       "offset": 847,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploader.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploader.swift",
       "kind": "IntegerLiteral",
       "offset": 888,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Reading\/FileReader.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/Reading\/FileReader.swift",
       "kind": "Array",
       "offset": 655,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 863,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 880,
       "length": 16,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 898,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 863,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 880,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 898,
+      "length": 5,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 863,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 880,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 898,
+      "length": 5,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1414,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1431,
       "length": 16,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1449,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1457,
       "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1465,
       "length": 9,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1476,
       "length": 11,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1489,
       "length": 7,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1414,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1431,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1449,
+      "length": 6,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1457,
+      "length": 6,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1465,
+      "length": 9,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1476,
+      "length": 11,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1489,
+      "length": 7,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1414,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1431,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1449,
+      "length": 6,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1457,
+      "length": 6,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1465,
+      "length": 9,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1476,
+      "length": 11,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1489,
+      "length": 7,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1612,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1621,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 1632,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosTimeFreeze.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1612,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1621,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1632,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1612,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1621,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1632,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosTimeFreeze.swift",
       "kind": "StringLiteral",
       "offset": 562,
       "length": 8,
       "value": "\"Uptime\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosTimeFreeze.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosTimeFreeze.swift",
       "kind": "StringLiteral",
       "offset": 599,
       "length": 11,
       "value": "\"Timestamp\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosTimeFreeze.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosTimeFreeze.swift",
       "kind": "StringLiteral",
       "offset": 636,
       "length": 8,
       "value": "\"Offset\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 411,
       "length": 3,
       "value": "202"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 511,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 599,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 695,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 784,
       "length": 3,
       "value": "408"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 883,
       "length": 3,
       "value": "413"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 987,
       "length": 3,
       "value": "429"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1078,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1173,
       "length": 3,
       "value": "502"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1296,
       "length": 3,
       "value": "503"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1425,
       "length": 3,
       "value": "504"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1553,
       "length": 3,
       "value": "507"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1614,
       "length": 4,
       "value": "-999"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadWorker.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 3,
+      "value": "202"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 511,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 599,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 695,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 784,
+      "length": 3,
+      "value": "408"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 883,
+      "length": 3,
+      "value": "413"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 987,
+      "length": 3,
+      "value": "429"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1078,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1173,
+      "length": 3,
+      "value": "502"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1296,
+      "length": 3,
+      "value": "503"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1425,
+      "length": 3,
+      "value": "504"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1553,
+      "length": 3,
+      "value": "507"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1614,
+      "length": 1,
+      "value": "-999"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 3,
+      "value": "202"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 511,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 599,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 695,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 784,
+      "length": 3,
+      "value": "408"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 883,
+      "length": 3,
+      "value": "413"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 987,
+      "length": 3,
+      "value": "429"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1078,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1173,
+      "length": 3,
+      "value": "502"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1296,
+      "length": 3,
+      "value": "503"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1425,
+      "length": 3,
+      "value": "504"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1553,
+      "length": 3,
+      "value": "507"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1614,
+      "length": 1,
+      "value": "-999"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadWorker.swift",
       "kind": "Array",
       "offset": 11588,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosTimeStorage.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosTimeStorage.swift",
       "kind": "StringLiteral",
       "offset": 1459,
       "length": 18,
       "value": "\"KronosStableTime\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
       "kind": "FloatLiteral",
       "offset": 1019,
       "length": 5,
       "value": "0.001"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
       "kind": "IntegerLiteral",
       "offset": 1696,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
       "kind": "IntegerLiteral",
       "offset": 2012,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
       "kind": "IntegerLiteral",
       "offset": 3223,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
       "kind": "Array",
       "offset": 8840,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Storage\/FilesOrchestrator.swift",
       "kind": "BooleanLiteral",
       "offset": 10470,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Versioning.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Versioning.swift",
       "kind": "StringLiteral",
       "offset": 69,
       "length": 8,
       "value": "\"2.24.0\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
       "kind": "FloatLiteral",
       "offset": 573,
       "length": 3,
       "value": "6.0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 607,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 642,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
       "kind": "FloatLiteral",
       "offset": 683,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
       "kind": "StringLiteral",
       "offset": 1710,
       "length": 16,
       "value": "\"time.apple.com\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 1752,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 1775,
       "length": 3,
       "value": "123"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 3883,
       "length": 3,
       "value": "123"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosNTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 3912,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadConditions.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Upload\/DataUploadConditions.swift",
       "kind": "FloatLiteral",
       "offset": 712,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosData+Bytes.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosData+Bytes.swift",
       "kind": "BooleanLiteral",
       "offset": 2075,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosData+Bytes.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosData+Bytes.swift",
       "kind": "BooleanLiteral",
       "offset": 2756,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosData+Bytes.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosData+Bytes.swift",
       "kind": "BooleanLiteral",
       "offset": 3568,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosData+Bytes.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Kronos\/KronosData+Bytes.swift",
       "kind": "BooleanLiteral",
       "offset": 3944,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Context\/ApplicationStatePublisher.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCore\/Sources\/Core\/Context\/ApplicationStatePublisher.swift",
       "kind": "StringLiteral",
       "offset": 584,
       "length": 35,

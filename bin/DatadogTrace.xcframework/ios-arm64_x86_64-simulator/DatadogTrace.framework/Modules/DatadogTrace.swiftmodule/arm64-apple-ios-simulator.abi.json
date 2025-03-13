@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "DatadogTrace",
-    "printedName": "DatadogTrace",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -202,22 +202,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -265,23 +249,7 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -894,22 +862,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -984,22 +936,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -1202,22 +1138,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -1388,20 +1308,6 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2851,22 +2757,6 @@
                     "declAttributes": [
                       "AccessControl",
                       "RawDocComment"
-                    ],
-                    "conformances": [
-                      {
-                        "kind": "Conformance",
-                        "name": "Copyable",
-                        "printedName": "Copyable",
-                        "usr": "s:s8CopyableP",
-                        "mangledName": "$ss8CopyableP"
-                      },
-                      {
-                        "kind": "Conformance",
-                        "name": "Escapable",
-                        "printedName": "Escapable",
-                        "usr": "s:s9EscapableP",
-                        "mangledName": "$ss9EscapableP"
-                      }
                     ]
                   },
                   {
@@ -2905,22 +2795,6 @@
                 "declAttributes": [
                   "AccessControl",
                   "RawDocComment"
-                ],
-                "conformances": [
-                  {
-                    "kind": "Conformance",
-                    "name": "Copyable",
-                    "printedName": "Copyable",
-                    "usr": "s:s8CopyableP",
-                    "mangledName": "$ss8CopyableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  }
                 ]
               },
               {
@@ -3081,20 +2955,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "SampledTelemetry",
                 "printedName": "SampledTelemetry",
                 "usr": "s:15DatadogInternal16SampledTelemetryP",
@@ -3110,22 +2970,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -3990,20 +3834,6 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
-                    "name": "Copyable",
-                    "printedName": "Copyable",
-                    "usr": "s:s8CopyableP",
-                    "mangledName": "$ss8CopyableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
@@ -4342,20 +4172,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -4677,20 +4493,6 @@
               "RawDocComment"
             ],
             "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
               {
                 "kind": "Conformance",
                 "name": "Decodable",
@@ -5075,22 +4877,6 @@
             "moduleName": "DatadogTrace",
             "declAttributes": [
               "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
             ]
           },
           {
@@ -5344,20 +5130,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -6305,22 +6077,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -6528,22 +6284,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -7050,22 +6790,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -7160,20 +6884,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "OTCustomFormatReader",
             "printedName": "OTCustomFormatReader",
             "usr": "s:12DatadogTrace20OTCustomFormatReaderP",
@@ -7198,20 +6908,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "OTCustomFormatWriter",
             "printedName": "OTCustomFormatWriter",
             "usr": "s:12DatadogTrace20OTCustomFormatWriterP",
@@ -7234,20 +6930,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
           {
             "kind": "Conformance",
             "name": "OTFormatReader",
@@ -7281,20 +6963,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "OTFormatWriter",
             "printedName": "OTFormatWriter",
             "usr": "s:12DatadogTrace14OTFormatWriterP",
@@ -7324,20 +6992,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
           {
             "kind": "Conformance",
             "name": "OTTextMapReader",
@@ -7376,20 +7030,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
           {
             "kind": "Conformance",
             "name": "OTTextMapWriter",
@@ -7459,22 +7099,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -7520,22 +7144,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -7658,20 +7266,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "TracerProvider",
@@ -7811,20 +7405,6 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -7844,20 +7424,6 @@
             "printedName": "TracePropagationHeadersReader",
             "usr": "s:15DatadogInternal29TracePropagationHeadersReaderP",
             "mangledName": "$s15DatadogInternal29TracePropagationHeadersReaderP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -7894,20 +7460,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "OTFormatReader",
             "printedName": "OTFormatReader",
             "usr": "s:12DatadogTrace14OTFormatReaderP",
@@ -7938,20 +7490,6 @@
             "printedName": "TracePropagationHeadersReader",
             "usr": "s:15DatadogInternal29TracePropagationHeadersReaderP",
             "mangledName": "$s15DatadogInternal29TracePropagationHeadersReaderP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -7988,20 +7526,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "OTFormatWriter",
             "printedName": "OTFormatWriter",
             "usr": "s:12DatadogTrace14OTFormatWriterP",
@@ -8035,20 +7559,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "OTFormatWriter",
             "printedName": "OTFormatWriter",
             "usr": "s:12DatadogTrace14OTFormatWriterP",
@@ -8079,20 +7589,6 @@
             "printedName": "TracePropagationHeadersWriter",
             "usr": "s:15DatadogInternal29TracePropagationHeadersWriterP",
             "mangledName": "$s15DatadogInternal29TracePropagationHeadersWriterP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -8149,23 +7645,7 @@
         "usr": "s:15DatadogInternal29TracePropagationHeadersWriterP",
         "mangledName": "$s15DatadogInternal29TracePropagationHeadersWriterP",
         "moduleName": "DatadogInternal",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
+        "isExternal": true
       },
       {
         "kind": "TypeDecl",
@@ -8209,884 +7689,1358 @@
         "usr": "s:15DatadogInternal29TracePropagationHeadersReaderP",
         "mangledName": "$s15DatadogInternal29TracePropagationHeadersReaderP",
         "moduleName": "DatadogInternal",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
+        "isExternal": true
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 843,
       "length": 15,
       "value": "\"resource.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 960,
       "length": 16,
       "value": "\"operation.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 1101,
       "length": 14,
       "value": "\"service.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 1384,
       "length": 21,
       "value": "\"foreground_duration\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 1574,
       "length": 15,
       "value": "\"is_background\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 1719,
       "length": 12,
       "value": "\"error.type\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 1867,
       "length": 11,
       "value": "\"error.msg\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 2010,
       "length": 13,
       "value": "\"error.stack\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 2173,
       "length": 20,
       "value": "\"_dd.application.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 2334,
       "length": 16,
       "value": "\"_dd.session.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 2485,
       "length": 13,
       "value": "\"_dd.view.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 2637,
       "length": 15,
       "value": "\"_dd.action.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Tracer.swift",
       "kind": "StringLiteral",
       "offset": 2848,
       "length": 11,
       "value": "\"span.kind\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/RequestBuilder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/RequestBuilder.swift",
       "kind": "StringLiteral",
       "offset": 603,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/RequestBuilder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/RequestBuilder.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/RequestBuilder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/RequestBuilder.swift",
       "kind": "StringLiteral",
       "offset": 630,
       "length": 4,
       "value": "\"\n\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/NOPOTelSpan.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/NOPOTelSpan.swift",
       "kind": "StringLiteral",
       "offset": 401,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/NOPOTelSpan.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/NOPOTelSpan.swift",
       "kind": "BooleanLiteral",
       "offset": 605,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/NOPOTelSpan.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/NOPOTelSpan.swift",
       "kind": "StringLiteral",
       "offset": 673,
       "length": 14,
       "value": "\"OTelNoOpSpan\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTSpan.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTSpan.swift",
       "kind": "StringLiteral",
       "offset": 5608,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanBuilder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanBuilder.swift",
       "kind": "Array",
       "offset": 614,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTReference.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTReference.swift",
       "kind": "StringLiteral",
       "offset": 701,
       "length": 10,
       "value": "\"CHILD_OF\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTReference.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTReference.swift",
       "kind": "StringLiteral",
       "offset": 837,
       "length": 14,
       "value": "\"FOLLOWS_FROM\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTReference.swift",
+      "kind": "StringLiteral",
+      "offset": 701,
+      "length": 10,
+      "value": "\"CHILD_OF\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTReference.swift",
+      "kind": "StringLiteral",
+      "offset": 837,
+      "length": 14,
+      "value": "\"FOLLOWS_FROM\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 10,
       "value": "\"trace_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
       "kind": "StringLiteral",
       "offset": 744,
       "length": 9,
       "value": "\"span_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
       "kind": "StringLiteral",
       "offset": 780,
       "length": 12,
       "value": "\"attributes\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
       "kind": "StringLiteral",
       "offset": 819,
       "length": 12,
       "value": "\"tracestate\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
       "kind": "StringLiteral",
       "offset": 858,
       "length": 7,
       "value": "\"flags\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/TraceConfiguration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "kind": "StringLiteral",
+      "offset": 711,
+      "length": 10,
+      "value": "\"trace_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "kind": "StringLiteral",
+      "offset": 744,
+      "length": 9,
+      "value": "\"span_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "kind": "StringLiteral",
+      "offset": 780,
+      "length": 12,
+      "value": "\"attributes\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "kind": "StringLiteral",
+      "offset": 819,
+      "length": 12,
+      "value": "\"tracestate\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpanLink.swift",
+      "kind": "StringLiteral",
+      "offset": 858,
+      "length": 7,
+      "value": "\"flags\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/TraceConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 5463,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/TraceConfiguration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/TraceConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6194,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/TraceConfiguration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/TraceConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 8051,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/TraceConfiguration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/TraceConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 8096,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Utils\/ActiveSpansPool.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Utils\/ActiveSpansPool.swift",
       "kind": "IntegerLiteral",
       "offset": 569,
       "length": 2,
       "value": "-2"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Utils\/ActiveSpansPool.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Utils\/ActiveSpansPool.swift",
       "kind": "StringLiteral",
       "offset": 574,
       "length": 22,
       "value": "\"_os_activity_current\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 501,
       "length": 7,
       "value": "\"spans\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 536,
       "length": 5,
       "value": "\"env\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 501,
+      "length": 7,
+      "value": "\"spans\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 536,
+      "length": 5,
+      "value": "\"env\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3030,
       "length": 8,
       "value": "\"mobile\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3065,
       "length": 8,
       "value": "\"tablet\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3096,
       "length": 4,
       "value": "\"tv\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3126,
       "length": 7,
       "value": "\"other\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3030,
+      "length": 8,
+      "value": "\"mobile\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3065,
+      "length": 8,
+      "value": "\"tablet\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3096,
+      "length": 4,
+      "value": "\"tv\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3126,
+      "length": 7,
+      "value": "\"other\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5127,
       "length": 10,
       "value": "\"trace_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5160,
       "length": 9,
       "value": "\"span_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5194,
       "length": 11,
       "value": "\"parent_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5235,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5269,
       "length": 9,
       "value": "\"service\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5344,
       "length": 7,
       "value": "\"start\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5397,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5460,
       "length": 20,
       "value": "\"metrics._top_level\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5513,
       "length": 31,
       "value": "\"metrics._sampling_priority_v1\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5573,
       "length": 23,
       "value": "\"metrics._dd.agent_psr\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5645,
       "length": 17,
       "value": "\"meta._dd.source\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5697,
       "length": 14,
       "value": "\"meta.version\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5741,
       "length": 21,
       "value": "\"meta.tracer.version\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5786,
       "length": 17,
       "value": "\"meta._dd.origin\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5825,
       "length": 16,
       "value": "\"meta._dd.p.tid\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5870,
       "length": 19,
       "value": "\"meta.device.brand\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5916,
       "length": 18,
       "value": "\"meta.device.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 5962,
       "length": 19,
       "value": "\"meta.device.model\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6016,
       "length": 26,
       "value": "\"meta.device.architecture\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6069,
       "length": 18,
       "value": "\"meta.device.type\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6111,
       "length": 14,
       "value": "\"meta.os.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6151,
       "length": 17,
       "value": "\"meta.os.version\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6192,
       "length": 15,
       "value": "\"meta.os.build\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6238,
       "length": 23,
       "value": "\"meta.os.version_major\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6285,
       "length": 13,
       "value": "\"meta.usr.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6323,
       "length": 15,
       "value": "\"meta.usr.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6364,
       "length": 16,
       "value": "\"meta.usr.email\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6417,
       "length": 34,
       "value": "\"meta.network.client.reachability\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6494,
       "length": 42,
       "value": "\"meta.network.client.available_interfaces\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6582,
       "length": 35,
       "value": "\"meta.network.client.supports_ipv4\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6663,
       "length": 35,
       "value": "\"meta.network.client.supports_ipv6\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6743,
       "length": 34,
       "value": "\"meta.network.client.is_expensive\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6824,
       "length": 36,
       "value": "\"meta.network.client.is_constrained\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6902,
       "length": 38,
       "value": "\"meta.network.client.sim_carrier.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 6991,
       "length": 45,
       "value": "\"meta.network.client.sim_carrier.iso_country\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7088,
       "length": 44,
       "value": "\"meta.network.client.sim_carrier.technology\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7179,
       "length": 45,
       "value": "\"meta.network.client.sim_carrier.allows_voip\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5127,
+      "length": 10,
+      "value": "\"trace_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5160,
+      "length": 9,
+      "value": "\"span_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5194,
+      "length": 11,
+      "value": "\"parent_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5235,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5269,
+      "length": 9,
+      "value": "\"service\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5344,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5397,
+      "length": 7,
+      "value": "\"error\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5460,
+      "length": 20,
+      "value": "\"metrics._top_level\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5513,
+      "length": 31,
+      "value": "\"metrics._sampling_priority_v1\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5573,
+      "length": 23,
+      "value": "\"metrics._dd.agent_psr\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5645,
+      "length": 17,
+      "value": "\"meta._dd.source\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5697,
+      "length": 14,
+      "value": "\"meta.version\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5741,
+      "length": 21,
+      "value": "\"meta.tracer.version\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5786,
+      "length": 17,
+      "value": "\"meta._dd.origin\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5825,
+      "length": 16,
+      "value": "\"meta._dd.p.tid\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5870,
+      "length": 19,
+      "value": "\"meta.device.brand\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5916,
+      "length": 18,
+      "value": "\"meta.device.name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 5962,
+      "length": 19,
+      "value": "\"meta.device.model\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6016,
+      "length": 26,
+      "value": "\"meta.device.architecture\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6069,
+      "length": 18,
+      "value": "\"meta.device.type\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6111,
+      "length": 14,
+      "value": "\"meta.os.name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6151,
+      "length": 17,
+      "value": "\"meta.os.version\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6192,
+      "length": 15,
+      "value": "\"meta.os.build\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6238,
+      "length": 23,
+      "value": "\"meta.os.version_major\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6285,
+      "length": 13,
+      "value": "\"meta.usr.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6323,
+      "length": 15,
+      "value": "\"meta.usr.name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6364,
+      "length": 16,
+      "value": "\"meta.usr.email\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6417,
+      "length": 34,
+      "value": "\"meta.network.client.reachability\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6494,
+      "length": 42,
+      "value": "\"meta.network.client.available_interfaces\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6582,
+      "length": 35,
+      "value": "\"meta.network.client.supports_ipv4\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6663,
+      "length": 35,
+      "value": "\"meta.network.client.supports_ipv6\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6743,
+      "length": 34,
+      "value": "\"meta.network.client.is_expensive\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6824,
+      "length": 36,
+      "value": "\"meta.network.client.is_constrained\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6902,
+      "length": 38,
+      "value": "\"meta.network.client.sim_carrier.name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 6991,
+      "length": 45,
+      "value": "\"meta.network.client.sim_carrier.iso_country\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7088,
+      "length": 44,
+      "value": "\"meta.network.client.sim_carrier.technology\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7179,
+      "length": 45,
+      "value": "\"meta.network.client.sim_carrier.allows_voip\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
       "kind": "StringLiteral",
       "offset": 372,
       "length": 11,
       "value": "\"span.kind\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
       "kind": "StringLiteral",
       "offset": 405,
       "length": 12,
       "value": "\"error.type\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
       "kind": "StringLiteral",
       "offset": 442,
       "length": 15,
       "value": "\"error.message\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
       "kind": "StringLiteral",
       "offset": 479,
       "length": 16,
       "value": "\"_dd.span_links\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
+      "kind": "StringLiteral",
+      "offset": 372,
+      "length": 11,
+      "value": "\"span.kind\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
+      "kind": "StringLiteral",
+      "offset": 405,
+      "length": 12,
+      "value": "\"error.type\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 15,
+      "value": "\"error.message\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTelemetry\/OTelSpan.swift",
+      "kind": "StringLiteral",
+      "offset": 479,
+      "length": 16,
+      "value": "\"_dd.span_links\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 660,
       "length": 11,
       "value": "\"component\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 741,
       "length": 13,
       "value": "\"db.instance\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 14,
       "value": "\"db.statement\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 905,
       "length": 9,
       "value": "\"db.type\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 980,
       "length": 9,
       "value": "\"db.user\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1052,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1129,
       "length": 13,
       "value": "\"http.method\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1213,
       "length": 18,
       "value": "\"http.status_code\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1298,
       "length": 10,
       "value": "\"http.url\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1389,
       "length": 25,
       "value": "\"message_bus.destination\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1485,
       "length": 14,
       "value": "\"peer.address\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1571,
       "length": 15,
       "value": "\"peer.hostname\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1654,
       "length": 11,
       "value": "\"peer.ipv4\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1733,
       "length": 11,
       "value": "\"peer.ipv6\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1809,
       "length": 11,
       "value": "\"peer.port\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1891,
       "length": 14,
       "value": "\"peer.service\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 1978,
       "length": 19,
       "value": "\"sampling.priority\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 2065,
       "length": 11,
       "value": "\"span.kind\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 2494,
       "length": 12,
       "value": "\"error.kind\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 2571,
       "length": 7,
       "value": "\"event\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 2645,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/OpenTracing\/OTConstants.swift",
       "kind": "StringLiteral",
       "offset": 2719,
       "length": 7,
       "value": "\"stack\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/DDSpanContext.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/DDSpanContext.swift",
       "kind": "Dictionary",
       "offset": 1710,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
       "kind": "StringLiteral",
       "offset": 528,
       "length": 12,
       "value": "\"Span event\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
       "kind": "StringLiteral",
       "offset": 583,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 803,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 821,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 841,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 859,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 878,
       "length": 8,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 803,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 821,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 841,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 859,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 878,
+      "length": 8,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 803,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 821,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 841,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 859,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 878,
+      "length": 8,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
       "kind": "StringLiteral",
       "offset": 954,
       "length": 5,
       "value": "\"log\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Integrations\/TracingWithLoggingIntegration.swift",
       "kind": "StringLiteral",
       "offset": 1017,
       "length": 7,
       "value": "\"trace\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 336,
       "length": 14,
       "value": "\"span_context\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 13,
       "value": "\"dd.trace_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 452,
       "length": 12,
       "value": "\"dd.span_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 416,
+      "length": 13,
+      "value": "\"dd.trace_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 12,
+      "value": "\"dd.span_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 632,
       "length": 5,
       "value": "\"rum\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 709,
       "length": 16,
       "value": "\"application.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 751,
       "length": 12,
       "value": "\"session.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 786,
       "length": 9,
       "value": "\"view.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 824,
       "length": 16,
       "value": "\"user_action.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanSanitizer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 709,
+      "length": 16,
+      "value": "\"application.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 751,
+      "length": 12,
+      "value": "\"session.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 786,
+      "length": 9,
+      "value": "\"view.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 824,
+      "length": 16,
+      "value": "\"user_action.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Span\/SpanSanitizer.swift",
       "kind": "StringLiteral",
       "offset": 502,
       "length": 6,
       "value": "\"Span\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/TraceFeature.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogTrace\/Sources\/Feature\/TraceFeature.swift",
       "kind": "StringLiteral",
       "offset": 373,
       "length": 9,

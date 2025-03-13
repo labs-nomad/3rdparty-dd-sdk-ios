@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogInternal
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import Compression
 import Foundation
@@ -23,7 +22,7 @@ public enum CoreLoggerLevel : Swift.Int, Swift.Comparable, Swift.CaseIterable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [DatadogInternal.CoreLoggerLevel]
   public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [DatadogInternal.CoreLoggerLevel] {
+  public static var allCases: [DatadogInternal.CoreLoggerLevel] {
     get
   }
   public var rawValue: Swift.Int {
@@ -86,7 +85,7 @@ public struct NetworkConnectionInfo : Swift.Codable, Swift.Equatable, DatadogInt
     public init?(rawValue: Swift.String)
     public typealias AllCases = [DatadogInternal.NetworkConnectionInfo.Reachability]
     public typealias RawValue = Swift.String
-    nonisolated public static var allCases: [DatadogInternal.NetworkConnectionInfo.Reachability] {
+    public static var allCases: [DatadogInternal.NetworkConnectionInfo.Reachability] {
       get
     }
     public var rawValue: Swift.String {
@@ -102,7 +101,7 @@ public struct NetworkConnectionInfo : Swift.Codable, Swift.Equatable, DatadogInt
     public init?(rawValue: Swift.String)
     public typealias AllCases = [DatadogInternal.NetworkConnectionInfo.Interface]
     public typealias RawValue = Swift.String
-    nonisolated public static var allCases: [DatadogInternal.NetworkConnectionInfo.Interface] {
+    public static var allCases: [DatadogInternal.NetworkConnectionInfo.Interface] {
       get
     }
     public var rawValue: Swift.String {
@@ -305,7 +304,7 @@ public struct CarrierInfo : Swift.Codable, Swift.Equatable, DatadogInternal.Pass
     public init?(rawValue: Swift.String)
     public typealias AllCases = [DatadogInternal.CarrierInfo.RadioAccessTechnology]
     public typealias RawValue = Swift.String
-    nonisolated public static var allCases: [DatadogInternal.CarrierInfo.RadioAccessTechnology] {
+    public static var allCases: [DatadogInternal.CarrierInfo.RadioAccessTechnology] {
       get
     }
     public var rawValue: Swift.String {
@@ -369,7 +368,6 @@ extension DatadogInternal.DatadogExtension where ExtendedType == UIKit.UIApplica
   }
 }
 extension UIKit.UIApplication : DatadogInternal.DatadogExtended {
-  @available(iOS 2.0, *)
   public typealias ExtendedType = UIKit.UIApplication
 }
 public struct BacktraceReport : Swift.Codable {
@@ -1019,7 +1017,6 @@ extension DatadogInternal.DeviceInfo {
 }
 public typealias _UIDevice = UIKit.UIDevice
 extension UIKit.UIDevice : DatadogInternal.DatadogExtended {
-  @available(iOS 2.0, *)
   public typealias ExtendedType = UIKit.UIDevice
 }
 extension DatadogInternal.DatadogExtension where ExtendedType == UIKit.UIDevice {
@@ -1339,7 +1336,6 @@ extension Foundation.Data {
   public func sha1() -> Swift.String
 }
 extension Foundation.JSONEncoder : DatadogInternal.DatadogExtended {
-  @available(iOS 8.0, tvOS 9.0, watchOS 2.0, macOS 10.10, *)
   public typealias ExtendedType = Foundation.JSONEncoder
 }
 extension DatadogInternal.DatadogExtension where ExtendedType == Foundation.JSONEncoder {
@@ -1461,7 +1457,7 @@ public enum TraceContextInjection : Swift.CaseIterable {
   public static func == (a: DatadogInternal.TraceContextInjection, b: DatadogInternal.TraceContextInjection) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [DatadogInternal.TraceContextInjection]
-  nonisolated public static var allCases: [DatadogInternal.TraceContextInjection] {
+  public static var allCases: [DatadogInternal.TraceContextInjection] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1674,7 +1670,7 @@ public enum TextAndInputPrivacyLevel : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [DatadogInternal.TextAndInputPrivacyLevel]
   public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [DatadogInternal.TextAndInputPrivacyLevel] {
+  public static var allCases: [DatadogInternal.TextAndInputPrivacyLevel] {
     get
   }
   public var rawValue: Swift.String {
@@ -1744,15 +1740,9 @@ extension Foundation.UUID : DatadogInternal.PassthroughAnyCodable {
 }
 extension Foundation.Data : DatadogInternal.PassthroughAnyCodable {
 }
-#if compiler(>=5.3) && $NoncopyableGenerics
 extension Swift.Optional {
   public func ifNotNil(_ closure: (Wrapped) throws -> Swift.Void) rethrows
 }
-#else
-extension Swift.Optional {
-  public func ifNotNil(_ closure: (Wrapped) throws -> Swift.Void) rethrows
-}
-#endif
 extension Swift.Double {
   public func divideIfNotZero(by divider: Swift.Double) -> Swift.Double?
   public var inverted: Swift.Double {
@@ -1810,7 +1800,6 @@ extension DatadogInternal.Event : Swift.CustomDebugStringConvertible {
   }
 }
 extension Foundation.URLSessionTask : DatadogInternal.DatadogExtended {
-  @available(iOS 7.0, *)
   public typealias ExtendedType = Foundation.URLSessionTask
 }
 extension Swift.Double {

@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "DatadogCrashReporting",
-    "printedName": "DatadogCrashReporting",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -166,23 +166,7 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -385,22 +369,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -513,112 +481,112 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/Integrations\/CrashReportSender.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/Integrations\/CrashReportSender.swift",
       "kind": "StringLiteral",
       "offset": 1149,
       "length": 7,
       "value": "\"crash\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashReportingFeature.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashReportingFeature.swift",
       "kind": "StringLiteral",
       "offset": 376,
       "length": 16,
       "value": "\"crash-reporter\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashReportingFeature.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashReportingFeature.swift",
       "kind": "StringLiteral",
       "offset": 4576,
       "length": 40,
       "value": "\"Invalid date format: Requires ISO8601.\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/DDCrashReportExporter.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/DDCrashReportExporter.swift",
       "kind": "StringLiteral",
       "offset": 917,
       "length": 11,
       "value": "\"<unknown>\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/DDCrashReportExporter.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/DDCrashReportExporter.swift",
       "kind": "StringLiteral",
       "offset": 959,
       "length": 5,
       "value": "\"???\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/DDCrashReportExporter.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/DDCrashReportExporter.swift",
       "kind": "Dictionary",
       "offset": 1079,
       "length": 1210,
       "value": "[(\"SIGSIGNAL 0\", \"Signal 0\"), (\"SIGHUP\", \"Hangup\"), (\"SIGINT\", \"Interrupt\"), (\"SIGQUIT\", \"Quit\"), (\"SIGILL\", \"Illegal instruction\"), (\"SIGTRAP\", \"Trace\/BPT trap\"), (\"SIGABRT\", \"Abort trap\"), (\"SIGEMT\", \"EMT trap\"), (\"SIGFPE\", \"Floating point exception\"), (\"SIGKILL\", \"Killed\"), (\"SIGBUS\", \"Bus error\"), (\"SIGSEGV\", \"Segmentation fault\"), (\"SIGSYS\", \"Bad system call\"), (\"SIGPIPE\", \"Broken pipe\"), (\"SIGALRM\", \"Alarm clock\"), (\"SIGTERM\", \"Terminated\"), (\"SIGURG\", \"Urgent I\/O condition\"), (\"SIGSTOP\", \"Suspended (signal)\"), (\"SIGTSTP\", \"Suspended\"), (\"SIGCONT\", \"Continued\"), (\"SIGCHLD\", \"Child exited\"), (\"SIGTTIN\", \"Stopped (tty input)\"), (\"SIGTTOU\", \"Stopped (tty output)\"), (\"SIGIO\", \"I\/O possible\"), (\"SIGXCPU\", \"Cputime limit exceeded\"), (\"SIGXFSZ\", \"Filesize limit exceeded\"), (\"SIGVTALRM\", \"Virtual timer expired\"), (\"SIGPROF\", \"Profiling timer expired\"), (\"SIGWINCH\", \"Window size changes\"), (\"SIGINFO\", \"Information request\"), (\"SIGUSR1\", \"User defined signal 1\"), (\"SIGUSR2\", \"User defined signal 2\")]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/CrashReportMinifier.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/CrashReportMinifier.swift",
       "kind": "IntegerLiteral",
       "offset": 763,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/PLCrashReporterIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/PLCrashReporterIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 585,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/PLCrashReporterIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/PLCrashReporterIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 589,
       "length": 5,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/PLCrashReporterIntegration.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/PLCrashReporterIntegration\/PLCrashReporterIntegration.swift",
       "kind": "IntegerLiteral",
       "offset": 597,
       "length": 5,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 29,
       "value": "\"com.datadoghq.crash-context\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
       "kind": "StringLiteral",
       "offset": 2310,
       "length": 16,
       "value": "\"rum-view-event\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
       "kind": "StringLiteral",
       "offset": 2431,
       "length": 16,
       "value": "\"rum-view-reset\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
       "kind": "StringLiteral",
       "offset": 2602,
       "length": 19,
       "value": "\"rum-session-state\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
       "kind": "StringLiteral",
       "offset": 2716,
       "length": 23,
       "value": "\"global-log-attributes\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogCrashReporting\/Sources\/CrashContext\/CrashContextProvider.swift",
       "kind": "StringLiteral",
       "offset": 2885,
       "length": 23,

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DatadogObjc-Swift.h</key>
 		<data>
-		07EFNkEzQzlVZcqXQUSdpZlmRwc=
+		WeyvUfwsPaAHmzK1Hlj2QoztkME=
 		</data>
 		<key>Headers/DatadogObjc.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		t+yaR4J2vybw+1qY7OxT11G2oE8=
+		JQhW3tlmFw8933BuQteg9Csc/vU=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		mFwIu6YUZ396gAruIVNlevMhq0A=
+		PKoeQ0lvZK00fs5l9lRsFGZxJ2Y=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xsSYtWeYQcCSEDeKFmYUdeF3ZXM=
+		T1iYDM8FENn57bg4GwyQ+y5JJt4=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xLDDWJ2FW/7sn9ctbsMRCG4zij8=
+		77w6DuEytgEaTRk4sh+L/aibGME=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xsSYtWeYQcCSEDeKFmYUdeF3ZXM=
+		T1iYDM8FENn57bg4GwyQ+y5JJt4=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QkxjGmmw6FAJZyvfifGEuPXv9hY=
+		pJZvGQ8TvF2i55Ug+Jm1Ur84+5s=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		mFwIu6YUZ396gAruIVNlevMhq0A=
+		PKoeQ0lvZK00fs5l9lRsFGZxJ2Y=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yGkY/rDDcr0wxvKb52NWMOIq0K0=
+		Zd4bTz9IOEDCkjQqo0A95shhXLg=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		J2aePY6rXpYmfHyoBjrrl8x9QvI=
+		/OxRXsPs136x0pfzQf1HljFnFrA=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yGkY/rDDcr0wxvKb52NWMOIq0K0=
+		Zd4bTz9IOEDCkjQqo0A95shhXLg=
 		</data>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NqKoP94feSIk8w7yjIFpi80aS1Q=
+		y7x86h6qfRnEdxJgAIbSMPzoCsg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,21 +65,13 @@
 	<dict>
 		<key>Headers/DatadogObjc-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			07EFNkEzQzlVZcqXQUSdpZlmRwc=
-			</data>
 			<key>hash2</key>
 			<data>
-			lhQv8HOiHEczGaG+H4+yE1ThWCPi7OTJlKdhAH7zYfM=
+			yCmbpGaTx4uHHVsqTVqYKs7jlBiEwIjQ0h4EB2yOtbI=
 			</data>
 		</dict>
 		<key>Headers/DatadogObjc.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jm/S9UDO7MieakVtjoctnxuIqKE=
-			</data>
 			<key>hash2</key>
 			<data>
 			QpUedDy0iKAjGn9tJm5rlKN+PktpoY/LUOvd+HvlhzY=
@@ -87,120 +79,76 @@
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mFwIu6YUZ396gAruIVNlevMhq0A=
-			</data>
 			<key>hash2</key>
 			<data>
-			kh4JNIXKZTcjHoAdScQOsvIYCG3Ue3mM4vzb38wZlEM=
+			mp2AJwoVv8s6v6ctmiSfcZ5Dq1H7hP5MRr7HVje5KG0=
 			</data>
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xsSYtWeYQcCSEDeKFmYUdeF3ZXM=
-			</data>
 			<key>hash2</key>
 			<data>
-			WigmmLit23Z/q4EOvCR0lVDMdTX9T703eRVI5wbAXJw=
+			u9MC6f3k+8xmbhsX/pMJg9bRXfY8s/amuh/L47/9WB4=
 			</data>
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xLDDWJ2FW/7sn9ctbsMRCG4zij8=
-			</data>
 			<key>hash2</key>
 			<data>
-			Bon6ICFZjNOnw141xSkhFMkl66fEt45udNEjhb/WGl8=
+			D/liqOe8ZSy3hC/jj5lCxoBkDpFIpXBR5Xl57/+QhyU=
 			</data>
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xsSYtWeYQcCSEDeKFmYUdeF3ZXM=
-			</data>
 			<key>hash2</key>
 			<data>
-			WigmmLit23Z/q4EOvCR0lVDMdTX9T703eRVI5wbAXJw=
+			u9MC6f3k+8xmbhsX/pMJg9bRXfY8s/amuh/L47/9WB4=
 			</data>
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QkxjGmmw6FAJZyvfifGEuPXv9hY=
-			</data>
 			<key>hash2</key>
 			<data>
-			n2bMrL6VpvMDFseuCgmjmHV3cDrjbGXX06bclBB3gGQ=
+			TUh/RQZ+K5LmEdbT9AlBzNmXS4TrteN7cqHPzaKphRU=
 			</data>
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mFwIu6YUZ396gAruIVNlevMhq0A=
-			</data>
 			<key>hash2</key>
 			<data>
-			kh4JNIXKZTcjHoAdScQOsvIYCG3Ue3mM4vzb38wZlEM=
+			mp2AJwoVv8s6v6ctmiSfcZ5Dq1H7hP5MRr7HVje5KG0=
 			</data>
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yGkY/rDDcr0wxvKb52NWMOIq0K0=
-			</data>
 			<key>hash2</key>
 			<data>
-			FeTOKWM8F/LW9IlEp3eiLh44WLY+1wExMqtv62a3eDo=
+			lXgEkVc6PA+zLvfdqMujX2/5yeFoKzMoOMzfrB0aeRs=
 			</data>
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			J2aePY6rXpYmfHyoBjrrl8x9QvI=
-			</data>
 			<key>hash2</key>
 			<data>
-			8e1omY2YkvjYjiQdrvpUp3Xt3sCdPX69cXR2NXQZmjk=
+			wA8LMmV6QqlgJ8h3nDxd63ZNiwF8wW4qi1D3mo2J450=
 			</data>
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yGkY/rDDcr0wxvKb52NWMOIq0K0=
-			</data>
 			<key>hash2</key>
 			<data>
-			FeTOKWM8F/LW9IlEp3eiLh44WLY+1wExMqtv62a3eDo=
+			lXgEkVc6PA+zLvfdqMujX2/5yeFoKzMoOMzfrB0aeRs=
 			</data>
 		</dict>
 		<key>Modules/DatadogObjc.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NqKoP94feSIk8w7yjIFpi80aS1Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			Yt8C61MIcaEuLSOUSgeRDzNCQG4/p7DCexDn9If2ps4=
+			4Ys2IHiRnw8t0zQJA3dxPDImMkgcv17k26hXpDmSrMg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IUnDsLVLAFBcRCxB9hQk0v9HK/Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			jiuZmnMOgUrlb5kaPBxU4gCPtyI8ZL+8v1olUUKUzpg=

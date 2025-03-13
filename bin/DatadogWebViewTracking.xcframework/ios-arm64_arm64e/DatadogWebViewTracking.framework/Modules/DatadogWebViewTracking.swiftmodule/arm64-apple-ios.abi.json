@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "DatadogWebViewTracking",
-    "printedName": "DatadogWebViewTracking",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -128,20 +128,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "InternalExtended",
@@ -326,20 +312,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -475,23 +447,7 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
-            "hasMissingDesignatedInitializers": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
-            ]
+            "hasMissingDesignatedInitializers": true
           },
           {
             "kind": "Function",
@@ -539,62 +495,60 @@
         "moduleName": "DatadogInternal",
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<ExtendedType>",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
+        "isExternal": true
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/WebViewTracking.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/WebViewTracking.swift",
       "kind": "Array",
       "offset": 1930,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/WebViewTracking.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/WebViewTracking.swift",
       "kind": "StringLiteral",
       "offset": 3059,
       "length": 26,
       "value": "\"\/* DatadogEventBridge *\/\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/ObjC\/WebViewTracking+objc.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/MessageEmitter.swift",
+      "kind": "StringLiteral",
+      "offset": 637,
+      "length": 14,
+      "value": "\"DatadogWebViewTracking.MessageEmitter\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/ObjC\/WebViewTracking+objc.swift",
       "kind": "Array",
       "offset": 1344,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/DDScriptMessageHandler.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/DDScriptMessageHandler.swift",
       "kind": "StringLiteral",
       "offset": 418,
       "length": 20,
       "value": "\"DatadogEventBridge\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/DDScriptMessageHandler.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/DDScriptMessageHandler.swift",
       "kind": "StringLiteral",
       "offset": 519,
       "length": 29,
       "value": "\"com.datadoghq.JSEventBridge\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogWebViewTracking\/Sources\/DDScriptMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 337,
+      "length": 22,
+      "value": "\"DatadogWebViewTracking.DDScriptMessageHandler\""
     }
   ]
 }

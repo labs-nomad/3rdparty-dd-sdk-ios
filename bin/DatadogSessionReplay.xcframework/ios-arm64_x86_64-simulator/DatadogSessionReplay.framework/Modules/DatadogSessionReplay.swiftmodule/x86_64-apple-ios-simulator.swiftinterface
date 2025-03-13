@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DatadogSessionReplay
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import CoreGraphics
 import DatadogInternal
@@ -21,7 +20,6 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
 extension UIKit.UIImage : DatadogInternal.DatadogExtended {
-  @available(iOS 2.0, *)
   public typealias ExtendedType = UIKit.UIImage
 }
 extension DatadogSessionReplay.SessionReplay {
@@ -78,7 +76,6 @@ extension DatadogSessionReplay.SessionReplayPrivacyOverrides : Swift.Equatable {
   public static func == (lhs: DatadogSessionReplay.SessionReplayPrivacyOverrides, rhs: DatadogSessionReplay.SessionReplayPrivacyOverrides) -> Swift.Bool
 }
 extension UIKit.UIView : DatadogInternal.DatadogExtended {
-  @available(iOS 2.0, *)
   public typealias ExtendedType = UIKit.UIView
 }
 public enum SessionReplay {
@@ -93,7 +90,6 @@ extension CoreFoundation.CGSize : DatadogInternal.DatadogExtended {
   public typealias ExtendedType = CoreFoundation.CGSize
 }
 extension UIKit.UIColor : DatadogInternal.DatadogExtended {
-  @available(iOS 2.0, *)
   public typealias ExtendedType = UIKit.UIColor
 }
 extension DatadogSessionReplay.SessionReplay.Configuration.FeatureFlag : Swift.Equatable {}

@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "DatadogLogs",
-    "printedName": "DatadogLogs",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -144,22 +144,6 @@
                 "declAttributes": [
                   "AccessControl",
                   "RawDocComment"
-                ],
-                "conformances": [
-                  {
-                    "kind": "Conformance",
-                    "name": "Copyable",
-                    "printedName": "Copyable",
-                    "usr": "s:s8CopyableP",
-                    "mangledName": "$ss8CopyableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  }
                 ]
               },
               {
@@ -1034,22 +1018,6 @@
             "moduleName": "DatadogLogs",
             "declAttributes": [
               "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
             ]
           },
           {
@@ -1097,22 +1065,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -1512,20 +1464,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "InternalExtended",
                 "printedName": "InternalExtended",
                 "children": [
@@ -1722,23 +1660,7 @@
               "AccessControl",
               "RawDocComment"
             ],
-            "isFromExtension": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
-            ]
+            "isFromExtension": true
           }
         ],
         "declKind": "Enum",
@@ -1750,20 +1672,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "InternalExtended",
@@ -1859,22 +1767,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -2030,22 +1922,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -2432,9 +2308,6 @@
                 "moduleName": "DatadogLogs",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Nonisolated"
-                ],
                 "accessors": [
                   {
                     "kind": "Accessor",
@@ -2477,20 +2350,6 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
               {
                 "kind": "Conformance",
                 "name": "Hashable",
@@ -2707,22 +2566,6 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
             ]
           },
           {
@@ -3049,22 +2892,6 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
             ]
           },
           {
@@ -3456,20 +3283,6 @@
                   "RawDocComment"
                 ],
                 "conformances": [
-                  {
-                    "kind": "Conformance",
-                    "name": "Copyable",
-                    "printedName": "Copyable",
-                    "usr": "s:s8CopyableP",
-                    "mangledName": "$ss8CopyableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
                   {
                     "kind": "Conformance",
                     "name": "Decodable",
@@ -4160,22 +3973,6 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
             ]
           },
           {
@@ -4426,20 +4223,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -4673,20 +4456,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -4812,20 +4581,6 @@
               "RawDocComment"
             ],
             "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
               {
                 "kind": "Conformance",
                 "name": "Decodable",
@@ -6140,20 +5895,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
@@ -6488,20 +6229,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7326,20 +7053,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -7593,23 +7306,7 @@
         "moduleName": "DatadogInternal",
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<ExtendedType>",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
+        "isExternal": true
       },
       {
         "kind": "TypeDecl",
@@ -7724,20 +7421,6 @@
             ],
             "usr": "s:s12CaseIterableP",
             "mangledName": "$ss12CaseIterableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           }
         ]
       }
@@ -7746,532 +7429,896 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Logger.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 4230,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Logger.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 4278,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Logger.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 4327,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Logs.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Logs.swift",
       "kind": "StringLiteral",
       "offset": 5326,
       "length": 23,
       "value": "\"_dd.error.fingerprint\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/RequestBuilder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/RequestBuilder.swift",
       "kind": "StringLiteral",
       "offset": 593,
       "length": 3,
       "value": "\"[\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/RequestBuilder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/RequestBuilder.swift",
       "kind": "StringLiteral",
       "offset": 606,
       "length": 3,
       "value": "\"]\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/RequestBuilder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/RequestBuilder.swift",
       "kind": "StringLiteral",
       "offset": 622,
       "length": 3,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 1159,
       "length": 16,
       "value": "\"application_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 1263,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 1357,
       "length": 9,
       "value": "\"view.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 1452,
       "length": 16,
       "value": "\"user_action.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 1820,
       "length": 13,
       "value": "\"dd.trace_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 1911,
       "length": 12,
       "value": "\"dd.span_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3489,
       "length": 6,
       "value": "\"arch\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3528,
       "length": 11,
       "value": "\"is_system\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3575,
       "length": 14,
       "value": "\"load_address\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3624,
       "length": 13,
       "value": "\"max_address\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3666,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 3701,
       "length": 6,
       "value": "\"uuid\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3489,
+      "length": 6,
+      "value": "\"arch\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3528,
+      "length": 11,
+      "value": "\"is_system\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3575,
+      "length": 14,
+      "value": "\"load_address\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3624,
+      "length": 13,
+      "value": "\"max_address\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3666,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 3701,
+      "length": 6,
+      "value": "\"uuid\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 4040,
       "length": 5,
       "value": "\"ios\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7337,
       "length": 9,
       "value": "\"service\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7374,
       "length": 5,
       "value": "\"env\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7400,
       "length": 8,
       "value": "\"ddtags\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7427,
       "length": 4,
       "value": "\"os\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7484,
       "length": 12,
       "value": "\"error.kind\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7525,
       "length": 15,
       "value": "\"error.message\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7567,
       "length": 13,
       "value": "\"error.stack\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7612,
       "length": 19,
       "value": "\"error.source_type\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7664,
       "length": 19,
       "value": "\"error.fingerprint\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7717,
       "length": 21,
       "value": "\"error.binary_images\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7811,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7859,
       "length": 15,
       "value": "\"build_version\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7898,
       "length": 10,
       "value": "\"build_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 7955,
       "length": 5,
       "value": "\"_dd\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8020,
       "length": 13,
       "value": "\"logger.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8063,
       "length": 16,
       "value": "\"logger.version\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8106,
       "length": 20,
       "value": "\"logger.thread_name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8180,
       "length": 8,
       "value": "\"usr.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8213,
       "length": 10,
       "value": "\"usr.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8249,
       "length": 11,
       "value": "\"usr.email\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8341,
       "length": 29,
       "value": "\"network.client.reachability\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8413,
       "length": 37,
       "value": "\"network.client.available_interfaces\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8496,
       "length": 30,
       "value": "\"network.client.supports_ipv4\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8572,
       "length": 30,
       "value": "\"network.client.supports_ipv6\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8647,
       "length": 29,
       "value": "\"network.client.is_expensive\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8723,
       "length": 31,
       "value": "\"network.client.is_constrained\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8836,
       "length": 33,
       "value": "\"network.client.sim_carrier.name\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 8920,
       "length": 40,
       "value": "\"network.client.sim_carrier.iso_country\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 9012,
       "length": 39,
       "value": "\"network.client.sim_carrier.technology\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
       "kind": "StringLiteral",
       "offset": 9098,
       "length": 40,
       "value": "\"network.client.sim_carrier.allows_voip\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7337,
+      "length": 9,
+      "value": "\"service\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7374,
+      "length": 5,
+      "value": "\"env\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7400,
+      "length": 8,
+      "value": "\"ddtags\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7427,
+      "length": 4,
+      "value": "\"os\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7484,
+      "length": 12,
+      "value": "\"error.kind\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7525,
+      "length": 15,
+      "value": "\"error.message\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7567,
+      "length": 13,
+      "value": "\"error.stack\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7612,
+      "length": 19,
+      "value": "\"error.source_type\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7664,
+      "length": 19,
+      "value": "\"error.fingerprint\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7717,
+      "length": 21,
+      "value": "\"error.binary_images\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7811,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7859,
+      "length": 15,
+      "value": "\"build_version\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7898,
+      "length": 10,
+      "value": "\"build_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 7955,
+      "length": 5,
+      "value": "\"_dd\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8020,
+      "length": 13,
+      "value": "\"logger.name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8063,
+      "length": 16,
+      "value": "\"logger.version\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8106,
+      "length": 20,
+      "value": "\"logger.thread_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8180,
+      "length": 8,
+      "value": "\"usr.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8213,
+      "length": 10,
+      "value": "\"usr.name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8249,
+      "length": 11,
+      "value": "\"usr.email\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8341,
+      "length": 29,
+      "value": "\"network.client.reachability\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8413,
+      "length": 37,
+      "value": "\"network.client.available_interfaces\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8496,
+      "length": 30,
+      "value": "\"network.client.supports_ipv4\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8572,
+      "length": 30,
+      "value": "\"network.client.supports_ipv6\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8647,
+      "length": 29,
+      "value": "\"network.client.is_expensive\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8723,
+      "length": 31,
+      "value": "\"network.client.is_constrained\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8836,
+      "length": 33,
+      "value": "\"network.client.sim_carrier.name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 8920,
+      "length": 40,
+      "value": "\"network.client.sim_carrier.iso_country\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 9012,
+      "length": 39,
+      "value": "\"network.client.sim_carrier.technology\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 9098,
+      "length": 40,
+      "value": "\"network.client.sim_carrier.allows_voip\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 476,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 490,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 506,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 520,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 535,
       "length": 8,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 476,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 490,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 506,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 520,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 535,
+      "length": 8,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 476,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 490,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 506,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 520,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/LoggerProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 535,
+      "length": 8,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
       "kind": "Array",
       "offset": 650,
       "length": 221,
       "value": "[\"host\", \"message\", \"status\", \"service\", \"source\", \"ddtags\", \"dd.trace_id\", \"dd.span_id\", \"application_id\", \"session_id\", \"view.id\", \"user_action.id\", \"build_id\"]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
       "kind": "IntegerLiteral",
       "offset": 1136,
       "length": 2,
       "value": "97"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
       "kind": "IntegerLiteral",
       "offset": 1141,
       "length": 3,
       "value": "122"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
       "kind": "IntegerLiteral",
       "offset": 1282,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
       "kind": "Array",
       "offset": 1449,
       "length": 68,
       "value": "[\"host\", \"device\", \"source\", \"service\", \"env\"]"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
       "kind": "IntegerLiteral",
       "offset": 1683,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Log\/LogEventSanitizer.swift",
       "kind": "StringLiteral",
       "offset": 1765,
       "length": 5,
       "value": "\"Log\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/LogsFeature.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/LogsFeature.swift",
       "kind": "StringLiteral",
       "offset": 367,
       "length": 9,
       "value": "\"logging\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/MessageReceivers.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/MessageReceivers.swift",
       "kind": "StringLiteral",
       "offset": 461,
       "length": 5,
       "value": "\"log\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/MessageReceivers.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/MessageReceivers.swift",
       "kind": "StringLiteral",
       "offset": 535,
       "length": 7,
       "value": "\"crash\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 409,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 671,
       "length": 8,
       "value": "\"logger\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 904,
       "length": 23,
       "value": "\"global-log-attributes\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 1884,
       "length": 14,
       "value": "\"span_context\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 1964,
       "length": 13,
       "value": "\"dd.trace_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 2000,
       "length": 12,
       "value": "\"dd.span_id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 1964,
+      "length": 13,
+      "value": "\"dd.trace_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 2000,
+      "length": 12,
+      "value": "\"dd.span_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 2183,
       "length": 5,
       "value": "\"rum\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 2260,
       "length": 16,
       "value": "\"application.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 2302,
       "length": 12,
       "value": "\"session.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 2337,
       "length": 9,
       "value": "\"view.id\""
     },
     {
-      "filePath": "\/Users\/joshlytle\/dev\/repos\/NomadGoApps\/Submodules\/NomadGoSDK\/Submodules\/3rdparty-dd-sdk-ios\/.working\/checkout\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 2375,
+      "length": 16,
+      "value": "\"user_action.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 2260,
+      "length": 16,
+      "value": "\"application.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 2302,
+      "length": 12,
+      "value": "\"session.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
+      "kind": "StringLiteral",
+      "offset": 2337,
+      "length": 9,
+      "value": "\"view.id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/6Jwjsq6m\/0\/DataDog\/dd-sdk-ios\/artifacts\/2.24.0\/dd-sdk-ios\/DatadogLogs\/Sources\/Feature\/Baggages.swift",
       "kind": "StringLiteral",
       "offset": 2375,
       "length": 16,

@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/DatadogWebViewTracking-Swift.h</key>
 		<data>
-		4pHdYKPh5ayLfGKJMBDgmcLMOfM=
+		PBYWqiUS+rET3vbZq80hR3zjo6c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YE9u8QZ8n0BjYuW24oFECpva9NI=
+		b60aUoioxs6XG+nngkgPHvBHZgs=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		t5N5nVDvT7vRDdhvkFGiUxbDlJw=
+		YebdMyp2TRVX2P/esQuKhZkf4So=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4uDNFW62NztQpxBEIb72NbTUssM=
+		R0ugnjYKyDqN5a//VfQbTtrVYP0=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		X5BVwY+lgqqoPZHHtOVnnOtcfNE=
+		zA3ipPxhycQI+McG4/sZfU6MNcI=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mPFgdvB4yzbfqUTH0s0G+bOE4NM=
+		DIzZkjeyd2kRoyCiycQkmUV1VyE=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6v+ylL6bZ89ZLZu4C/rDdODtbSo=
+		dTInL1zslmwv1vK+HydTiSSsir4=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		t5N5nVDvT7vRDdhvkFGiUxbDlJw=
+		YebdMyp2TRVX2P/esQuKhZkf4So=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0sy1IaIo8udUvGJmjLXamjz8f+c=
+		XAEQILU8oNNiwMTEhBWB5a1AaRU=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		MoArYn4nCiUyhsFGGd+8C4BejT0=
+		912Bkyg+CZIJuqdNbG/b3p7bMN4=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zPRZHypAEsjNsNhJrykU/e3jwUk=
+		2BO9CM0spariJFawwW6mKtDwgiU=
 		</data>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jAAi/HqpqcHuOxYrhaNiGLPsYKI=
+		b6n5cgJWi6Rm4NtcctiWvpbB1wI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,131 +61,83 @@
 	<dict>
 		<key>Headers/DatadogWebViewTracking-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4pHdYKPh5ayLfGKJMBDgmcLMOfM=
-			</data>
 			<key>hash2</key>
 			<data>
-			PWxsr7flzPTll6RgWd+W9uyqWeMx9wY+i3614U8iRQs=
+			Yx9jWDIBHMT+1BQjCCDQDcXJX14ftDKnfK6MG6YjnQ4=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			t5N5nVDvT7vRDdhvkFGiUxbDlJw=
-			</data>
 			<key>hash2</key>
 			<data>
-			H96TUp0YBjW15o8tPT5TbZtFsVp6rZjAQrJfJM4w3c4=
+			vsu9QDf1pMET3YVJEGlywrrCppp/1oRhNRfZWjficbs=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4uDNFW62NztQpxBEIb72NbTUssM=
-			</data>
 			<key>hash2</key>
 			<data>
-			E9LNx0YbHrCY21MmlZiqLQDS82ol+e4MK97xE5vJ1Hw=
+			kh+SpPm9zlDioMlkOJJN2fppd4MMOT5hZTDs55B7TXI=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			X5BVwY+lgqqoPZHHtOVnnOtcfNE=
-			</data>
 			<key>hash2</key>
 			<data>
-			jlVbhg9aKpj2EQYru7iJMX8a3fDDY7ndm1iLbvywLU0=
+			jHzDRxnlMG93RPSCc9VWrCbIpqvMhBm3qjfbfDCMTq8=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mPFgdvB4yzbfqUTH0s0G+bOE4NM=
-			</data>
 			<key>hash2</key>
 			<data>
-			9W/ZE5SXE8KjR8sgc8pJdGU82E/7taUcX+CG5rGajcU=
+			i4Uv9mumd43+CrjIb47KftalWrEcfAbY5rxeKGgwSqs=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6v+ylL6bZ89ZLZu4C/rDdODtbSo=
-			</data>
 			<key>hash2</key>
 			<data>
-			cRw90FVs3ahyQ/QC9/P5safDU3oqhY/H0lPOKCTtD+c=
+			TpTlXB3cMiwpP5A2KWEHx6PTZdKmhqq1EFWyMDFcIY8=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			t5N5nVDvT7vRDdhvkFGiUxbDlJw=
-			</data>
 			<key>hash2</key>
 			<data>
-			H96TUp0YBjW15o8tPT5TbZtFsVp6rZjAQrJfJM4w3c4=
+			vsu9QDf1pMET3YVJEGlywrrCppp/1oRhNRfZWjficbs=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0sy1IaIo8udUvGJmjLXamjz8f+c=
-			</data>
 			<key>hash2</key>
 			<data>
-			YhYadgpzME//lj6J4lUuFAyErhVNIsYK39387vtF+Dg=
+			xbyPMmuqb18Id0j1Ucsxb1ssz/6xKKFc5dw1EuyV5WY=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MoArYn4nCiUyhsFGGd+8C4BejT0=
-			</data>
 			<key>hash2</key>
 			<data>
-			dfQMrlzrq91kl0/MWxnePv7QEJdq4DMpsaPAzC5NN4Q=
+			Rdq8JhM7wIbHd8zOBRJ0HOqY5Q/bn2Pa6U3c1XzwxzY=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zPRZHypAEsjNsNhJrykU/e3jwUk=
-			</data>
 			<key>hash2</key>
 			<data>
-			VrT/G3PoehowSoQ8iyH9mUgiQIw4lY11Of0rd3D6kZc=
+			dM/hVdNKETW8Q/Yh23tuSELkENXcJ3AFRXeQPQQxmmY=
 			</data>
 		</dict>
 		<key>Modules/DatadogWebViewTracking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jAAi/HqpqcHuOxYrhaNiGLPsYKI=
-			</data>
 			<key>hash2</key>
 			<data>
-			qOH+XAsj949SPH5NwXmNBLL4tWBPkFDR5cYcFsfcwDw=
+			fWmkmaGetSJ71M7/2yrwWDvFCvWspVpY/glLuGxvLOg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EbLhjtp4/UYKbRgTDD6upF4tNFs=
-			</data>
 			<key>hash2</key>
 			<data>
 			AfruXD0D958n5p2KE0OMrz17sFL6cmLVMr6rPjMs0bY=
